@@ -2,7 +2,7 @@ version:  2.0
 jobs:
   build:
     environment:
-      CC_TEST_REPORTER_ID: 56c9a210ad6da7ab52065beff45ddac91f975afde5e69301b633960e30db8de2
+      CC_TEST_REPORTER_ID: cbec4d10e7551e8b9bc63df2fa4c8fa3ece27594e2bb95ccaf427a392576e17d
     docker:
       - image: circleci/node:stretch
     working_directory: ~/repo
