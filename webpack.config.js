@@ -13,7 +13,7 @@ const ensureArray = (config) => config && (Array.isArray(config) ? config : [con
 const when = (condition, config, negativeConfig) => (condition ? ensureArray(config) : ensureArray(negativeConfig));
 
 // primary config:
-const title = 'Coding For Llamas';
+const title = 'Caring Child Daycare';
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
@@ -134,9 +134,6 @@ module.exports = ({
 
   plugins: [
     new ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
     }),
     new HtmlWebpackPlugin({
