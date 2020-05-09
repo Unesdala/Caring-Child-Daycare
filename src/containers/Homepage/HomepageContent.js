@@ -3,6 +3,7 @@ import React from 'react';
 const HomeContent = () => (
   <div className="homepage">
     <h1>Your child’s future never looked so bright.</h1>
+    <br />
     <p>
       Welcome to Caring Child Daycare – A learning center dedicated to the future of you child’s well being.
       Caring Child Daycare is a leader in education-based childcare in the Greater Roanoke Valley.
