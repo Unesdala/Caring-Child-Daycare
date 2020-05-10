@@ -1,12 +1,12 @@
 @include menu;
 
-// Widescreens
-@include mediaXl {
-}
+// // Widescreens
+// @include mediaXl {
+// }
 
-// Desktops & Laptops
-@include mediaLg {
-}
+// // Desktops & Laptops
+// @include mediaLg {
+// }
 
 @media screen and (max-width: 768px) {
     @include mobileMenu;
