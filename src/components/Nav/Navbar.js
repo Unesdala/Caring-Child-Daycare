@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import ReactResizeDetector from 'react-resize-detector';
 import DefaultCollapsableNav from './CollapsableNav';
+import DefaultAboutNav from './DropdownNav';
 
 export default class Navigation extends Component {
   constructor(props) {
@@ -27,7 +28,7 @@ export default class Navigation extends Component {
               <ul className="menu-nav">
                 <li className="nav-item"><NavLink to="/daycare" className="nav-link" exact activeClassName="active">Home</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/centers" className="nav-link">Our Centers</NavLink></li>
-                <li className="nav-item"><NavLink to="/daycare/about" className="nav-link">About Us</NavLink></li>
+                <li className="nav-item"><DefaultAboutNav /></li>
                 <li className="nav-item"><NavLink to="/daycare/programs" className="nav-link">Programs</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/parents" className="nav-link">Parent&apos;s Corner</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/news" className="nav-link">News</NavLink></li>
