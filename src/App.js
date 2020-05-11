@@ -4,6 +4,7 @@ import Navbar from './components/Nav/Navbar';
 import AppTemplate from './components/App-Main';
 import DefaultOurCenters from './containers/Centers/OurCenters';
 import DefaultAbout from './containers/About/About';
+import DefaultAboutCaringChild from './containers/About/AboutCaringChild/AboutCaringChild';
 import DefaultCareers from './containers/Careers/Careers';
 import DefaultJobs from './containers/Jobs/Jobs';
 import DefaultContact from './containers/Contact/Contact';
@@ -19,7 +20,8 @@ export class App extends PureComponent {
             <Switch>
               <Route exact path="/daycare" component={AppTemplate} />
               <Route path="/daycare/centers" component={DefaultOurCenters} />
-              <Route path="/daycare/about" component={DefaultAbout} />
+              <Route exact path="/daycare/about" component={DefaultAbout} />
+              <Route path="daycare/about/about-caring-child" component={DefaultAboutCaringChild} />
               <Route path="/daycare/careers" component={DefaultCareers} />
               <Route path="/daycare/job-descriptions" component={DefaultJobs} />
               <Route path="/daycare/contact" component={DefaultContact} />
