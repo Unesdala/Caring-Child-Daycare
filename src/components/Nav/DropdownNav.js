@@ -32,6 +32,11 @@ const AboutNav = () => {
                 Meeting Higher Standards
               </NavLink>
             </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/curriculum" tag={RRNavLink} onClick={toggle}>
+                Curriculum
+              </NavLink>
+            </DropdownItem>
           </DropdownMenu>
         </Nav>
       </Dropdown>

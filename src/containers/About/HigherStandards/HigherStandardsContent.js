@@ -6,7 +6,7 @@ const HigherStandardsContent = () => (
     <h1>Meeting Higher Standards</h1>
 
     <p>
-      Caring Child Daycare is partnered with Virginian’s For Higher Standards – a non profit organization
+      Caring Child Daycare is partnered with Virginian&apos;s For Higher Standards – a non profit organization
       that looks into and rates businesses based on a formulaic check list and gives them a rating based on its own, interdependent findings.
     </p>
 
