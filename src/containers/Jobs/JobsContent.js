@@ -9,7 +9,7 @@ const JobsContent = () => (
 
       <p>
         Responsible for transporting children between the centers, school, and home.
-        Applicant must be at least 21 years of age, possess a valid driver’s license
+        Applicant must be at least 21 years of age, possess a valid driver&apos;s license
         &#40;with the possibility of requiring a CDL&#41;, and have an exceptional driving record.
       </p>
 
@@ -36,9 +36,9 @@ const JobsContent = () => (
 
       <p>
         Responsible for carrying out instructions from the Lead Center Director, supports the Lead Center Director with paperwork and filing,
-        maintains accurate and updated children’s files, maintains order, cleanliness, and organization
+        maintains accurate and updated children&apos;s files, maintains order, cleanliness, and organization
         of the center, handles parent concerns or questions, ensures the implementation of curriculum into the daily
-        routine of all classrooms, handles Center’s responsibilities for the Lead Center Director
+        routine of all classrooms, handles Center&apos;s responsibilities for the Lead Center Director
         in their absence. Applicant must meet all qualifications for a Lead
         Teacher position and have substantial experience in a formal childcare setting.
       </p>

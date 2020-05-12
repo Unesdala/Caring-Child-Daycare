@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultAboutContent from './AboutContent';
-import DefaultFooter from '../../components/Footer/Footer';
+import commonUtils from '../../../components/lib/commonUtils';
+import DefaultCaringChildHistory from './CaringChildHistoryContent';
+import DefaultFooter from '../../../components/Footer/Footer';
 
-export class About extends Component {
+export class CaringChildHistory extends Component {
   constructor(props) {
     super(props);
     this.commonUtils = commonUtils;
@@ -15,7 +15,7 @@ export class About extends Component {
     return (
       <div className="page-content">
         <main>
-          <DefaultAboutContent />
+          <DefaultCaringChildHistory />
         </main>
         <DefaultFooter />
       </div>
@@ -23,4 +23,4 @@ export class About extends Component {
   }
 }
 
-export default About;
+export default CaringChildHistory;
