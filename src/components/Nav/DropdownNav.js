@@ -27,6 +27,11 @@ const AboutNav = () => {
                 The Caring Child Difference
               </NavLink>
             </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/meeting-higher-standards" tag={RRNavLink} onClick={toggle}>
+                Meeting Higher Standards
+              </NavLink>
+            </DropdownItem>
           </DropdownMenu>
         </Nav>
       </Dropdown>

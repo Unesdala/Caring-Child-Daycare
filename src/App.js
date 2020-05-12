@@ -4,8 +4,9 @@ import Navbar from './components/Nav/Navbar';
 import AppTemplate from './components/App-Main';
 import DefaultOurCenters from './containers/Centers/OurCenters';
 import DefaultAbout from './containers/About/About';
-import DefaultCaringChildHistory from './containers/About/CaringChildHistory/CaringChildHistory';
-import DefaultCaringChildDifference from './containers/About/CaringChildDifference/CaringChildDifference';
+import DefaultCaringChildHistory from './containers/About/History/CaringChildHistory';
+import DefaultCaringChildDifference from './containers/About/Difference/CaringChildDifference';
+import DefaultMeetingHigherStandards from './containers/About/HigherStandards/MeetingHigherStandards';
 import DefaultCareers from './containers/Careers/Careers';
 import DefaultJobs from './containers/Jobs/Jobs';
 import DefaultContact from './containers/Contact/Contact';
@@ -24,6 +25,7 @@ export class App extends PureComponent {
               <Route exact path="/daycare/about" component={DefaultAbout} />
               <Route path="/daycare/about/caring-child-history" component={DefaultCaringChildHistory} />
               <Route path="/daycare/about/caring-child-difference" component={DefaultCaringChildDifference} />
+              <Route path="/daycare/about/meeting-higher-standards" component={DefaultMeetingHigherStandards} />
               <Route path="/daycare/careers" component={DefaultCareers} />
               <Route path="/daycare/job-descriptions" component={DefaultJobs} />
               <Route path="/daycare/contact" component={DefaultContact} />

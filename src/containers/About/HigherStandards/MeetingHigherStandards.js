@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultAboutContent from './AboutContent';
-import DefaultFooter from '../../components/Footer/Footer';
+import commonUtils from '../../../components/lib/commonUtils';
+import DefaultHigherStandardsContent from './HigherStandardsContent';
+import DefaultFooter from '../../../components/Footer/Footer';
 
 export class About extends Component {
   constructor(props) {
@@ -9,13 +9,13 @@ export class About extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('About Us'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Meeting Higher Standards'); }
 
   render() {
     return (
       <div className="page-content">
         <main>
-          <DefaultAboutContent />
+          <DefaultHigherStandardsContent />
         </main>
         <DefaultFooter />
       </div>
