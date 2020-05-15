@@ -10,6 +10,7 @@ import DefaultDifference from './containers/About/Difference/Difference';
 import DefaultHigherStandards from './containers/About/HigherStandards/HigherStandards';
 import DefaultCurriculum from './containers/About/Curriculum/Curriculum';
 import DefaultTeachers from './containers/About/Teachers/Teachers';
+import DefaultFAQ from './containers/About/FAQ/FAQ';
 // End About
 import DefaultCareers from './containers/Careers/Careers';
 import DefaultJobs from './containers/Jobs/Jobs';
@@ -32,6 +33,7 @@ export class App extends PureComponent {
               <Route path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
               <Route path="/daycare/about/curriculum" component={DefaultCurriculum} />
               <Route path="/daycare/about/teachers" component={DefaultTeachers} />
+              <Route path="/daycare/about/faq" component={DefaultFAQ} />
               <Route path="/daycare/careers" component={DefaultCareers} />
               <Route path="/daycare/job-descriptions" component={DefaultJobs} />
               <Route path="/daycare/contact" component={DefaultContact} />
