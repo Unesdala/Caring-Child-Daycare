@@ -32,7 +32,7 @@ export class App extends PureComponent {
               <Route path="/daycare/about/caring-child-difference" component={DefaultDifference} />
               <Route path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
               <Route path="/daycare/about/curriculum" component={DefaultCurriculum} />
-              <Route path="/daycare/about/teachers" component={DefaultTeachers} />
+              <Route path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
               <Route path="/daycare/about/faq" component={DefaultFAQ} />
               <Route path="/daycare/careers" component={DefaultCareers} />
               <Route path="/daycare/job-descriptions" component={DefaultJobs} />

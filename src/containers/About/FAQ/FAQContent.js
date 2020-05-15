@@ -47,7 +47,11 @@ const FAQContent = () => (
       Enrollment Agreement. A complete packet with all the forms and information
       needed will be provided at the
       Center your child will be attending prior to their start date. In addition, you can view some of
-      the forms and information at our [Link Needed] Parent Resources section.
+      the forms and information at our
+      {' '}
+      <a href="/daycare/parent's-corner/parent-resources">Parent Resources</a>
+      {' '}
+      section.
     </p>
 
     <h2>How often is tuition due?</h2>
