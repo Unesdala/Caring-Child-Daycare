@@ -49,7 +49,7 @@ const FAQContent = () => (
       Center your child will be attending prior to their start date. In addition, you can view some of
       the forms and information at our
       {' '}
-      <a href="/daycare/parent's-corner/parent-resources">Parent Resources</a>
+      <a href="/daycare/parents-corner/parent-resources">Parent Resources</a>
       {' '}
       section.
     </p>

@@ -30,7 +30,7 @@ export default class Navigation extends Component {
                 <li className="nav-item"><NavLink to="/daycare/centers" className="nav-link">Our Centers</NavLink></li>
                 <li className="nav-item"><DefaultAboutNav /></li>
                 <li className="nav-item"><NavLink to="/daycare/programs" className="nav-link">Programs</NavLink></li>
-                <li className="nav-item"><NavLink to="/daycare/parents" className="nav-link">Parent&apos;s Corner</NavLink></li>
+                <li className="nav-item"><NavLink to="/daycare/parents-corner" className="nav-link">Parent&apos;s Corner</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/news" className="nav-link">News</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/careers" className="nav-link">Careers</NavLink></li>
                 <li className="nav-item"><NavLink to="/daycare/contact" className="nav-link">Contact Us</NavLink></li>
