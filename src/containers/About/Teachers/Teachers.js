@@ -1,21 +1,21 @@
 import React, { Component } from 'react';
 import commonUtils from '../../../components/lib/commonUtils';
-import DefaultCaringChildHistory from './CaringChildHistoryContent';
+import DefaultTeachers from './TeachersContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
-export class CaringChildHistory extends Component {
+export class Teachers extends Component {
   constructor(props) {
     super(props);
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll(''); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Meet The Teachers'); }
 
   render() {
     return (
       <div className="page-content">
         <main>
-          <DefaultCaringChildHistory />
+          <DefaultTeachers />
         </main>
         <DefaultFooter />
       </div>
@@ -23,4 +23,4 @@ export class CaringChildHistory extends Component {
   }
 }
 
-export default CaringChildHistory;
+export default Teachers;

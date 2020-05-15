@@ -37,6 +37,16 @@ const AboutNav = () => {
                 Curriculum
               </NavLink>
             </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/meet-the-teachers" tag={RRNavLink} onClick={toggle}>
+                Meet The Teachers
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/faq" tag={RRNavLink} onClick={toggle}>
+                FAQ
+              </NavLink>
+            </DropdownItem>
           </DropdownMenu>
         </Nav>
       </Dropdown>
