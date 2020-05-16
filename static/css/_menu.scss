@@ -46,16 +46,13 @@
         background-color: #242323;
     }
 
-    .btn:hover, .btn:focus, {
+    .btn:hover, .btn:focus {
         background-color: #242323;
     }
 
     .btn-secondary:focus, .btn-secondary:active {
         background-color: #242323 !important;
         border-color: #242323 !important;
-    }
-
-    .btn-secondary:active, .btn-secondary:focus {
         box-shadow: 0 0 0 0.1rem rgba(130,138,145,.5);
     }
 

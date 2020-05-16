@@ -10,16 +10,41 @@ const AboutNav = () => {
   const toggle = () => setDropdownOpen((prevState) => !prevState);
 
   return (
-    <Navbar dark>
+    <Navbar>
       <Dropdown isOpen={dropdownOpen} toggle={toggle}>
         <Nav>
-          <DropdownToggle dark caret>
+          <DropdownToggle caret>
             <NavItem><NavLink to="/daycare/about" tag={RRNavLink} onClick={toggle}>About Us</NavLink></NavItem>
           </DropdownToggle>
           <DropdownMenu>
             <DropdownItem>
-              <NavLink to="/daycare/about/about-caring-child" tag={RRNavLink} onClick={toggle}>
-                About Caring Child Daycare
+              <NavLink to="/daycare/about/caring-child-history" tag={RRNavLink} onClick={toggle}>
+                Caring Child Daycare&apos;s History
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/caring-child-difference" tag={RRNavLink} onClick={toggle}>
+                The Caring Child Difference
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/meeting-higher-standards" tag={RRNavLink} onClick={toggle}>
+                Meeting Higher Standards
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/curriculum" tag={RRNavLink} onClick={toggle}>
+                Curriculum
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/meet-the-teachers" tag={RRNavLink} onClick={toggle}>
+                Meet The Teachers
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/about/faq" tag={RRNavLink} onClick={toggle}>
+                FAQ
               </NavLink>
             </DropdownItem>
           </DropdownMenu>

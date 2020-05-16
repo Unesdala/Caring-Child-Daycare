@@ -2,10 +2,10 @@ import React from 'react';
 
 const HomeContent = () => (
   <div className="homepage">
-    <h1>Your child’s future never looked so bright.</h1>
+    <h1>Your child&apos;s future never looked so bright.</h1>
     <br />
     <p>
-      Welcome to Caring Child Daycare – A learning center dedicated to the future of you child’s well being.
+      Welcome to Caring Child Daycare – A learning center dedicated to the future of you child&apos;s well being.
       Caring Child Daycare is a leader in education-based childcare in the Greater Roanoke Valley.
     </p>
     <p>
@@ -13,7 +13,7 @@ const HomeContent = () => (
       for the future through age-appropriate activities designed to make every experience a learning experience.
     </p>
     <p>
-      There’s never a dull moment at Caring Child!
+      There&apos;s never a dull moment at Caring Child!
     </p>
   </div>
 );
