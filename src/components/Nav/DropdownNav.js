@@ -94,7 +94,7 @@ export const ProgramsNav = () => {
             </DropdownItem>
             <DropdownItem>
               <NavLink to="/daycare/programs/summer-school" tag={RRNavLink} onClick={toggle}>
-                Summer School
+                Summer Camp
               </NavLink>
             </DropdownItem>
           </DropdownMenu>
