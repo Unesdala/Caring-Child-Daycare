@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ParentResourcesContent = () => (
-  <div className="parent-resources">
+  <main className="parent-resources">
 
     <h1>Bringing you resources to make life easier.</h1>
 
@@ -42,7 +42,7 @@ const ParentResourcesContent = () => (
       <li>Caring Child Sample Menu W/o Dinner</li>
     </ul>
 
-  </div>
+  </main>
 );
 
 export default ParentResourcesContent;

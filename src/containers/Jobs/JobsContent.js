@@ -1,7 +1,7 @@
 import React from 'react';
 
 const JobsContent = () => (
-  <div className="jobs">
+  <main className="jobs">
     <h1>Leaders in Childhood Education.</h1>
     <br />
     <div className="job-descriptions">
@@ -43,7 +43,7 @@ const JobsContent = () => (
         Teacher position and have substantial experience in a formal childcare setting.
       </p>
     </div>
-  </div>
+  </main>
 );
 
 export default JobsContent;

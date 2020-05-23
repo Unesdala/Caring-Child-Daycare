@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../../components/lib/commonUtils';
 import DefaultTestimonialsContent from './TestimonialsContent';
+import DefaultFooter from '../../../components/Footer/Footer';
 
 export class Testimonials extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class Testimonials extends Component {
     return (
       <div className="page-content">
         <DefaultTestimonialsContent />
+        <DefaultFooter />
       </div>
     );
   }

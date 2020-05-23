@@ -14,9 +14,7 @@ export class FAQ extends Component {
   render() {
     return (
       <div className="page-content">
-        <main>
-          <DefaultFAQContent />
-        </main>
+        <DefaultFAQContent />
         <DefaultFooter />
       </div>
     );

@@ -14,9 +14,7 @@ export class CaringChildDifference extends Component {
   render() {
     return (
       <div className="page-content">
-        <main>
-          <DefaultDifferenceContent />
-        </main>
+        <DefaultDifferenceContent />
         <DefaultFooter />
       </div>
     );

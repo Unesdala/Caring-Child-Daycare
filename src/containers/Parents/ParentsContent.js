@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ParentsContent = () => (
-  <div className="parents-corner">
+  <main className="parents-corner">
 
     <h1>Your link to our resources.</h1>
 
@@ -26,7 +26,7 @@ const ParentsContent = () => (
       about Caring Child Daycare.
     </p>
 
-  </div>
+  </main>
 );
 
 export default ParentsContent;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../components/lib/commonUtils';
 import DefaultOurCentersContent from './OurCentersContent';
+import DefaultFooter from '../../components/Footer/Footer';
 
 export class OurCenters extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class OurCenters extends Component {
     return (
       <div className="page-content">
         <DefaultOurCentersContent />
+        <DefaultFooter />
       </div>
     );
   }

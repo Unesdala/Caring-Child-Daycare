@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AboutContent = () => (
-  <div className="about">
+  <main className="about">
 
     <h1>Our Mission</h1>
 
@@ -43,7 +43,7 @@ const AboutContent = () => (
       facilities at any time so you can experience first hand what we can provide to you and your family.
     </p>
 
-  </div>
+  </main>
 );
 
 export default AboutContent;

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../components/lib/commonUtils';
 import DefaultJobsContent from './JobsContent';
+import DefaultFooter from '../../components/Footer/Footer';
 
 export class Jobs extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class Jobs extends Component {
     return (
       <div className="page-content">
         <DefaultJobsContent />
+        <DefaultFooter />
       </div>
     );
   }

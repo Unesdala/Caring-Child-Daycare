@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CurriculumContent = () => (
-  <div className="curriculum">
+  <main className="curriculum">
 
     <h1>Caring Child Daycare Curricula</h1>
 
@@ -71,7 +71,7 @@ const CurriculumContent = () => (
       Coalition, visit the Character Counts! official website.
     </p>
 
-  </div>
+  </main>
 );
 
 export default CurriculumContent;

@@ -14,9 +14,7 @@ export class CaringChildHistory extends Component {
   render() {
     return (
       <div className="page-content">
-        <main>
-          <DefaultCaringChildHistoryContent />
-        </main>
+        <DefaultCaringChildHistoryContent />
         <DefaultFooter />
       </div>
     );

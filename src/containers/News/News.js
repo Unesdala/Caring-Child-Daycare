@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../components/lib/commonUtils';
 import DefaultNewsContent from './NewsContent';
+import DefaultFooter from '../../components/Footer/Footer';
 
 export class News extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class News extends Component {
     return (
       <div className="page-content">
         <DefaultNewsContent />
+        <DefaultFooter />
       </div>
     );
   }

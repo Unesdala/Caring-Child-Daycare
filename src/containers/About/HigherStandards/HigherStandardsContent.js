@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HigherStandardsContent = () => (
-  <div className="standards">
+  <main className="standards">
 
     <h1>Meeting Higher Standards</h1>
 
@@ -21,7 +21,7 @@ const HigherStandardsContent = () => (
       arrive in the morning for breakfast, stay through the day for lunch, or have an afternoon snack
       or supper &#45; you can rest assured knowing all meals will be nutritious and delicious at our centers.
     </p>
-  </div>
+  </main>
 );
 
 export default HigherStandardsContent;
