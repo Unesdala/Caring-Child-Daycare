@@ -12,6 +12,12 @@ import DefaultCurriculum from './containers/About/Curriculum/Curriculum';
 import DefaultTeachers from './containers/About/Teachers/Teachers';
 import DefaultFAQ from './containers/About/FAQ/FAQ';
 // End About
+// Programs Submenu
+// Parents Submenu
+import DefaultParents from './containers/Parents/Parents';
+import DefaultParentResources from './containers/Parents/ParentResources/ParentResources';
+// End Parents
+import DefaultTestimonials from './containers/Parents/Testimonials/Testimonials';
 import DefaultNews from './containers/News/News';
 import DefaultCareers from './containers/Careers/Careers';
 import DefaultContact from './containers/Contact/Contact';
@@ -35,6 +41,9 @@ export class App extends PureComponent {
               <Route path="/daycare/about/curriculum" component={DefaultCurriculum} />
               <Route path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
               <Route path="/daycare/about/faq" component={DefaultFAQ} />
+              <Route exact path="/daycare/parents" component={DefaultParents} />
+              <Route exact path="/daycare/parents/resources" component={DefaultParentResources} />
+              <Route exact path="/daycare/parents/testimonials" component={DefaultTestimonials} />
               <Route path="/daycare/news" component={DefaultNews} />
               <Route path="/daycare/careers" component={DefaultCareers} />
               <Route path="/daycare/job-descriptions" component={DefaultJobs} />
