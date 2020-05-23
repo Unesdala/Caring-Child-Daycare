@@ -9,7 +9,7 @@ export class PreK extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Twos'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Private Pre-K'); }
 
   render() {
     return (

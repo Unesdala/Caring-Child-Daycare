@@ -9,7 +9,7 @@ export class SummerCamp extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Twos'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Summer Camp'); }
 
   render() {
     return (
