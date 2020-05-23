@@ -27,7 +27,11 @@ const ParentResourcesContent = () => (
       <li>Safety Tips for Kids</li>
       <li>Holiday Safety</li>
       <li>Sleep Safety</li>
-      <li>Virginia592 College Savings Plan</li>
+      <li>
+        <a href="https://www.virginia529.com/uploads/files/va529_brochure.pdf?v=1515779958" target="blank" rel="noopener noreferrer">
+          Virginia592 College Savings Plan
+        </a>
+      </li>
     </ul>
 
     <h2>Daycare Documents</h2>
