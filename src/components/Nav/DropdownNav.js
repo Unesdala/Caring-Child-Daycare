@@ -4,7 +4,7 @@ import {
 } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
 
-const AboutNav = () => {
+export const AboutNav = () => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -54,4 +54,84 @@ const AboutNav = () => {
   );
 };
 
-export default AboutNav;
+export const ProgramsNav = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
+
+  return (
+    <Navbar>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+        <Nav>
+          <DropdownToggle caret>
+            <NavItem><NavLink to="/daycare/programs" tag={RRNavLink} onClick={toggle}>Programs</NavLink></NavItem>
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/infants-and-toddlers" tag={RRNavLink} onClick={toggle}>
+                Infants &amp; Toddlers
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/twos" tag={RRNavLink} onClick={toggle}>
+                Twos
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/preschool" tag={RRNavLink} onClick={toggle}>
+                Preschool
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/private-pre-k" tag={RRNavLink} onClick={toggle}>
+                Private Pre-K
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/after-school" tag={RRNavLink} onClick={toggle}>
+                After School
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/programs/summer-school" tag={RRNavLink} onClick={toggle}>
+                Summer School
+              </NavLink>
+            </DropdownItem>
+          </DropdownMenu>
+        </Nav>
+      </Dropdown>
+    </Navbar>
+  );
+};
+
+const ParentsNav = () => {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
+  const toggle = () => setDropdownOpen((prevState) => !prevState);
+
+  return (
+    <Navbar>
+      <Dropdown isOpen={dropdownOpen} toggle={toggle}>
+        <Nav>
+          <DropdownToggle caret>
+            <NavItem><NavLink to="/daycare/parents" tag={RRNavLink} onClick={toggle}>Parent&apos;s Corner</NavLink></NavItem>
+          </DropdownToggle>
+          <DropdownMenu>
+            <DropdownItem>
+              <NavLink to="/daycare/parents/resources" tag={RRNavLink} onClick={toggle}>
+                Parent Resources
+              </NavLink>
+            </DropdownItem>
+            <DropdownItem>
+              <NavLink to="/daycare/parents/testimonials" tag={RRNavLink} onClick={toggle}>
+                Testimonials
+              </NavLink>
+            </DropdownItem>
+          </DropdownMenu>
+        </Nav>
+      </Dropdown>
+    </Navbar>
+  );
+};
+
+export default ParentsNav;
