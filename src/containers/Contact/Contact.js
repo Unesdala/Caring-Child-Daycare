@@ -8,7 +8,7 @@ export class Contact extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Contact Me'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Contact Us'); }
 
   render() {
     return (
