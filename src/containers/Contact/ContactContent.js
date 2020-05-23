@@ -13,6 +13,7 @@ const ContactContent = () => (
 
     <p>
       1280 Placeholder Road
+      <br />
       Vinton, VA 24179
     </p>
 
@@ -38,6 +39,7 @@ const ContactContent = () => (
 
     <p>
       1157 Placeholder Ave
+      <br />
       Vinton, VA 24179
     </p>
 
@@ -49,6 +51,7 @@ const ContactContent = () => (
 
     <p>
       1578 Placeholder Rd
+      <br />
       Vinton, VA 24179
     </p>
 
