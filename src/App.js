@@ -13,6 +13,14 @@ import DefaultTeachers from './containers/About/Teachers/Teachers';
 import DefaultFAQ from './containers/About/FAQ/FAQ';
 // End About
 // Programs Submenu
+import DefaultPrograms from './containers/Programs/Programs';
+import DefaultAfterSchool from './containers/Programs/AfterSchool/AfterSchool';
+import DefaultInfants from './containers/Programs/Infants/Infants';
+import DefaultPreK from './containers/Programs/PreK/PreK';
+import DefaultPreSchool from './containers/Programs/PreSchool/PreSchool';
+import DefaultSummerCamp from './containers/Programs/SummerCamp/SummerCamp';
+import DefaultTwos from './containers/Programs/Twos/Twos';
+// End Programs
 // Parents Submenu
 import DefaultParents from './containers/Parents/Parents';
 import DefaultParentResources from './containers/Parents/ParentResources/ParentResources';
@@ -39,8 +47,15 @@ export class App extends PureComponent {
               <Route exact path="/daycare/about/caring-child-difference" component={DefaultDifference} />
               <Route exact path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
               <Route exact path="/daycare/about/curriculum" component={DefaultCurriculum} />
-              <Route path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
-              <Route path="/daycare/about/faq" component={DefaultFAQ} />
+              <Route exact path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
+              <Route exact path="/daycare/programs/faq" component={DefaultFAQ} />
+              <Route exact path="/daycare/programs" component={DefaultPrograms} />
+              <Route exact path="/daycare/programs/after-school" component={DefaultAfterSchool} />
+              <Route exact path="/daycare/programs/infants-and-toddlers" component={DefaultInfants} />
+              <Route exact path="/daycare/programs/private-pre-k" component={DefaultPreK} />
+              <Route exact path="/daycare/programs/preschool" component={DefaultPreSchool} />
+              <Route exact path="/daycare/programs/summer-camp" component={DefaultSummerCamp} />
+              <Route exact path="/daycare/programs/twos" component={DefaultTwos} />
               <Route exact path="/daycare/parents" component={DefaultParents} />
               <Route exact path="/daycare/parents/resources" component={DefaultParentResources} />
               <Route exact path="/daycare/parents/testimonials" component={DefaultTestimonials} />
