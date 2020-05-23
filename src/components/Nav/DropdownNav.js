@@ -93,7 +93,7 @@ export const ProgramsNav = () => {
               </NavLink>
             </DropdownItem>
             <DropdownItem>
-              <NavLink to="/daycare/programs/summer-school" tag={RRNavLink} onClick={toggle}>
+              <NavLink to="/daycare/programs/summer-camp" tag={RRNavLink} onClick={toggle}>
                 Summer Camp
               </NavLink>
             </DropdownItem>
