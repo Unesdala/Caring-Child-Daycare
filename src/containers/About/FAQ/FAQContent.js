@@ -36,7 +36,7 @@ const FAQContent = () => (
 
     <p>
       All the children at Caring Child Daycare Centers are served nutritious meals based on USDA guidelines.
-      Your child’s tuition includes breakfast, lunch, and an afternoon snack. Supper will also be provided for children who stay past 4 pm.
+      Your child&apos;s tuition includes breakfast, lunch, and an afternoon snack. Supper will also be provided for children who stay past 4 pm.
     </p>
 
     <h2>What information is needed upon enrollment?</h2>
@@ -62,7 +62,7 @@ const FAQContent = () => (
 
     <p>
       Yes! We at Caring Child Daycare know and understand how difficult it can be for working parents
-      to find an affordable solution for their child’s needs while they make ends meet. We will do what we can to ease that burden.
+      to find an affordable solution for their child&apos;s needs while they make ends meet. We will do what we can to ease that burden.
     </p>
 
     <h2>Will teachers work with my child on toilet training?</h2>
@@ -77,7 +77,7 @@ const FAQContent = () => (
     <p>
       While we try to stay open, if inclement weather makes it unsafe for our staff to get to our centers,
       we will be forced to close them for that day. Our Centers will send out a phone call ahead of
-      time if we are expecting a change in our schedule. If you’re unsure of whether
+      time if we are expecting a change in our schedule. If you&apos;re unsure of whether
       or not the center is open, feel free to
       contact your local Caring Child Daycare Center or our main office at
       {' '}

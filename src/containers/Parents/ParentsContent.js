@@ -6,10 +6,10 @@ const ParentsContent = () => (
     <h1>Your link to our resources.</h1>
 
     <p>
-      At Caring Child, we know parenting can be stressful. That’s why we offer a range of resources to make
+      At Caring Child, we know parenting can be stressful. That&apos;s why we offer a range of resources to make
       getting through the day a little bit easier.
-      Whether it be links to forms and papers that you’ll need to register for our facilities, or general Virginia schools, the menu
-      for your child’s upcoming meals at our centers, or plans for emergencies, we hope to ease the stress of daily life even just a little bit.
+      Whether it be links to forms and papers that you&apos;ll need to register for our facilities, or general Virginia schools, the menu
+      for your child&apos;s upcoming meals at our centers, or plans for emergencies, we hope to ease the stress of daily life even just a little bit.
     </p>
 
     <p>At Caring Child, both you and your child are in good hands.</p>

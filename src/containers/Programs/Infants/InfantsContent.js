@@ -5,19 +5,19 @@ const InfantsContent = () => (
     <h1>Infants and Toddlers have their own individual personalities. We bring them to the surface.</h1>
 
     <p>
-      Through a unique blend of teaching and nurturing, we’ll help to prepare your child to enter school life later in life. Early education
+      Through a unique blend of teaching and nurturing, we&apos;ll help to prepare your child to enter school life later in life. Early education
       is important, and we at Caring Child Daycare will help your young ones to prepare for preschool and beyond.
     </p>
 
     <p>
       Teachers take the time to bond and develop trust with your children. We believe this trust
       is an important stepping stone to allow for caregivers
-      at Caring Child to help guide your child’s early development. Individual caregivers are also the main point of contact for you, the parent.
+      at Caring Child to help guide your child&apos;s early development. Individual caregivers are also the main point of contact for you, the parent.
     </p>
 
     <p>
-      At Caring Child Daycare, we understand that each child’s needs will be different, which is
-      why we change curriculum slightly to accommodate each child’s
+      At Caring Child Daycare, we understand that each child&apos;s needs will be different, which is
+      why we change curriculum slightly to accommodate each child&apos;s
       individual needs. As a base, we follow the Caring Child Educational Formula to help
       ensure your child is prepared for life. This formula includes
       areas of childhood development such as: cognitive development, communication, emotional
@@ -28,7 +28,7 @@ const InfantsContent = () => (
 
     <p>
       The Caring Child Educational Formula for infants is designed to help them develop the cognitive, emotional, social, and physical motor skills
-      they’ll need to prepare for preschool and beyond. We use a unique blend of teaching exercises to help
+      they&apos;ll need to prepare for preschool and beyond. We use a unique blend of teaching exercises to help
       your child learn in a way that makes sense and utilizes the way infants best learn.
     </p>
 
@@ -48,8 +48,8 @@ const InfantsContent = () => (
 
     <p>
       <b>Emotional development and health&nbsp;</b>
-      is important for everyone, and that’s no different for infants. By feeling safe and secure with the caregivers
-      in their lives, your child will learn to build trust and attachments. We at Caring Child Daycare will help to develop your child’s trust
+      is important for everyone, and that&apos;s no different for infants. By feeling safe and secure with the caregivers
+      in their lives, your child will learn to build trust and attachments. We at Caring Child Daycare will help to develop your child&apos;s trust
       through watching for common body language, and responding as necessary. Through cradling hugs,
       and gentle responses about the world around them, your child will be set to grow emotionally.
     </p>
@@ -83,7 +83,7 @@ const InfantsContent = () => (
 
     <p>
       Similar to infants, we focus on six main areas of learning to help further expand and build upon the early development
-      of your child. At this stage, your child is further refining and developing key skills they’ll need later in life in order to succeed.
+      of your child. At this stage, your child is further refining and developing key skills they&apos;ll need later in life in order to succeed.
     </p>
 
     <p>
@@ -103,16 +103,17 @@ const InfantsContent = () => (
       At this stage in life, your toddler will begin to use words to express both their needs and identity. The teachers at our centers will help
       your child to develop their
       <b>communication skills&nbsp;</b>
-      through increasing your child’s vocabulary. Our teachers lead by example, practicing good
-      manners such as saying please and thank you, welcoming guests that come into the room, and encouraging your child to do the same. They’ll help
+      through increasing your child&apos;s vocabulary. Our teachers lead by example, practicing good
+      manners such as saying please and thank you, welcoming guests that come into the room,
+      and encouraging your child to do the same. They&apos;ll help
       your child build connections to what objects are by stating the name of an object and having your child repeat it when they point at something.
       Children learn through example, and our teachers are here to set good examples.
     </p>
 
     <p>
-      Toddler’s
+      Toddler&apos;s
       <b>&nbsp;emotional development&nbsp;</b>
-      largely involves feeling safe with where they’re at. They’ll develop strong bonds with their teachers and
+      largely involves feeling safe with where they&apos;re at. They&apos;ll develop strong bonds with their teachers and
       experience a wide variety of emotions. Our staff will talk to your child about their feelings,
       and will help discuss what others may be feeling as well.
     </p>
@@ -133,8 +134,8 @@ const InfantsContent = () => (
     </p>
 
     <p>
-      Toddlers start engaging in longer periods of play, but they’re still frequently check in to make sure an adult is close by. They’re not always
-      willing to share toys, and tend to be sensitive. At Caring Child Daycare, we use
+      Toddlers start engaging in longer periods of play, but they&apos;re still frequently check in to make sure an adult is close by.
+      They&apos;re not always willing to share toys, and tend to be sensitive. At Caring Child Daycare, we use
       <b>&nbsp;social skills&nbsp;</b>
       activities to teach your child to share
       and learn to respect others. Your child will learn to take turns with toys, stacking blocks,

@@ -15,7 +15,7 @@ const TeachersContent = () => (
     <p>
       Our lead teachers are required to have a degree in Early Childhood Education, or alternatively an associates degree in
       Childhood Development. We employ nearly 100 teachers between our facilities – each bringing a level of
-      expertise that ensures a greater standard of learning and development for your child’s future.
+      expertise that ensures a greater standard of learning and development for your child&apos;s future.
     </p>
   </main>
 );
