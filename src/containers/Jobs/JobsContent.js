@@ -2,7 +2,7 @@ import React from 'react';
 
 const JobsContent = () => (
   <div className="jobs">
-    <h1>Leaders in Childhood Education Education.</h1>
+    <h1>Leaders in Childhood Education.</h1>
     <br />
     <div className="job-descriptions">
       <h2>Driver:</h2>
