@@ -14,9 +14,7 @@ export class Curriculum extends Component {
   render() {
     return (
       <div className="page-content">
-        <main>
-          <DefaultCurriculumContent />
-        </main>
+        <DefaultCurriculumContent />
         <DefaultFooter />
       </div>
     );

@@ -33,21 +33,21 @@ export class App extends PureComponent {
           <div className="siteContent">
             <Switch>
               <Route exact path="/daycare" component={AppTemplate} />
-              <Route path="/daycare/centers" component={DefaultOurCenters} />
+              <Route exact path="/daycare/centers" component={DefaultOurCenters} />
               <Route exact path="/daycare/about" component={DefaultAbout} />
-              <Route path="/daycare/about/caring-child-history" component={DefaultHistory} />
-              <Route path="/daycare/about/caring-child-difference" component={DefaultDifference} />
-              <Route path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
-              <Route path="/daycare/about/curriculum" component={DefaultCurriculum} />
+              <Route exact path="/daycare/about/caring-child-history" component={DefaultHistory} />
+              <Route exact path="/daycare/about/caring-child-difference" component={DefaultDifference} />
+              <Route exact path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
+              <Route exact path="/daycare/about/curriculum" component={DefaultCurriculum} />
               <Route path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
               <Route path="/daycare/about/faq" component={DefaultFAQ} />
               <Route exact path="/daycare/parents" component={DefaultParents} />
               <Route exact path="/daycare/parents/resources" component={DefaultParentResources} />
               <Route exact path="/daycare/parents/testimonials" component={DefaultTestimonials} />
-              <Route path="/daycare/news" component={DefaultNews} />
-              <Route path="/daycare/careers" component={DefaultCareers} />
-              <Route path="/daycare/job-descriptions" component={DefaultJobs} />
-              <Route path="/daycare/contact" component={DefaultContact} />
+              <Route exact path="/daycare/news" component={DefaultNews} />
+              <Route exact path="/daycare/careers" component={DefaultCareers} />
+              <Route exact path="/daycare/job-descriptions" component={DefaultJobs} />
+              <Route exact path="/daycare/contact" component={DefaultContact} />
               <Route component={FourOhFour} />
             </Switch>
           </div>

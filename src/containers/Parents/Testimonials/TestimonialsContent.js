@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TestimonialsContent = () => (
-  <div className="testimonials">
+  <main className="testimonials">
     <h1>What parents think about Caring Child.</h1>
     <br />
     <div className="testimonials-content">
@@ -35,7 +35,7 @@ const TestimonialsContent = () => (
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-  </div>
+  </main>
 );
 
 export default TestimonialsContent;

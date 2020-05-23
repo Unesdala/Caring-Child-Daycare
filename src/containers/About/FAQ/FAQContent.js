@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FAQContent = () => (
-  <div className="faq">
+  <main className="faq">
 
     <h1>Frequently Asked Questions</h1>
 
@@ -92,7 +92,7 @@ const FAQContent = () => (
       for more than 15 years. Our standards of care are top notch and federally recognized.
     </p>
 
-  </div>
+  </main>
 );
 
 export default FAQContent;

@@ -1,7 +1,7 @@
 import React from 'react';
 
 const JobsContent = () => (
-  <div className="news">
+  <main className="news">
     <h1>Daily Up and Comings of Caring Child Daycare.</h1>
     <br />
     <div className="news-content">
@@ -15,7 +15,7 @@ const JobsContent = () => (
         proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
     </div>
-  </div>
+  </main>
 );
 
 export default JobsContent;

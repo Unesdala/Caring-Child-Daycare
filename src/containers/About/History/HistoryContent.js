@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CaringChildHistoryContent = () => (
-  <div className="history">
+  <main className="history">
 
     <h1>Our History. Your Future.</h1>
 
@@ -29,7 +29,7 @@ const CaringChildHistoryContent = () => (
       family and your child&apos;s education is our priority. We may have grown, but our vision is still the same.
     </p>
 
-  </div>
+  </main>
 );
 
 export default CaringChildHistoryContent;

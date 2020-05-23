@@ -1,7 +1,7 @@
 import React from 'react';
 
 const CaringChildDifferenceContent = () => (
-  <div className="difference">
+  <main className="difference">
 
     <h1>Exceptional Care That Matters</h1>
 
@@ -75,7 +75,7 @@ const CaringChildDifferenceContent = () => (
 
     <p>Camp Wannahawk is available for school students who have completed Kindergarten, all the way to 12 years of age.</p>
 
-  </div>
+  </main>
 );
 
 export default CaringChildDifferenceContent;

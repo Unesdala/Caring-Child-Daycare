@@ -1,7 +1,7 @@
 import React from 'react';
 
 const TeachersContent = () => (
-  <div className="teachers">
+  <main className="teachers">
 
     <h1>Educators are the gateway to a brighter future for our children.</h1>
 
@@ -17,7 +17,7 @@ const TeachersContent = () => (
       Childhood Development. We employ nearly 100 teachers between our facilities – each bringing a level of
       expertise that ensures a greater standard of learning and development for your child’s future.
     </p>
-  </div>
+  </main>
 );
 
 export default TeachersContent;

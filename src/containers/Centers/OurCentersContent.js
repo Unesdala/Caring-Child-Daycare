@@ -1,7 +1,7 @@
 import React from 'react';
 
 const OurCentersContent = () => (
-  <div className="our-centers">
+  <main className="our-centers">
     <p>
       Caring Child Daycare currently offers 3 separate locations throughout the Roanoke Valley.
       All of our centers are open Monday through Friday from 6:30 am to 6:30 pm.
@@ -63,7 +63,7 @@ const OurCentersContent = () => (
       <br />
       <a href="mailto:placeholder@placeholder.com">Click Here To Email Him</a>
     </p>
-  </div>
+  </main>
 );
 
 export default OurCentersContent;

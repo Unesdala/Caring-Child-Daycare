@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../components/lib/commonUtils';
 import DefaultParentsContent from './ParentsContent';
+import DefaultFooter from '../../components/Footer/Footer';
 
 export class Parents extends Component {
   constructor(props) {
@@ -14,6 +15,7 @@ export class Parents extends Component {
     return (
       <div className="page-content">
         <DefaultParentsContent />
+        <DefaultFooter />
       </div>
     );
   }
