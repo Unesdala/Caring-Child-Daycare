@@ -1,18 +1,12 @@
 @include menu;
 
-// Widescreens
-@include mediaXl {
-    .projects {
-        grid-template-columns: repeat(4, 1fr);
-    }
-}
+// // Widescreens
+// @include mediaXl {
+// }
 
-// Desktops & Laptops
-@include mediaLg {
-    .projects {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
+// // Desktops & Laptops
+// @include mediaLg {
+// }
 
 @media screen and (max-width: 768px) {
     @include mobileMenu;
@@ -46,23 +40,6 @@
             font-size: 24px;
         }
 
-        .menu-branding {
-            height: 25vh;
-            transform: translate3d(100%, 0, 0);
-        }
-
-        .about-info {
-            grid-template-areas:
-                'bioimage'
-                'bio'
-                'about1'
-                'about2'
-                'about3';
-
-            grid-template-columns: 1fr;
-        }
-
-        .projects,
         .contact-info {
             grid-template-columns: repeat(2, 1fr);
         }
@@ -85,7 +62,6 @@
             }
         }
 
-        .projects,
         .contact-info {
             grid-template-columns: 1fr;
         }

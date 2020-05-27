@@ -1,6 +1,6 @@
 const setTitleAndScroll = (pageTitle) => {
   if (pageTitle !== '') pageTitle += ' | ';// eslint-disable-line no-param-reassign
-  document.title = `${pageTitle}Coding For Llamas`;
+  document.title = `${pageTitle}Caring Child Daycare`;
   const top = document.getElementsByClassName('menu')[0];
   if (top !== undefined && typeof top.scrollIntoView === 'function') top.scrollIntoView();
 };

@@ -1,7 +1,7 @@
 require('dotenv').config();
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { ProvidePlugin } = require('webpack');
@@ -13,11 +13,11 @@ const ensureArray = (config) => config && (Array.isArray(config) ? config : [con
 const when = (condition, config, negativeConfig) => (condition ? ensureArray(config) : ensureArray(negativeConfig));
 
 // primary config:
-const title = 'Coding For Llamas';
+const title = 'Caring Child Daycare';
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
 const nodeModulesDir = path.resolve(__dirname, 'node_modules');
-const baseUrl = '/';
+const baseUrl = '/daycare';
 const scssRules = [{ loader: 'sass-loader' }];
 
 module.exports = ({
@@ -52,9 +52,9 @@ module.exports = ({
     // // serve index.html for all 404 (required for push-state)
     historyApiFallback: {
       rewrites: [
-        { from: /^\/$/, to: '/' },
-        { from: /^\//, to: '/' },
-        { from: /./, to: '/' },
+        { from: /^\/$/, to: '/daycare' },
+        { from: /^\//, to: '/daycare' },
+        { from: /./, to: '/daycare' },
       ],
     },
     port: parseInt(process.env.PORT, 10),
@@ -134,9 +134,6 @@ module.exports = ({
 
   plugins: [
     new ProvidePlugin({
-      $: 'jquery',
-      jQuery: 'jquery',
-      'window.jQuery': 'jquery',
       Popper: ['popper.js', 'default'],
     }),
     new HtmlWebpackPlugin({
@@ -149,10 +146,12 @@ module.exports = ({
       allChunks: true,
       metadata: { title, baseUrl },
     }),
-    new CopyWebpackPlugin([
-      { from: 'static/favicon.ico', to: 'favicon.ico' },
-      { from: 'static/img', to: 'static/img' },
-    ]),
+    new CopyPlugin({
+      patterns: [
+        { from: 'static/favicon.ico', to: 'favicon.ico' },
+        { from: 'static/img', to: 'static/img' },
+      ],
+    }),
     new webpack.EnvironmentPlugin(['NODE_ENV',
       'AuthProductionBaseURL', 'PORT', 'BackendUrl', 'GoogleClientId', 'userRoles', 'HashString']),
     ...when(analyze, new BundleAnalyzerPlugin()),

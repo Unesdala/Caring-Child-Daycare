@@ -1,6 +1,7 @@
 {
   "verbose": true,
   "bail": true,
+  "resetMocks": true,
   "setupFiles": [
     "core-js/stable",
     "regenerator-runtime/runtime",
@@ -8,7 +9,7 @@
     "<rootDir>/test/jest-pretest.js"
   ],
   "moduleNameMapper": {
-    ".+\\.(css|styl|less|sass|scss|png|jpg|ttf|woff|woff2)$": "identity-obj-proxy"
+    "\\.(css|less|scss|sass)$": "identity-obj-proxy"
   },
   "moduleFileExtensions": ["js", "json", "jsx"],
   "testPathIgnorePatterns": ["/node_modules/", "/puppeteer/"],
