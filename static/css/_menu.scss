@@ -3,8 +3,10 @@
         &-nav {
             margin: 0;
             padding-left: 1rem;
-            background-color: darken($primary-color, 5);
+            background-color: darken($link-color, 5);
             list-style: none;
+            border-top: thin solid slategrey;
+            border-bottom: thin solid slategrey;
         }
 
         .nav-item {
@@ -20,7 +22,7 @@
             font-size: 18px;
             text-transform: uppercase;
             font-weight: 300;
-            color: set-text-color($primary-color);
+            color: set-text-color($link-color);
             text-decoration: none;
 
             &.active {
@@ -34,30 +36,35 @@
     }
 
     .dropdown-toggle {
-        background-color: #242323;
+        background-color: $link-color;
         :hover {
-            background-color: #242323;
+            background-color: $link-color;
         }
         a:hover {
-            background-color: #242323;
+            background-color: $link-color;
         }
     }
     .dropdown-menu {
-        background-color: #242323;
+        background-color: $link-color;
     }
 
     .btn:hover, .btn:focus {
-        background-color: #242323;
+        background-color: $link-color;
+    }
+
+    // Arrow for menu dropdown
+    .btn-secondary {
+        color: $secondary-color !important;
     }
 
     .btn-secondary:focus, .btn-secondary:active {
-        background-color: #242323 !important;
-        border-color: #242323 !important;
+        background-color: $link-color !important;
+        border-color: darken($primary-color, 5) !important;
         box-shadow: 0 0 0 0.1rem rgba(130,138,145,.5);
     }
 
     .nav .button:hover {
-        background-color: #242323;
+        background-color: $link-color;
     }
 
     .dropdown-item:focus, .dropdown-item:hover {
@@ -100,7 +107,7 @@
         text-transform: uppercase;
         // padding: 1rem 0;
         font-weight: 300;
-        color: set-text-color($primary-color) !important;
+        color: set-text-color($link-color) !important;
         text-decoration: none;
         @include easeOut;
 

@@ -13,10 +13,12 @@ export class CaringChildHistory extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultCaringChildHistoryContent />
+      <>
+        <div className="page-content">
+          <DefaultCaringChildHistoryContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

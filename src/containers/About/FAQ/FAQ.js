@@ -13,10 +13,12 @@ export class FAQ extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultFAQContent />
+      <>
+        <div className="page-content">
+          <DefaultFAQContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

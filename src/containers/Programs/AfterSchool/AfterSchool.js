@@ -13,10 +13,12 @@ export class AfterSchool extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultAfterSchoolContent />
+      <>
+        <div className="page-content">
+          <DefaultAfterSchoolContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

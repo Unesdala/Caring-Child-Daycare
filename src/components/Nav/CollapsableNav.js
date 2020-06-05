@@ -11,7 +11,7 @@ const CollapsableNav = () => {
 
   return (
     <div>
-      <Navbar dark>
+      <Navbar light>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav>

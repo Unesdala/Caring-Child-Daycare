@@ -13,10 +13,12 @@ export class PreSchool extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultPreSchoolContent />
+      <>
+        <div className="page-content">
+          <DefaultPreSchoolContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

@@ -13,12 +13,12 @@ export class Teachers extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <main>
+      <>
+        <div className="page-content">
           <DefaultTeachers />
-        </main>
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }
