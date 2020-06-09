@@ -45,6 +45,10 @@ main {
     }
 }
 
+nav {
+    text-align: center;
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Specific to this particular image */
@@ -53,6 +57,11 @@ main {
         margin-left: -512px;
         /* 50% */
     }
+
+    .menu-nav > li {
+        padding: 0px 1.3rem !important;
+    }
+
 }
 
 .page-content {
@@ -65,7 +74,8 @@ h1 {
     font-weight: 400;
 }
 
-h2, h3 {
+h2,
+h3 {
     margin: 12px 0;
 }
 
