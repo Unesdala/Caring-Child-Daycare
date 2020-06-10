@@ -13,10 +13,12 @@ export class Contact extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultContactContent />
+      <>
+        <div className="page-content">
+          <DefaultContactContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

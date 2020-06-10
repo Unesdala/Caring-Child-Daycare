@@ -8,7 +8,7 @@ export default class FourOhFour extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div className="page-content">
         <div className="fof">404 - Page not available.</div>
       </div>
     );

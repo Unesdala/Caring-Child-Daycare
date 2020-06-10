@@ -2,7 +2,8 @@ import React from 'react';
 
 const InfantsContent = () => (
   <main className="infants">
-    <h1>Infants and Toddlers have their own individual personalities. We bring them to the surface.</h1>
+    <h1>Infants and Toddlers have their own individual personalities.</h1>
+    <h2>We bring them to the surface.</h2>
 
     <p>
       Through a unique blend of teaching and nurturing, we&apos;ll help to prepare your child to enter school life later in life. Early education

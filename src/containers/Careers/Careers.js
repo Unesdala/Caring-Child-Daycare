@@ -13,10 +13,12 @@ export class Career extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultCareerContent />
+      <>
+        <div className="page-content">
+          <DefaultCareerContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

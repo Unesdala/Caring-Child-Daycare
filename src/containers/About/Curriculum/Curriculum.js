@@ -13,10 +13,12 @@ export class Curriculum extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultCurriculumContent />
+      <>
+        <div className="page-content">
+          <DefaultCurriculumContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

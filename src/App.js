@@ -48,7 +48,7 @@ export class App extends PureComponent {
               <Route exact path="/daycare/about/meeting-higher-standards" component={DefaultHigherStandards} />
               <Route exact path="/daycare/about/curriculum" component={DefaultCurriculum} />
               <Route exact path="/daycare/about/meet-the-teachers" component={DefaultTeachers} />
-              <Route exact path="/daycare/programs/faq" component={DefaultFAQ} />
+              <Route exact path="/daycare/about/faq" component={DefaultFAQ} />
               <Route exact path="/daycare/programs" component={DefaultPrograms} />
               <Route exact path="/daycare/programs/after-school" component={DefaultAfterSchool} />
               <Route exact path="/daycare/programs/infants-and-toddlers" component={DefaultInfants} />

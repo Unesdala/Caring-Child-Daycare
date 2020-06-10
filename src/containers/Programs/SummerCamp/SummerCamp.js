@@ -13,10 +13,12 @@ export class SummerCamp extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultSummerCampContent />
+      <>
+        <div className="page-content">
+          <DefaultSummerCampContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

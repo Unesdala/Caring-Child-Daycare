@@ -1,7 +1,7 @@
 import React from 'react';
 
 const HomeContent = () => (
-  <div className="homepage">
+  <main className="homepage">
     <h1>Your child&apos;s future never looked so bright.</h1>
     <br />
     <p>
@@ -15,7 +15,7 @@ const HomeContent = () => (
     <p>
       There&apos;s never a dull moment at Caring Child!
     </p>
-  </div>
+  </main>
 );
 
 export default HomeContent;

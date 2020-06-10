@@ -13,10 +13,12 @@ export class Jobs extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultJobsContent />
+      <>
+        <div className="page-content">
+          <DefaultJobsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

@@ -13,10 +13,12 @@ export class Parents extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultParentsContent />
+      <>
+        <div className="page-content">
+          <DefaultParentsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

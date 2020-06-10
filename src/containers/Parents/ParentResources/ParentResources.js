@@ -13,10 +13,12 @@ export class ParentResources extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultParentResourcesContent />
+      <>
+        <div className="page-content">
+          <DefaultParentResourcesContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

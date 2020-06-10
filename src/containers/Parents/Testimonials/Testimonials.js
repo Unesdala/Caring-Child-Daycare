@@ -13,10 +13,12 @@ export class Testimonials extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultTestimonialsContent />
+      <>
+        <div className="page-content">
+          <DefaultTestimonialsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }
