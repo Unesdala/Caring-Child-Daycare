@@ -13,10 +13,12 @@ export class News extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultNewsContent />
+      <>
+        <div className="page-content">
+          <DefaultNewsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

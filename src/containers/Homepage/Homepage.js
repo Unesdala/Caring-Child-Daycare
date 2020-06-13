@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import commonUtils from '../../components/lib/commonUtils';
 import DefaultHomeContent from './HomepageContent';
+import DefaultFooter from '../../components/Footer/Footer';
 
 export class Homepage extends Component {
   constructor(props) {
@@ -12,9 +13,12 @@ export class Homepage extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultHomeContent />
-      </div>
+      <>
+        <div className="page-content">
+          <DefaultHomeContent />
+        </div>
+        <DefaultFooter />
+      </>
     );
   }
 }

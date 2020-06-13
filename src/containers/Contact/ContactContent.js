@@ -4,7 +4,7 @@ const ContactContent = () => (
   <main id="contact">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our
-      <a href="/daycare/centers">local centers.</a>
+      <a href="/daycare/centers"> local centers.</a>
     </p>
 
     <p>For more general information, contact our central corporate office.</p>

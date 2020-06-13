@@ -13,10 +13,12 @@ export class Twos extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultTwosContent />
+      <>
+        <div className="page-content">
+          <DefaultTwosContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

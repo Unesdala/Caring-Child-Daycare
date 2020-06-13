@@ -13,10 +13,12 @@ export class Programs extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultProgramsContent />
+      <>
+        <div className="page-content">
+          <DefaultProgramsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

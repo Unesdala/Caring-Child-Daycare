@@ -13,10 +13,12 @@ export class PreK extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultPreKContent />
+      <>
+        <div className="page-content">
+          <DefaultPreKContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

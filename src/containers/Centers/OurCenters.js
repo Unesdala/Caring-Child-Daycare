@@ -13,10 +13,12 @@ export class OurCenters extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultOurCentersContent />
+      <>
+        <div className="page-content">
+          <DefaultOurCentersContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

@@ -13,10 +13,12 @@ export class CaringChildDifference extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultDifferenceContent />
+      <>
+        <div className="page-content">
+          <DefaultDifferenceContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

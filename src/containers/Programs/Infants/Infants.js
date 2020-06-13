@@ -13,10 +13,12 @@ export class Infants extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultInfantsContent />
+      <>
+        <div className="page-content">
+          <DefaultInfantsContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }

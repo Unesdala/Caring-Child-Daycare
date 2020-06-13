@@ -13,10 +13,12 @@ export class About extends Component {
 
   render() {
     return (
-      <div className="page-content">
-        <DefaultAboutContent />
+      <>
+        <div className="page-content">
+          <DefaultAboutContent />
+        </div>
         <DefaultFooter />
-      </div>
+      </>
     );
   }
 }
