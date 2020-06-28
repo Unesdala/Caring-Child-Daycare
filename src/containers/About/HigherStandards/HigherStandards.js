@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import commonUtils from '../../../components/lib/commonUtils';
+import commonUtils from '../../../lib/commonUtils';
 import DefaultHigherStandardsContent from './HigherStandardsContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
