@@ -3,7 +3,7 @@ import commonUtils from '../../../components/lib/commonUtils';
 import DefaultHigherStandardsContent from './HigherStandardsContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
-export class About extends Component {
+export class HigherStandards extends Component {
   constructor(props) {
     super(props);
     this.commonUtils = commonUtils;
@@ -23,4 +23,4 @@ export class About extends Component {
   }
 }
 
-export default About;
+export default HigherStandards;
