@@ -1,7 +1,7 @@
 import React from 'react';
 
 const ContactContent = () => (
-  <main id="contact">
+  <main className="contact">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our
       <a href="/daycare/centers"> local centers.</a>
