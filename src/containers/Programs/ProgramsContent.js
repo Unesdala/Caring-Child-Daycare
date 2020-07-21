@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ProgramsContent = () => (
   <main className="programs">
@@ -14,12 +15,12 @@ const ProgramsContent = () => (
     <h2>Select a program to learn more:</h2>
 
     <ul>
-      <li><a href="/daycare/programs/infants-and-toddlers">Infant and Toddler – 6 weeks to 23 months</a></li>
-      <li><a href="/daycare/programs/twos">Twos – 24 months to 36 months</a></li>
-      <li><a href="/daycare/programs/pre-school">Preschool – 3 years</a></li>
-      <li><a href="/daycare/programs/private-pre-k">Private Pre-K – 4 year olds</a></li>
-      <li><a href="/daycare/programs/after-school">After School – 5 years to 12 years</a></li>
-      <li><a href="/daycare/programs/summer-camp">Summer Camp – 6 years to 12 years</a></li>
+      <li><Link to="/daycare/programs/infants-and-toddlers">Infant and Toddler – 6 weeks to 23 months</Link></li>
+      <li><Link to="/daycare/programs/twos">Twos – 24 months to 36 months</Link></li>
+      <li><Link to="/daycare/programs/preschool">Preschool – 3 years</Link></li>
+      <li><Link to="/daycare/programs/private-pre-k">Private Pre-K – 4 year olds</Link></li>
+      <li><Link to="/daycare/programs/after-school">After School – 5 years to 12 years</Link></li>
+      <li><Link to="/daycare/programs/summer-camp">Summer Camp – 6 years to 12 years</Link></li>
     </ul>
   </main>
 );
