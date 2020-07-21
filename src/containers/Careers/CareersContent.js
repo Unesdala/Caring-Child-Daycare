@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CareerContent = () => (
   <main className="careers">
@@ -19,7 +20,7 @@ const CareerContent = () => (
     <p>
       To see a list of job descriptions,
       {' '}
-      <a href="/daycare/job-descriptions/">click here.</a>
+      <Link to="/daycare/job-descriptions/">click here.</Link>
     </p>
   </main>
 );

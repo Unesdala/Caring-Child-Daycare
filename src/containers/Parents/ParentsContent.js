@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ParentsContent = () => (
   <main className="parents-corner">
@@ -17,11 +18,11 @@ const ParentsContent = () => (
     <p>
       Feel free to browse our
       {' '}
-      <a href="/daycare/parents/resources">parent resources</a>
+      <Link to="/daycare/parents/resources">parent resources</Link>
       {' '}
       or take a look at what other parents
       {' '}
-      <a href="/daycare/parents/testimonials">have said</a>
+      <Link to="/daycare/parents/testimonials">have said</Link>
       {' '}
       about Caring Child Daycare.
     </p>

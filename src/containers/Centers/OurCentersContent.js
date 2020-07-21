@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const OurCentersContent = () => (
   <main className="our-centers">
@@ -15,7 +16,7 @@ const OurCentersContent = () => (
       <a href="tel:555-555-5555">&#40;555&#41;-555-5555</a>
       {' '}
       or use our online&nbsp;
-      <a href="/daycare/contact">contact form.</a>
+      <Link to="/daycare/contact">contact form.</Link>
     </p>
 
     <h1>East Roanoke</h1>

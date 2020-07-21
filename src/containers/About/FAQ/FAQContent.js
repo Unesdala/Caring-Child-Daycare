@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FAQContent = () => (
   <main className="faq">
@@ -49,7 +50,7 @@ const FAQContent = () => (
       Center your child will be attending prior to their start date. In addition, you can view some of
       the forms and information at our
       {' '}
-      <a href="/daycare/parents-corner/parent-resources">Parent Resources</a>
+      <Link to="/daycare/parents/resources">Parent Resources</Link>
       {' '}
       section.
     </p>

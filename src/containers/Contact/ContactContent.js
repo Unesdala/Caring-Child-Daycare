@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const ContactContent = () => (
   <main className="contact">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our
-      <a href="/daycare/centers"> local centers.</a>
+      <Link to="/daycare/centers"> local centers.</Link>
     </p>
 
     <p>For more general information, contact our central corporate office.</p>
