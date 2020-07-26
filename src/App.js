@@ -1,5 +1,9 @@
-import React, { PureComponent } from 'react';
+import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import Navbar from './components/Nav/Navbar';
 import AppTemplate from './components/App-Main';
 import DefaultOurCenters from './containers/Centers/OurCenters';
@@ -31,8 +35,15 @@ import DefaultCareers from './containers/Careers/Careers';
 import DefaultContact from './containers/Contact/Contact';
 import DefaultJobs from './containers/Jobs/Jobs';
 import FourOhFour from './containers/404';
+import getImages from './actions/imageActions';
+import mapStoreToProps from './redux/mapStoreToProps';
 
-export class App extends PureComponent {
+export class App extends Component {
+  async componentDidMount() {
+    const { dispatch, images } = this.props;
+    if (images.length === 0)dispatch(getImages());
+  }
+
   render() {
     return (
       <div id="App" className="App Site">
@@ -73,4 +84,10 @@ export class App extends PureComponent {
   }
 }
 
-export default App;
+App.propTypes = {
+  dispatch: PropTypes.func.isRequired,
+  images: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({})), PropTypes.shape({})]),
+};
+App.defaultProps = { images: [] };
+
+export default connect(mapStoreToProps)(App);
