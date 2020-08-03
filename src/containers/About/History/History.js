@@ -9,7 +9,7 @@ export class CaringChildHistory extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Caring Child Daycare\'s History'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Caring Child Daycare\'s History', window.screen.width); }
 
   render() {
     return (

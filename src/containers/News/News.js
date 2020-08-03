@@ -9,7 +9,7 @@ export class News extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('News'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('News', window.screen.width); }
 
   render() {
     return (

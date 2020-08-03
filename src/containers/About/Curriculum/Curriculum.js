@@ -9,7 +9,7 @@ export class Curriculum extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Curriculum'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Curriculum', window.screen.width); }
 
   render() {
     return (

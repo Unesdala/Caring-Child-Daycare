@@ -9,7 +9,7 @@ export class HigherStandards extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Meeting Higher Standards'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Meeting Higher Standards', window.screen.width); }
 
   render() {
     return (

@@ -9,7 +9,7 @@ export class Infants extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Infants & Toddlers'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Infants & Toddlers', window.screen.width); }
 
   render() {
     return (

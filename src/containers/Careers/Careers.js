@@ -9,7 +9,7 @@ export class Career extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Careers'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Careers', window.screen.width); }
 
   render() {
     return (

@@ -9,7 +9,7 @@ export class Twos extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Twos'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Twos', window.screen.width); }
 
   render() {
     return (

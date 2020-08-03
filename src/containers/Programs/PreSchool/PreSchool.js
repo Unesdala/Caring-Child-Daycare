@@ -9,7 +9,7 @@ export class PreSchool extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Pre School'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Pre School', window.screen.width); }
 
   render() {
     return (

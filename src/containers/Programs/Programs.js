@@ -9,7 +9,7 @@ export class Programs extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Programs'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Programs', window.screen.width); }
 
   render() {
     return (

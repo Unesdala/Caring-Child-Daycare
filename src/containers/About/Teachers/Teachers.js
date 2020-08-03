@@ -9,7 +9,7 @@ export class Teachers extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Meet The Teachers'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Meet The Teachers', window.screen.width); }
 
   render() {
     return (

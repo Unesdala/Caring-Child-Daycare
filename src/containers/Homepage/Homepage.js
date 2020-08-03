@@ -9,7 +9,7 @@ export class Homepage extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll(''); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('', window.screen.width); }
 
   render() {
     return (
