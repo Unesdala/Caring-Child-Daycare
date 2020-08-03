@@ -9,7 +9,7 @@ export class AfterSchool extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('After School'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('After School', window.screen.width); }
 
   render() {
     return (

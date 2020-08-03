@@ -9,7 +9,7 @@ export class Jobs extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Job Descriptions'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Job Descriptions', window.screen.width); }
 
   render() {
     return (

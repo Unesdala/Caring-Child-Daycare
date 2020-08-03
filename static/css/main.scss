@@ -45,6 +45,10 @@ main {
     }
 }
 
+hr {
+    width: 96%;
+}
+
 nav {
     text-align: center;
 }
@@ -80,7 +84,7 @@ h3 {
 }
 
 a {
-    color: #792E8A;
+    color: $secondary-link-color;
     text-decoration: none;
 
     &:hover {
@@ -90,7 +94,7 @@ a {
     }
 
     &:visited {
-        color: #A2005B
+        color: $link-visited;
     }
 }
 

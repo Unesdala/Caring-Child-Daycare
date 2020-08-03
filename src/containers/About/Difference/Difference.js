@@ -9,7 +9,7 @@ export class CaringChildDifference extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('The Caring Child Difference'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('The Caring Child Difference', window.screen.width); }
 
   render() {
     return (

@@ -9,7 +9,7 @@ export class Parents extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent&apos;s Corner'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent&apos;s Corner', window.screen.width); }
 
   render() {
     return (

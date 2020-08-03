@@ -9,7 +9,7 @@ export class About extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('About Us'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('About Us', window.screen.width); }
 
   render() {
     return (

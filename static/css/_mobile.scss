@@ -1,48 +1,52 @@
 @include menu;
 
-@media screen and (max-width: 768px) {
+// Tablets & Small Laptops
+@include mediaMd {
     @include mobileMenu;
 
-    // Tablets & Small Laptops
-    @include mediaMd {
-        main {
-            align-items: center;
-            text-align: center;
-        }
-
-        ul.menu-nav,
-        div.menu-branding {
-            float: none;
-            width: 100%;
-            min-height: 0;
-        }
-
-        .menu-nav {
-            height: 75vh;
-            transform: translate3d(-100%, 0, 0);
-            font-size: 24px;
-        }
+    main {
+        align-items: center;
+        text-align: center;
     }
 
-    // Smartphones
-    @include mediaSm {
-        .siteContent {
-            margin-top: 5rem;
-        }
+    .nav-link {
+        font-size: 24px;
+    }
+}
 
-        .page-content {
-            margin-left: 0;
-            margin-top: 0;
-        }
+// Smartphones
+@include mediaSm {
+    @include mobileMenu;
 
-        main {
-            padding: 2rem;
-            margin-top: -70px;
-            margin-left: -15px;
-        }
+    .siteContent {
+        margin-top: 5rem;
+    }
 
-        ul {
-            margin-left: -40px;
-        }
+    .page-content {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .about-links {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 4px;
+        margin-bottom: 2px;
+        color: purple;
+        text-decoration: underline;
+    }
+
+    main {
+        padding: 2rem;
+        margin-top: -70px;
+        margin-left: -15px;
+    }
+
+    ul {
+        margin-left: -40px;
+    }
+
+    .nav-link {
+        font-size: 17px;
     }
 }

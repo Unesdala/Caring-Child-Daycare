@@ -9,7 +9,7 @@ export class ParentResources extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent Resources'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent Resources', window.screen.width); }
 
   render() {
     return (

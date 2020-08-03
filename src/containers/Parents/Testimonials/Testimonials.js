@@ -9,7 +9,7 @@ export class Testimonials extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent Testimonials'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Parent Testimonials', window.screen.width); }
 
   render() {
     return (

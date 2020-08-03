@@ -9,7 +9,7 @@ export class OurCenters extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Our Centers'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Our Centers', window.screen.width); }
 
   render() {
     return (

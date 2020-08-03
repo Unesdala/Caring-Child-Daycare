@@ -9,7 +9,7 @@ export class FAQ extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Frequently Asked Questions'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Frequently Asked Questions', window.screen.width); }
 
   render() {
     return (

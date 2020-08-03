@@ -9,7 +9,7 @@ export class Contact extends Component {
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Contact Us'); }
+  componentDidMount() { this.commonUtils.setTitleAndScroll('Contact Us', window.screen.width); }
 
   render() {
     return (
