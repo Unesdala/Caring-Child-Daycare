@@ -53,6 +53,11 @@ nav {
     text-align: center;
 }
 
+li.resource-link {
+    margin: 0 0 -5px 6px;
+    list-style: none;
+}
+
 @media screen and (max-width: 1024px) {
 
     /* Specific to this particular image */
