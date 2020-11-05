@@ -1,3 +1,4 @@
+// @ts-nocheck
 import reducer from '../../src/redux/reducers/imagesReducer';
 
 describe('fetch reducer', () => {

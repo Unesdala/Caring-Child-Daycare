@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useState } from 'react';
 import {
   Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Navbar, Nav, NavItem, NavLink,

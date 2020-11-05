@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { Component } from 'react';
 import commonUtils from '../../../lib/commonUtils';
 import DefaultSummerCampContent from './SummerCampContent';

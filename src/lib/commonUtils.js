@@ -1,3 +1,4 @@
+// @ts-nocheck
 const setTitleAndScroll = (pageTitle, width) => {
   if (pageTitle !== '') pageTitle += ' | ';// eslint-disable-line no-param-reassign
   document.title = `${pageTitle}Caring Child Daycare`;

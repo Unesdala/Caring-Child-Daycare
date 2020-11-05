@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React from 'react';
 import { EnrollmentForms, ParentResources, DaycareDocuments } from './ResourceLinks';
 
