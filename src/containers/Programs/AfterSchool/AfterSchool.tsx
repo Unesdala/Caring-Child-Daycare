@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 import React, { Component } from 'react';
 import commonUtils from '../../../lib/commonUtils';

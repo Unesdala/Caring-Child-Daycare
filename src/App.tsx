@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/ban-ts-comment */
 // @ts-nocheck
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
@@ -40,12 +41,12 @@ import getImages from './actions/imageActions';
 import mapStoreToProps from './redux/mapStoreToProps';
 
 export class App extends Component {
-  async componentDidMount() {
+  async componentDidMount(): void {
     const { dispatch, images } = this.props;
     if (images.length === 0)dispatch(getImages());
   }
 
-  render() {
+  render(): JSX.Element {
     return (
       <div id="App" className="App Site">
         <Router>
