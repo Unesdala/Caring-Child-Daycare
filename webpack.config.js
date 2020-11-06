@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv').config();
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
@@ -6,7 +7,6 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
 const { ProvidePlugin } = require('webpack');
 const webpack = require('webpack');
-const TerserPlugin = require('terser-webpack-plugin');
 
 // config helpers:
 const ensureArray = (config) => config && (Array.isArray(config) ? config : [config]) || []; // eslint-disable-line no-mixed-operators
@@ -16,21 +16,19 @@ const when = (condition, config, negativeConfig) => (condition ? ensureArray(con
 const title = 'Caring Child Daycare';
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
-const nodeModulesDir = path.resolve(__dirname, 'node_modules');
-const baseUrl = '/daycare';
+const baseUrl = '/';
 const scssRules = [{ loader: 'sass-loader' }];
 
 module.exports = ({
-  production, coverage, analyze,
+  production, analyze,
 } = {
 }) => ({
   resolve: {
-    extensions: ['.js', '.jsx'],
-    modules: [srcDir, 'node_modules'],
+    extensions: ['.js', '.jsx', '.ts', '.tsx'],
   },
 
   entry: {
-    app: [`${srcDir}/main.js`],
+    app: [`${srcDir}/main.tsx`],
     vendor: ['bootstrap'],
   },
 
@@ -40,7 +38,6 @@ module.exports = ({
     path: outDir,
     publicPath: baseUrl,
     filename: production ? '[name].[chunkhash].bundle.js' : '[name].[hash].bundle.js',
-    // sourceMapFilename: production ? '[name].[chunkhash].bundle.map' : '[name].[hash].bundle.map',
     chunkFilename: production ? '[name].[chunkhash].chunk.js' : '[name].[hash].chunk.js',
   },
 
@@ -49,7 +46,7 @@ module.exports = ({
   devServer: {
     contentBase: outDir,
     hot: true,
-    // // serve index.html for all 404 (required for push-state)
+    // serve index.html for all 404 (required for push-state)
     historyApiFallback: {
       rewrites: [
         { from: /^\/$/, to: '/daycare' },
@@ -60,24 +57,9 @@ module.exports = ({
     port: parseInt(process.env.PORT, 10),
   },
 
-  devtool: production ? 'nosources-source-map' : 'cheap-module-eval-source-map',
+  devtool: production ? 'nosources-source-map' : 'source-map',
 
   optimization: {
-    minimizer: production ? [
-      new TerserPlugin({
-        extractComments: true,
-        cache: true,
-        parallel: true,
-        sourceMap: true,
-        terserOptions: {
-        // https://github.com/webpack-contrib/terser-webpack-plugin#terseroptions
-          extractComments: 'all',
-          compress: {
-            drop_console: true,
-          },
-        },
-      }),
-    ] : [],
     splitChunks: {
       cacheGroups: {
         styles: {
@@ -92,6 +74,16 @@ module.exports = ({
 
   module: {
     rules: [
+      {
+        test: /\.(t|j)sx?$/,
+        use: { loader: 'ts-loader' },
+        exclude: [/node_modules/],
+      },
+      {
+        enforce: 'pre',
+        test: /\.js$/,
+        loader: 'source-map-loader',
+      },
       // SCSS required in JS/TS files should use the style-loader that auto-injects it into the website
       // only when the issuer is a .js/.ts file, so the loaders are not applied inside html templates
       {
@@ -116,13 +108,6 @@ module.exports = ({
         use: scssRules,
       },
       { test: /\.html$/i, loader: 'html-loader' },
-      {
-        test: /\.jsx?$/i,
-        loader: 'babel-loader',
-        exclude: nodeModulesDir,
-        options: coverage ? { sourceMap: 'inline', plugins: ['istanbul'] } : {},
-      }, // eslint-disable-next-line no-useless-escape
-      { test: /[\/\\]node_modules[\/\\]bluebird[\/\\].+\.js$/, loader: 'expose-loader?Promise' },
       // embed small images and fonts as Data Urls and larger ones as files:
       { test: /\.(png|gif|jpg|cur)$/i, loader: 'url-loader', options: { limit: 8192 } },
       { test: /\.woff2(\?v=[0-9]\.[0-9]\.[0-9])?$/i, loader: 'url-loader', options: { limit: 10000, mimetype: 'application/font-woff2' } },
@@ -149,7 +134,6 @@ module.exports = ({
     new CopyPlugin({
       patterns: [
         { from: 'static/favicon.ico', to: 'favicon.ico' },
-        { from: 'static/img', to: 'static/img' },
       ],
     }),
     new webpack.EnvironmentPlugin(['NODE_ENV',
