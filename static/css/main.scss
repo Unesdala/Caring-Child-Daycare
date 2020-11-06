@@ -33,16 +33,24 @@ img.bg {
     z-index: -2;
 }
 
+a {
+    color: $secondary-link-color;
+    text-decoration: none;
+
+    &:hover {
+        color: $secondary-color;
+        text-decoration: none;
+        @include easeOut();
+    }
+
+    &:visited {
+        color: $link-visited;
+    }
+}
+
 main {
     padding: 4rem; // height: 100%;
     min-height: calc(100vh - 120px);
-
-    a {
-        &:hover {
-            color: $secondary-color;
-            @include easeOut();
-        }
-    }
 }
 
 hr {
@@ -88,32 +96,8 @@ h3 {
     margin: 12px 0;
 }
 
-a {
-    color: $secondary-link-color;
-    text-decoration: none;
-
-    &:hover {
-        color: $secondary-color;
-        text-decoration: none;
-        @include easeOut();
-    }
-
-    &:visited {
-        color: $link-visited;
-    }
-}
-
 .text-secondary {
     color: $secondary-color !important;
-}
-
-.siteContent {
-    a {
-        &:hover {
-            color: $secondary-color;
-            @include easeOut();
-        }
-    }
 }
 
 // Button Styles
