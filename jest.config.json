@@ -2,7 +2,7 @@
   "verbose": true,
   "timers": "fake",
   "bail": true,
-  "resetMocks": false,
+  "resetMocks": true,
   "notify": true,
   "setupFiles": [
     "core-js/stable",
