@@ -1,23 +1,32 @@
-import { normalize, join } from 'path';
-import express, { static } from 'express';
-import { HTTPS } from 'express-sslify';
-
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+/* eslint-disable @typescript-eslint/no-var-requires */
 require('dotenv').config();
+const path = require('path');
+const express = require('express');
+const enforce = require('express-sslify');
 
 const app = express();
-let port = Number(process.env.PORT);
-if (process.env.NODE_ENV === 'test') port += 10;
-/* istanbul ignore if */
-if (process.env.NODE_ENV === 'production') app.use(HTTPS({ trustProtoHeader: true }));
 
-app.use(static(normalize(join(__dirname, 'dist'))));
-app.use('/', static(normalize(join(__dirname, 'dist'))));
-app.get('/*', (request, response) => {
-  response.sendFile(normalize(join(__dirname, 'dist/index.html')));
+/* istanbul ignore if */
+if (process.env.NODE_ENV === 'production') app.use(enforce.HTTPS({ trustProtoHeader: true }));
+
+// set up rate limiter: maximum of five requests per minute
+const RateLimit = require('express-rate-limit');
+
+const limiter = new RateLimit({
+  windowMs: 1 * 60 * 1000, // 1 minute
+  max: 5,
 });
-app.listen(port, () => {
+
+// apply rate limiter to all requests
+app.use(limiter);
+
+app.use(express.static(path.normalize(path.join(__dirname, 'dist'))));
+app.use('/daycare/', express.static(path.normalize(path.join(__dirname, 'dist'))));
+app.get('/daycare/*', (req, res) => {
+  res.sendFile(path.normalize(path.join(__dirname, 'dist/index.html')));
+});
+app.listen(process.env.PORT, () => {
   console.log(`Magic happens on port ${process.env.PORT}`); // eslint-disable-line no-console
 });
 
-export default app;
+module.exports = app;
