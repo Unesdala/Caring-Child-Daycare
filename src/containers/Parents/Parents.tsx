@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommonUtils from '../../lib/commonUtils';
 import DefaultParentsContent from './ParentsContent';
-import DefaultFooter from '../../components/Footer/Footer';
 
 export class Parents extends Component {
   public commonUtils: typeof CommonUtils = CommonUtils;
@@ -14,7 +13,6 @@ export class Parents extends Component {
         <div className="page-content">
           <DefaultParentsContent />
         </div>
-        <DefaultFooter />
       </>
     );
   }

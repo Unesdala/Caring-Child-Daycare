@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommonUtils from '../../../lib/commonUtils';
 import DefaultCaringChildHistoryContent from './HistoryContent';
-import DefaultFooter from '../../../components/Footer/Footer';
 
 export class CaringChildHistory extends Component {
   public commonUtils: typeof CommonUtils = CommonUtils;
@@ -14,7 +13,6 @@ export class CaringChildHistory extends Component {
         <div className="page-content">
           <DefaultCaringChildHistoryContent />
         </div>
-        <DefaultFooter />
       </>
     );
   }

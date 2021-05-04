@@ -52,7 +52,7 @@
     "@popperjs/core": "latest",
     "@tinymce/tinymce-react": "latest",
     "@types/copy-webpack-plugin": "latest",
-    "@types/core-js": "^2.5.4",
+    "@types/core-js": "latest",
     "@types/domutils": "^1.7.2",
     "@types/ejs": "^3.0.1",
     "@types/enzyme": "^3.10.5",

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
@@ -32,6 +31,7 @@ import DefaultParentResources from './containers/Parents/ParentResources/ParentR
 // End Parents
 import DefaultTestimonials from './containers/Parents/Testimonials/Testimonials';
 import DefaultNews from './containers/News/News';
+import DefaultFooter from './components/Footer/Footer';
 import DefaultCareers from './containers/Careers/Careers';
 import DefaultContact from './containers/Contact/Contact';
 import DefaultJobs from './containers/Jobs/Jobs';
@@ -97,6 +97,7 @@ export class App extends Component<AppProps> {
               <Route exact path="/daycare/contact" component={DefaultContact} />
               <Route component={FourOhFour} />
             </Switch>
+            <DefaultFooter />
           </div>
         </Router>
       </div>

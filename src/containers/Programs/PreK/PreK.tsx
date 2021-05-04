@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommonUtils from '../../../lib/commonUtils';
 import DefaultPreKContent from './PreKContent';
-import DefaultFooter from '../../../components/Footer/Footer';
 
 export class PreK extends Component {
   public commonUtils: typeof CommonUtils = CommonUtils;
@@ -14,7 +13,6 @@ export class PreK extends Component {
         <div className="page-content">
           <DefaultPreKContent />
         </div>
-        <DefaultFooter />
       </>
     );
   }

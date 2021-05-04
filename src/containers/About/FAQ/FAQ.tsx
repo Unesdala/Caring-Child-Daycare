@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommonUtils from '../../../lib/commonUtils';
 import DefaultFAQContent from './FAQContent';
-import DefaultFooter from '../../../components/Footer/Footer';
 
 export class FAQ extends Component {
   public commonUtils: typeof CommonUtils = CommonUtils;
@@ -14,7 +13,6 @@ export class FAQ extends Component {
         <div className="page-content">
           <DefaultFAQContent />
         </div>
-        <DefaultFooter />
       </>
     );
   }

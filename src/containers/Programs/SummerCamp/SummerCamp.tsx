@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import CommonUtils from '../../../lib/commonUtils';
 import DefaultSummerCampContent from './SummerCampContent';
-import DefaultFooter from '../../../components/Footer/Footer';
 
 export class SummerCamp extends Component {
   public commonUtils: typeof CommonUtils = CommonUtils;
@@ -14,7 +13,6 @@ export class SummerCamp extends Component {
         <div className="page-content">
           <DefaultSummerCampContent />
         </div>
-        <DefaultFooter />
       </>
     );
   }
