@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import CreateResourceLinks from './ParentResourceLinks';
 
-const ParentResourcesContent = () => (
+const ParentResourcesContent = (): JSX.Element => (
   <main className="parent-resources">
 
     <h1>Bringing you resources to make life easier.</h1>

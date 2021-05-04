@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const OurCentersContent = () => (
+const OurCentersContent = (): JSX.Element => (
   <main className="our-centers">
     <p>
       Caring Child Daycare currently offers 3 separate locations throughout the Roanoke Valley.

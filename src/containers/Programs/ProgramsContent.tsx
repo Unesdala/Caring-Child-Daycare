@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ProgramsContent = () => (
+const ProgramsContent = (): JSX.Element => (
   <main className="programs">
 
     <h1>Programs at Caring Child Daycare</h1>

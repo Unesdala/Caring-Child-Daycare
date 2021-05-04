@@ -1,18 +1,14 @@
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import CommonUtils from '../../../lib/commonUtils';
 import DefaultPreSchoolContent from './PreSchoolContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
 export class PreSchool extends Component {
-  constructor(props) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
+  public commonUtils: typeof CommonUtils = CommonUtils;
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Pre School', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Pre School', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">

@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ContactContent = () => (
+const ContactContent = (): JSX.Element => (
   <main className="contact">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our

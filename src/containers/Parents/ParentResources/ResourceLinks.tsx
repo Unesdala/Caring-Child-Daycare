@@ -1,4 +1,3 @@
-// @ts-nocheck
 const EnrollmentForms = [
   {
     name: 'Registration Paperwork',

@@ -1,18 +1,14 @@
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import CommonUtils from '../../../lib/commonUtils';
 import DefaultFAQContent from './FAQContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
 export class FAQ extends Component {
-  constructor(props) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
+  public commonUtils: typeof CommonUtils = CommonUtils;
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Frequently Asked Questions', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Frequently Asked Questions', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">

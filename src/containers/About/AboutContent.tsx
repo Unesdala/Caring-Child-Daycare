@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const AboutContent = () => (
+const AboutContent = (): JSX.Element => (
   <main className="about">
 
     <h1>Our Mission</h1>

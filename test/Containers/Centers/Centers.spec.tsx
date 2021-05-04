@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import { shallow } from 'enzyme';
 import { OurCenters } from '../../../src/containers/Centers/OurCenters';

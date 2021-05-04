@@ -1,18 +1,14 @@
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import CommonUtils from '../../../lib/commonUtils';
 import DefaultCurriculumContent from './CurriculumContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
 export class Curriculum extends Component {
-  constructor(props) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
+  public commonUtils: typeof CommonUtils = CommonUtils;
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Curriculum', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Curriculum', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">

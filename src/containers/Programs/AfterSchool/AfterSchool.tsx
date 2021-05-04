@@ -1,19 +1,14 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import CommonUtils from '../../../lib/commonUtils';
 import DefaultAfterSchoolContent from './AfterSchoolContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
 export class AfterSchool extends Component {
-  constructor(props) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
+  public commonUtils: typeof CommonUtils = CommonUtils;
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('After School', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('After School', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">

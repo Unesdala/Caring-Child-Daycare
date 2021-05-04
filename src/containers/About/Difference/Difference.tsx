@@ -1,18 +1,14 @@
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import CommonUtils from '../../../lib/commonUtils';
 import DefaultDifferenceContent from './DifferenceContent';
 import DefaultFooter from '../../../components/Footer/Footer';
 
 export class CaringChildDifference extends Component {
-  constructor(props) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
+  public commonUtils: typeof CommonUtils = CommonUtils;
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('The Caring Child Difference', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('The Caring Child Difference', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">

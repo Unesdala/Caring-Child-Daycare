@@ -1,11 +1,10 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
 import React, { Component } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
+import superagent from 'superagent';
 import Navbar from './components/Nav/Navbar';
 import AppTemplate from './components/App-Main';
 import DefaultOurCenters from './containers/Centers/OurCenters';
@@ -37,13 +36,33 @@ import DefaultCareers from './containers/Careers/Careers';
 import DefaultContact from './containers/Contact/Contact';
 import DefaultJobs from './containers/Jobs/Jobs';
 import FourOhFour from './containers/404';
-import getImages from './actions/imageActions';
 import mapStoreToProps from './redux/mapStoreToProps';
+import fetch from './lib/fetch';
+import { AppProps } from './AppTypes';
 
-export class App extends Component {
-  async componentDidMount(): void {
-    const { dispatch, images } = this.props;
-    if (images.length === 0)dispatch(getImages());
+export class App extends Component<AppProps> {
+  fetch: typeof fetch;
+
+  superagent: superagent.SuperAgentStatic;
+
+  static defaultProps = {
+    dispatch: /* istanbul ignore next */(): void => { },
+  };
+
+  constructor(props: AppProps) {
+    super(props);
+    this.fetch = fetch;
+    this.state = {};
+    this.superagent = superagent;
+  }
+
+  /*
+    ToDo:
+    Make fetch for parent resources
+  */
+
+  componentDidMount(): void { // fetch the images
+    this.fetch.fetchGet(this, 'images/', 'GOT_IMAGES');
   }
 
   render(): JSX.Element {
@@ -86,10 +105,4 @@ export class App extends Component {
   }
 }
 
-App.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  images: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({})), PropTypes.shape({})]),
-};
-App.defaultProps = { images: [] };
-
-export default connect(mapStoreToProps)(App);
+export default connect(mapStoreToProps, null)(App);

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const SummerCampContent = () => (
+const SummerCampContent = (): JSX.Element => (
   <main className="summer-camp">
 
     <h1>Learning doesn&apos;t end just because school did.</h1>

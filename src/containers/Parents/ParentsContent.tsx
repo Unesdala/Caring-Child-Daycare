@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const ParentsContent = () => (
+const ParentsContent = (): JSX.Element => (
   <main className="parents-corner">
 
     <h1>Your link to our resources.</h1>

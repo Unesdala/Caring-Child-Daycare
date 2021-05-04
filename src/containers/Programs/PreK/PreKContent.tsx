@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const PreKContent = () => (
+const PreKContent = (): JSX.Element => (
   <main className="pre-k">
 
     <h1>By 4 years old, children are preparing to enter school. We guide them to make sure they&apos;re ready.</h1>
