@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const CaringChildDifferenceContent = () => (
+const CaringChildDifferenceContent = (): JSX.Element => (
   <main className="difference">
 
     <h1>Exceptional Care That Matters</h1>

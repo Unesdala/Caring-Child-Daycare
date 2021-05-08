@@ -1,11 +1,10 @@
-// @ts-nocheck
 import React, { useState } from 'react';
 import {
   Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Navbar, Nav, NavItem, NavLink,
 } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
 
-export const AboutNav = () => {
+export const AboutNav = (): JSX.Element => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -58,7 +57,7 @@ export const AboutNav = () => {
   );
 };
 
-export const ProgramsNav = () => {
+export const ProgramsNav = (): JSX.Element => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);
@@ -111,7 +110,7 @@ export const ProgramsNav = () => {
   );
 };
 
-const ParentsNav = () => {
+const ParentsNav = (): JSX.Element => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   const toggle = () => setDropdownOpen((prevState) => !prevState);

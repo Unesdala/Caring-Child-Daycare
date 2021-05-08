@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const InfantsContent = () => (
+const InfantsContent = (): JSX.Element => (
   <main className="infants">
     <h1>Infants and Toddlers have their own individual personalities.</h1>
     <h2>We bring them to the surface.</h2>

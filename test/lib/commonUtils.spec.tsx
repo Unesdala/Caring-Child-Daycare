@@ -1,4 +1,4 @@
-// @ts-nocheck
+
 import commonUtils from '../../src/lib/commonUtils';
 
 describe('commonUtils', () => {

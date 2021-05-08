@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const PreSchoolContent = () => (
+const PreSchoolContent = (): JSX.Element => (
   <main className="pre-school">
     <h1>At 3, children are discovering the world around them. We encourage them in their exploration.</h1>
 

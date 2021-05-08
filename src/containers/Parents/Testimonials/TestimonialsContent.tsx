@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const TestimonialsContent = () => (
+const TestimonialsContent = (): JSX.Element => (
   <main className="testimonials">
     <h1>What parents think about Caring Child.</h1>
     <br />

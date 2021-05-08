@@ -1,5 +1,3 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
 import React from 'react';
 import { Provider } from 'react-redux';
 import { render } from 'react-dom';

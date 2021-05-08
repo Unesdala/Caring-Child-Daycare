@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const CaringChildHistoryContent = () => (
+const CaringChildHistoryContent = (): JSX.Element => (
   <main className="history">
 
     <h1>Our History. Your Future.</h1>

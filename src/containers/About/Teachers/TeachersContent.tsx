@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const TeachersContent = () => (
+const TeachersContent = (): JSX.Element => (
   <main className="teachers">
 
     <h1>Educators are the gateway to a brighter future for our children.</h1>

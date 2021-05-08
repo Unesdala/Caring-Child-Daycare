@@ -1,4 +1,3 @@
-// @ts-nocheck
 import React from 'react';
 import { shallow } from 'enzyme';
 import { ParentResources } from '../../../src/containers/Parents/ParentResources/ParentResources';

@@ -1,21 +1,26 @@
-// @ts-nocheck
 import request from 'superagent';
 
-export const fetchImages = () => ({
+interface IImageActions {
+  type: string;
+  data?: any;
+  error?: any;
+}
+
+export const fetchImages = (): IImageActions => ({
   type: 'FETCH_IMAGES',
 });
 
-export const receiveImages = (docs) => ({
+export const receiveImages = (docs: any): IImageActions => ({
   type: 'FETCHED_IMAGES',
   data: docs,
 });
 
-export const receiveError = (e) => ({
+export const receiveError = (e: any): IImageActions => ({
   type: 'RECEIVE_ERROR',
   error: e,
 });
 
-const getImages = () => (dispatch, getState) => {
+const getImages = () => (dispatch: any, getState: any): Promise<boolean> => {
   const { images } = getState();
   const type = 'img';
   if (images.images !== undefined && images.images.length > 0) return Promise.resolve(true);
