@@ -1,6 +1,6 @@
 {
   "name": "caring-child-daycare",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "description": "codingforllamas.com/daycare",
   "main": "dist/index.html",
   "repository": {
@@ -105,13 +105,12 @@
     "react-dom": "latest",
     "react-google-login": "latest",
     "react-html-parser": "latest",
-    "react-moment": "^1.1.1",
     "react-redux": "latest",
     "react-resize-detector": "latest",
     "react-router-dom": "latest",
     "react-router-hash-link": "latest",
     "react-slick": "latest",
-    "reactstrap": "^8.9.0",
+    "reactstrap": "^8.4.1",
     "redux": "latest",
     "redux-logger": "latest",
     "redux-persist": "latest",
