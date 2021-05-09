@@ -47,7 +47,6 @@
     "test:puppeteer:cc": "jest --preset jest-puppeteer --config jest.puppeteer-config.json /test/puppeteer --maxWorkers=2",
     "installglobals": "yarn config set registry https://registry.yarnpkg.com -g",
     "cleaninstall": "rm -rf yarn.lock && rm -rf node_modules && yarn cache clean && yarn installglobals && yarn install",
-    "cleaninstall:cc": "rm -rf node_modules && yarn cache clean && yarn installglobals && yarn install",
     "cleaninstall:windows": "del /f /q yarn.lock && del /f /q node_modules && yarn cache clean && yarn installglobals && yarn install",
     "postinstall": "yarn start build",
     "test:stylelint": "stylelint \"static/**/*.scss\""
