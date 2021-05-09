@@ -1,24 +1,23 @@
-// @ts-nocheck
 import React, { Component } from 'react';
-import commonUtils from '../../../lib/commonUtils';
+import commonUtils from '../../../components/lib/commonUtils';
 import DefaultTeachers from './TeachersContent';
-import DefaultFooter from '../../../components/Footer/Footer';
 
 export class Teachers extends Component {
-  constructor(props) {
+  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
+
+  constructor(props: Record<string, unknown>) {
     super(props);
     this.commonUtils = commonUtils;
   }
 
-  componentDidMount() { this.commonUtils.setTitleAndScroll('Meet The Teachers', window.screen.width); }
+  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Teachers', window.screen.width); }
 
-  render() {
+  render(): JSX.Element {
     return (
       <>
         <div className="page-content">
           <DefaultTeachers />
         </div>
-        <DefaultFooter />
       </>
     );
   }

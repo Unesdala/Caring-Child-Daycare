@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { EnrollmentForms, ParentResources, DaycareDocuments } from './ResourceLinks';
 
-const CreateResourceLinks = () => (
+const CreateResourceLinks = (): JSX.Element => (
   <div className="parent-resources">
     <h2>Enrollment Forms</h2>
     {EnrollmentForms.map((EF) => (

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const HigherStandardsContent = () => (
+const HigherStandardsContent = (): JSX.Element => (
   <main className="standards">
 
     <h1>Meeting Higher Standards</h1>

@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const JobsContent = () => (
+const JobsContent = (): JSX.Element => (
   <main className="news">
     <h1>Daily Up and Comings of Caring Child Daycare.</h1>
     <br />

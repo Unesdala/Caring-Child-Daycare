@@ -1,9 +1,6 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-// @ts-nocheck
-import React, { Component } from 'react';
+import React, { Component, Dispatch } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
-import PropTypes from 'prop-types';
 import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 import Navbar from './components/Nav/Navbar';
@@ -38,12 +35,22 @@ import DefaultContact from './containers/Contact/Contact';
 import DefaultJobs from './containers/Jobs/Jobs';
 import FourOhFour from './containers/404';
 import getImages from './actions/imageActions';
-import mapStoreToProps from './redux/mapStoreToProps';
+import mapStoreToProps, { Iimage } from './redux/mapStoreToProps';
+import Footer from './components/Footer/Footer';
 
-export class App extends Component {
-  async componentDidMount(): void {
+export interface AppProps {
+  dispatch: Dispatch<unknown>;
+  images: Iimage[];
+}
+export class App extends Component<AppProps> {
+  static defaultProps = {
+    dispatch: (): void => { },
+    images: [],
+  };
+
+  async componentDidMount(): Promise<void> {
     const { dispatch, images } = this.props;
-    if (images.length === 0)dispatch(getImages());
+    if (images.length === 0) dispatch(getImages());
   }
 
   render(): JSX.Element {
@@ -80,16 +87,11 @@ export class App extends Component {
             </Switch>
           </div>
         </Router>
+        <Footer />
       </div>
 
     );
   }
 }
 
-App.propTypes = {
-  dispatch: PropTypes.func.isRequired,
-  images: PropTypes.oneOfType([PropTypes.arrayOf(PropTypes.shape({})), PropTypes.shape({})]),
-};
-App.defaultProps = { images: [] };
-
-export default connect(mapStoreToProps)(App);
+export default connect(mapStoreToProps, null)(App);

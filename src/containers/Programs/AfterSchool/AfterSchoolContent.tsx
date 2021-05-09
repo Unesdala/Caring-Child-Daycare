@@ -1,7 +1,6 @@
-// @ts-nocheck
 import React from 'react';
 
-const AfterSchoolContent = () => (
+const AfterSchoolContent = (): JSX.Element => (
   <main className="after-school">
 
     <h1>School age children are busy searching the world. We help them to navigate it.</h1>

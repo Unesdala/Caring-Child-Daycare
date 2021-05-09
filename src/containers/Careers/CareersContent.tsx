@@ -1,8 +1,7 @@
-// @ts-nocheck
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const CareerContent = () => (
+const CareerContent = (): JSX.Element => (
   <main className="careers">
     <p>
       We hire people that have a genuine love for young children and who have a

@@ -1,5 +1,4 @@
-// @ts-nocheck
-import commonUtils from '../../src/lib/commonUtils';
+import commonUtils from '../../src/components/lib/commonUtils';
 
 describe('commonUtils', () => {
   it('calls scrollIntoView', () => {
