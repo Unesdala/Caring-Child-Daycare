@@ -16,7 +16,7 @@ const when = (condition, config, negativeConfig) => (condition ? ensureArray(con
 const title = 'Caring Child Daycare';
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
-const baseUrl = '/';
+const baseUrl = '/daycare';
 
 module.exports = (env) => ({
   resolve: {
@@ -54,9 +54,9 @@ module.exports = (env) => ({
     hot: true,
     historyApiFallback: { // serve index.html for all 404 (required for push-state)
       rewrites: [
-        { from: /^\/$/, to: '/' },
-        { from: /^\//, to: '/' },
-        { from: /./, to: '/' },
+        { from: /^\/$/, to: '/daycare' },
+        { from: /^\//, to: '/daycare' },
+        { from: /./, to: '/daycare' },
       ],
     },
     port: parseInt(process.env.PORT, 10),

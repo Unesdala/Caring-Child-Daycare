@@ -21,8 +21,8 @@ const limiter = new RateLimit({
 app.use(limiter);
 
 app.use(express.static(path.normalize(path.join(__dirname, 'dist'))));
-app.use('/', express.static(path.normalize(path.join(__dirname, 'dist'))));
-app.get('/*', (req, res) => {
+app.use('/daycare', express.static(path.normalize(path.join(__dirname, 'dist'))));
+app.get('/daycare/*', (req, res) => {
   res.sendFile(path.normalize(path.join(__dirname, 'dist/index.html')));
 });
 app.listen(process.env.PORT, () => {
