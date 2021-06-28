@@ -1,141 +1,15 @@
-@import 'config';
-@import 'menu';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
 
-* {
-    box-sizing: border-box;
-}
+@import 'base/animations';
+@import 'base/base';
+@import 'base/typography';
+@import 'base/utilities';
 
-body {
-    background-color: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-    line-height: 1.5;
-}
+@import 'components/button';
+@import 'components/form';
 
-img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
-
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
-
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
-
-    opacity: 0.1;
-
-    z-index: -2;
-}
-
-a {
-    color: $secondary-link-color;
-    text-decoration: none;
-
-    &:hover {
-        color: $secondary-color;
-        text-decoration: none;
-        @include easeOut();
-    }
-
-    &:visited {
-        color: $link-visited;
-    }
-}
-
-main {
-    padding: 4rem; // height: 100%;
-    min-height: calc(100vh - 120px);
-}
-
-hr {
-    width: 96%;
-}
-
-nav {
-    text-align: center;
-}
-
-li.resource-link {
-    margin: 0 0 -5px 6px;
-    list-style: none;
-}
-
-@media screen and (max-width: 1024px) {
-
-    /* Specific to this particular image */
-    img.bg {
-        left: 50%;
-        margin-left: -512px;
-        /* 50% */
-    }
-
-    .menu-nav > li {
-        padding: 0px 1.3rem !important;
-    }
-
-}
-
-.page-content {
-    margin-left: 3.5rem;
-}
-
-// Headings
-h1 {
-    margin: 5px 0;
-    font-weight: 400;
-}
-
-h2,
-h3 {
-    margin: 12px 0;
-}
-
-.text-secondary {
-    color: $secondary-color !important;
-}
-
-// Button Styles
-.button {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-
-    &:hover {
-        background-color: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
-}
-
-.btn {
-    margin: 0 -10px;
-    border-radius: 0.25rem;
-}
-
-// Lists
-
-ul {
-    list-style: none;
-}
-
-#contact ul li {
-    margin-left: -30px;
-}
-
-// Footer
-
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-}
-
-@import 'mobile';
+@import 'layout/footer';
+@import 'layout/mobile';
+@import 'layout/navigation';
