@@ -1,9 +1,18 @@
-@import 'config';
-@import 'menu';
-
-* {
-    box-sizing: border-box;
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
+
+// html {
+//   box-sizing: border-box;
+//   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
+// //   @media only screen and (max-width: $bp-largest) {
+// //     font-size: 50%; // 1rem = 8px;
+// //   }
+// }
 
 body {
     background-color: $primary-color;
@@ -50,7 +59,7 @@ a {
 
 main {
     padding: 4rem; // height: 100%;
-    min-height: calc(100vh - 120px);
+    min-height: calc(100vh - 12rem);
 }
 
 hr {
@@ -62,16 +71,16 @@ nav {
 }
 
 li.resource-link {
-    margin: 0 0 -5px 6px;
+    margin: 0 0 -.5rem .6rem;
     list-style: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 102.4rem) {
 
     /* Specific to this particular image */
     img.bg {
         left: 50%;
-        margin-left: -512px;
+        margin-left: -51.2rem;
         /* 50% */
     }
 
@@ -85,39 +94,6 @@ li.resource-link {
     margin-left: 3.5rem;
 }
 
-// Headings
-h1 {
-    margin: 5px 0;
-    font-weight: 400;
-}
-
-h2,
-h3 {
-    margin: 12px 0;
-}
-
-.text-secondary {
-    color: $secondary-color !important;
-}
-
-// Button Styles
-.button {
-    display: block;
-    padding: 0.5rem 1rem;
-    border: 0;
-    margin-bottom: 0.3rem;
-
-    &:hover {
-        background-color: $secondary-color;
-        color: set-text-color($secondary-color);
-    }
-}
-
-.btn {
-    margin: 0 -10px;
-    border-radius: 0.25rem;
-}
-
 // Lists
 
 ul {
@@ -125,17 +101,5 @@ ul {
 }
 
 #contact ul li {
-    margin-left: -30px;
+    margin-left: -3rem;
 }
-
-// Footer
-
-#main-footer {
-    text-align: center;
-    padding: 1rem;
-    background-color: darken($primary-color, 10);
-    color: set-text-color($primary-color);
-    height: 60px;
-}
-
-@import 'mobile';
