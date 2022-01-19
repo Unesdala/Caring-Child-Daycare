@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SummerCampContent = (): JSX.Element => (
   <main className="summer-camp">
 

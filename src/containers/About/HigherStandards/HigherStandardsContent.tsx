@@ -1,5 +1,3 @@
-import React from 'react';
-
 const HigherStandardsContent = (): JSX.Element => (
   <main className="standards">
 

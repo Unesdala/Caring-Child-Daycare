@@ -1,4 +1,4 @@
-import React, { PureComponent } from 'react';
+import { PureComponent } from 'react';
 import { Redirect } from 'react-router-dom';
 
 export default class FourOhFour extends PureComponent {

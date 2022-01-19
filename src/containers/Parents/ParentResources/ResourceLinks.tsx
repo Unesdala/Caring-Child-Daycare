@@ -1,4 +1,3 @@
-
 const EnrollmentForms = [
   {
     name: 'Registration Paperwork',

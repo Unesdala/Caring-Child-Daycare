@@ -1,3 +1,5 @@
+@use "sass:color";
+
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
@@ -7,8 +9,8 @@
   .menu {
       &-nav {
           margin: 0;
-          padding-left: 1rem;
-          background-color: darken($link-color, 5);
+          margin-left: -2.5rem;
+          background-color: color.adjust($link-color, $lightness: -5%);
           list-style: none;
           border-top: thin solid slategrey;
           border-bottom: thin solid slategrey;
@@ -66,7 +68,7 @@
 
   .btn-secondary:focus, .btn-secondary:active {
       background-color: $link-color !important;
-      border-color: darken($primary-color, 5) !important;
+      border-color: color.adjust($primary-color, $lightness: -5%) !important;
       box-shadow: 0 0 0 0.1rem rgba(130,138,145,.5);
   }
 

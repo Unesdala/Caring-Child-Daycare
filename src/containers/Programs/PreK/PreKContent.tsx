@@ -1,5 +1,3 @@
-import React from 'react';
-
 const PreKContent = (): JSX.Element => (
   <main className="pre-k">
 
