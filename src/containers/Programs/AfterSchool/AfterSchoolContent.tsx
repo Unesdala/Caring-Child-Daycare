@@ -1,5 +1,3 @@
-import React from 'react';
-
 const AfterSchoolContent = (): JSX.Element => (
   <main className="after-school">
 

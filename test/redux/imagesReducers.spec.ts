@@ -1,9 +1,11 @@
-
-import reducer from '../../src/redux/reducers/imagesReducer';
+/* eslint-disable @typescript-eslint/no-explicit-any */
+import reducer from 'src/redux/reducers/imagesReducer';
 
 describe('fetch reducer', () => {
-  it('should return the initial state', () => {
-    expect(reducer(undefined, {})).toEqual(
+  it('returns the initial state', () => {
+    expect(reducer(undefined, {
+      type: '',
+    })).toEqual(
       {
         images: [],
         isFetching: false,
@@ -12,9 +14,11 @@ describe('fetch reducer', () => {
       },
     );
   });
-  it('should handle fetch images', () => {
+  it('handles fetch images', () => {
     expect(
-      reducer(undefined, { type: 'FETCH_IMAGES' }),
+      reducer(undefined, {
+        type: 'FETCH_IMAGES',
+      }),
     ).toEqual(
       {
         images: [],
@@ -24,22 +28,15 @@ describe('fetch reducer', () => {
       },
     );
   });
-  it('should handle fetched images', () => {
-    expect(
-      reducer(undefined, {
-        type: 'FETCHED_IMAGES',
-        data: [{}],
-      }),
-    ).toEqual(
-      {
-        images: [{}],
-        isFetching: false,
-        isError: false,
-        error: '',
-      },
-    );
+  it('handles FETCHED_IMAGES', () => {
+    const testImage:any = { _id: 'testid' };
+    const newState: any = reducer(undefined, {
+      type: 'FETCHED_IMAGES',
+      data: [testImage],
+    });
+    expect(newState.images[0]._id).toBe('testid');
   });
-  it('should handle receive error', () => {
+  it('handles RECEIVE_ERROR', () => {
     expect(
       reducer(undefined, {
         type: 'RECEIVE_ERROR',
@@ -51,6 +48,20 @@ describe('fetch reducer', () => {
         isFetching: false,
         isError: true,
         error: 'bad',
+      },
+    );
+  });
+  it('handles RECEIVE_ERROR when unknown error', () => {
+    expect(
+      reducer(undefined, {
+        type: 'RECEIVE_ERROR',
+      }),
+    ).toEqual(
+      {
+        images: [],
+        isFetching: false,
+        isError: true,
+        error: 'unknown error',
       },
     );
   });

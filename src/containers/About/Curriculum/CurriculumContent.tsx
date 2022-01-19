@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CurriculumContent = (): JSX.Element => (
   <main className="curriculum">
 

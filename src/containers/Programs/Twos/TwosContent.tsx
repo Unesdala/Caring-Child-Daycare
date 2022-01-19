@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TwosContent = (): JSX.Element => (
   <main className="twos">
 

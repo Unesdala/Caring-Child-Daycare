@@ -1,4 +1,3 @@
-import React from 'react';
 import CreateResourceLinks from './ParentResourceLinks';
 
 const ParentResourcesContent = (): JSX.Element => (

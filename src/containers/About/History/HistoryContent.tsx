@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CaringChildHistoryContent = (): JSX.Element => (
   <main className="history">
 

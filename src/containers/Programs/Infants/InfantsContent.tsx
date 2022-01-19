@@ -1,5 +1,3 @@
-import React from 'react';
-
 const InfantsContent = (): JSX.Element => (
   <main className="infants">
     <h1>Infants and Toddlers have their own individual personalities.</h1>

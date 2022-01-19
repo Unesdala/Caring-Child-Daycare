@@ -1,5 +1,5 @@
 /* eslint-disable @typescript-eslint/ban-ts-comment */
-import React, { Component } from 'react';
+import { Component } from 'react';
 import commonUtils from '../../../components/lib/commonUtils';
 import DefaultAfterSchoolContent from './AfterSchoolContent';
 

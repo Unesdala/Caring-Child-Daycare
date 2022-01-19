@@ -1,4 +1,3 @@
-import React from 'react';
 import { EnrollmentForms, ParentResources, DaycareDocuments } from './ResourceLinks';
 
 const CreateResourceLinks = (): JSX.Element => (

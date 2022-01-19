@@ -1,5 +1,3 @@
-import React from 'react';
-
 const CaringChildDifferenceContent = (): JSX.Element => (
   <main className="difference">
 

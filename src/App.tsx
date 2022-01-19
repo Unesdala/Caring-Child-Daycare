@@ -1,4 +1,4 @@
-import React, { Component, Dispatch } from 'react';
+import { Component, Dispatch } from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { connect } from 'react-redux';
 import 'core-js/stable';

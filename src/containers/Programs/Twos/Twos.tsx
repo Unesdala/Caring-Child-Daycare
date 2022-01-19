@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import { Component } from 'react';
 import commonUtils from '../../../components/lib/commonUtils';
 import DefaultTwosContent from './TwosContent';
 

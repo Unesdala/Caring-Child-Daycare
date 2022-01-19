@@ -1,5 +1,3 @@
-import React from 'react';
-
 const TestimonialsContent = (): JSX.Element => (
   <main className="testimonials">
     <h1>What parents think about Caring Child.</h1>

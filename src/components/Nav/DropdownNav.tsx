@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import {
   Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Navbar, Nav, NavItem, NavLink,
 } from 'reactstrap';
@@ -17,7 +17,7 @@ export const AboutNav = (): JSX.Element => {
             About Caring Child
             <DropdownMenu>
               <DropdownItem>
-                <NavItem><NavLink to="/daycare/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>About Us</NavLink></NavItem>
+                <NavLink to="/daycare/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>About Us</NavLink>
               </DropdownItem>
               <DropdownItem>
                 <NavLink to="/daycare/about/caring-child-history" tag={RRNavLink} onClick={toggle}>
