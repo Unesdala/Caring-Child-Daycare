@@ -25,7 +25,7 @@
   ],
   "keywords": [
     "React",
-    "Babel",
+    "Typescript",
     "Webpack",
     "Jest"
   ],
@@ -50,8 +50,6 @@
     "@types/enzyme": "^3.10.5",
     "@types/html-webpack-plugin": "latest",
     "@types/jest": "^27.4.0",
-    "@types/materialize-css": "^1.0.8",
-    "@types/mini-css-extract-plugin": "latest",
     "@types/node": "latest",
     "@types/react": "^17.0.2",
     "@types/react-dom": "^17.0.2",

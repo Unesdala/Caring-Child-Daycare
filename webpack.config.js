@@ -16,7 +16,7 @@ const nodeEnv = process.env.NODE_ENV || 'development';
 const title = 'Caring Child Daycare';
 const outDir = path.resolve(__dirname, 'dist');
 const srcDir = path.resolve(__dirname, 'src');
-const baseUrl = '/';
+const baseUrl = '/daycare';
 const envVars = ['NODE_ENV', 'BackendUrl', 'GoogleClientId', 'userRoles', 'HashString'];
 if (nodeEnv === 'development')envVars.push('PORT');
 
