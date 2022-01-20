@@ -32,7 +32,6 @@
   "license": "MIT",
   "scripts": {
     "build:prod": "rm -rf dist && npx webpack --node-env=production --progress --env production",
-    "test:cc": "npm test:lint && jest --config jest.config.json --no-cache --maxWorkers=2",
     "cc": "codeclimate analyze -f html > codeclimate.html",
     "start": "webpack serve --node-env=development --env --inline",
     "test:stylelint": "stylelint \"static/**/*.scss\"",
@@ -41,7 +40,7 @@
     "test": "npm run test:lint && npm run test:jest",
     "test:local": "npm run test:lint-fix && npm run test:jest && npm run cc",
     "test:jest": "jest --config jest.config.json --no-cache --runInBand",
-    "cleaninstall": "rm -rf npm.lock && rm -rf package-lock.json && rm -rf node_modules && npm cache clean --force && npm install",
+    "cleaninstall": "rm -rf yarn.lock && rm -rf package-lock.json && rm -rf node_modules && npm cache clean --force && npm install",
     "postinstall": "npm run build:prod"
   },
   "dependencies": {
@@ -50,6 +49,7 @@
     "@types/ejs": "^3.0.1",
     "@types/enzyme": "^3.10.5",
     "@types/html-webpack-plugin": "latest",
+    "@types/jest": "^27.4.0",
     "@types/materialize-css": "^1.0.8",
     "@types/mini-css-extract-plugin": "latest",
     "@types/node": "latest",
@@ -64,6 +64,7 @@
     "@types/superagent": "^4.1.7",
     "@types/webpack-bundle-analyzer": "latest",
     "@types/webpack-env": "latest",
+    "@wojtekmaj/enzyme-adapter-react-17": "latest",
     "bootstrap": "^5.1.3",
     "copy-webpack-plugin": "^9.0.0",
     "core-js": "latest",
@@ -113,14 +114,12 @@
   "devDependencies": {
     "@testing-library/jest-dom": "latest",
     "@testing-library/react": "latest",
-    "@types/jest": "^27.4.0",
     "@types/jest-environment-puppeteer": "latest",
     "@types/jsonwebtoken": "^8.5.4",
     "@types/react-test-renderer": "latest",
     "@types/redux-mock-store": "latest",
     "@typescript-eslint/eslint-plugin": "latest",
     "@typescript-eslint/parser": "latest",
-    "@wojtekmaj/enzyme-adapter-react-17": "latest",
     "enzyme": "latest",
     "eslint": "latest",
     "eslint-config-airbnb": "latest",
