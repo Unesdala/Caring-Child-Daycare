@@ -1,5 +1,5 @@
 const HomeContent = (): JSX.Element => (
-  <main className="homepage">
+  <>
     <h1>Your child&apos;s future never looked so bright.</h1>
     <br />
     <p>
@@ -13,7 +13,7 @@ const HomeContent = (): JSX.Element => (
     <p>
       There&apos;s never a dull moment at Caring Child!
     </p>
-  </main>
+  </>
 );
 
 export default HomeContent;

@@ -1,9 +1,6 @@
-@use "sass:color";
-
-#main-footer {
+.main-footer {
   text-align: center;
-  padding: 1rem;
-  background-color: color.adjust($primary-color, $lightness: -10%);
+  padding: .75rem;
+  background-color: $darken-2;
   color: set-text-color($primary-color);
-  height: 1rem;
 }
