@@ -2,7 +2,8 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  background-color: $darken-1;
+  background-color: $white;
+  border-bottom: red 10px solid;
 
 
   @include respond('medium') {
@@ -30,12 +31,12 @@
                 font-size: 30px;
                 text-transform: uppercase;
                 font-weight: 300;
-                color: set-text-color($primary-color) !important;
+                color: set-text-color($black) !important;
                 text-decoration: none;
                 @include easeOut;
               
                 &.active {
-                    color: $secondary-color !important;
+                    color: $black !important;
                 }
               
                 &:hover {
@@ -68,11 +69,11 @@
         font-size: 30px;
         text-transform: uppercase;
         font-weight: 300;
-        color: set-text-color($primary-color);
+        color: $black;
         text-decoration: none;
   
         &.active {
-            color: $secondary-color;
+            color: $black;
         }
   
         &:hover {

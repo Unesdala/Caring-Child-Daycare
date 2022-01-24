@@ -16,16 +16,14 @@ export class App extends PureComponent {
     return (
       <React.StrictMode>
         <div id="App" className="App Site">
-        <Router>
-          <NavBar />
-          <>
-            <Switch>
-              <Route exact path="/" component={DefaultHome} />
-              <Route component={AppFourOhFour} />
-            </Switch>
-          </>
-          <Footer />
-        </Router>
+          <Router>
+            <NavBar />
+              <Switch>
+                <Route exact path="/daycare" component={DefaultHome} />
+                <Route component={AppFourOhFour} />
+              </Switch>
+            <Footer />
+          </Router>
       </div>
       </React.StrictMode>
     );

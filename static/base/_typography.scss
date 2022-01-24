@@ -1,5 +1,3 @@
-
-
 h1, h2, h3 {
     margin: 0;
     font-weight: 400;
@@ -29,6 +27,10 @@ h2 {
     @include respond('medium') {
         font-size: calc(1.1rem + 0.7vw);
     }
+}
+
+.bright {
+    color: $bright;
 }
 
 .text-secondary {
