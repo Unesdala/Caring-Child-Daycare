@@ -43,7 +43,7 @@ body {
     main {
       &[class$=-main] {
         width: 80%;
-        padding: 10rem 0 4rem 5rem;
+        padding: 5rem 0 4rem 5rem;
 
         @include respond('large') {
           padding: 7rem 0 0 0;
@@ -51,12 +51,12 @@ body {
         }
 
         @include respond('medium') {
-          padding: 5rem 0 0 0;
+          padding: 3rem 0 0 0;
           margin: auto;
         }
 
         @include respond('extra-small') {
-          padding: 3.5rem 0 0 0;
+          padding: 2.5rem 0 0 0;
         }
       }
     }

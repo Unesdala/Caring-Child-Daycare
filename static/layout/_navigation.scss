@@ -5,7 +5,6 @@
   background-color: $color-white;
   border-bottom: $border-top;
 
-
   @include respond('medium') {
     flex-direction: column;
       .navbar {
@@ -33,14 +32,14 @@
                 font-weight: 300;
                 color: set-text-color($color-black) !important;
                 text-decoration: none;
-                @include easeOut;
-              
+
                 &.active {
-                    color: $color-black !important;
+                    color: $color-secondary !important;
                 }
               
                 &:hover {
                     color: $color-secondary !important;
+                    @include easeOut();
                 }
               }
             }
@@ -53,6 +52,16 @@
         margin: 0;
         padding-left: 1rem;
         list-style: none;
+    }
+
+    button {
+      &.active, &:active {
+        background-color: $light-blue-2;
+      }
+    }
+  
+    .dropdown-item {
+      width: 90%;
     }
   
     .nav {
@@ -71,9 +80,15 @@
         font-weight: 300;
         color: $color-black;
         text-decoration: none;
-  
-        &.active {
+
+        &.no-hover-color {
+          &:hover, &.active {
             color: $color-black;
+          }
+        }
+
+        &.active {
+          color: $color-secondary;
         }
   
         &:hover {

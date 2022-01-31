@@ -16,16 +16,14 @@ const MobileNav = (): JSX.Element => {
         <NavbarToggler onClick={toggleNavbar} />
         <Collapse isOpen={!collapsed} navbar>
           <ul className="menu-nav">
-            <li className="nav-item">
-              <NavLink 
-                to="/daycare" 
-                exact activeClassName="active" 
-                tag={RRNavLink} 
-                onClick={toggleNavbar}
-              >
-                Home
-              </NavLink>
-            </li>
+            <NavLink 
+              to="/" 
+              exact activeClassName="active" 
+              tag={RRNavLink} 
+              onClick={toggleNavbar}
+            >
+              Home
+            </NavLink>
           </ul>
         </Collapse>
       </Navbar>
