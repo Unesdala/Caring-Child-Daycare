@@ -7,8 +7,8 @@
 }
 
 body {
-  background-color: $white;
-  // color: set-text-color($primary-color);
+  background-color: $color-white;
+  // color: set-text-color($color-primary);
 }
 
 .Site {
@@ -32,6 +32,11 @@ body {
 
       p, blockquote {
         margin: 0 10px;
+      }
+
+      figcaption {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
       }
     }
   
@@ -61,7 +66,7 @@ body {
       text-decoration: none;
 
       &:hover {
-        color: $secondary-color;
+        color: $color-secondary;
         @include easeOut();
       }
     }

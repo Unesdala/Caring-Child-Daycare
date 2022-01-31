@@ -58,7 +58,7 @@ const HomeContent = (): JSX.Element => (
         </figcaption>
       </figure>
       <br />
-      <button className="review-button">Read More Reviews</button>
+      <button className="btn btn--white review-button">Read More Reviews</button>
     </section>
   </>
 );
