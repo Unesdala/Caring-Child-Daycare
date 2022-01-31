@@ -46,9 +46,14 @@
   }
 
   &--links {
-    @include respond('medium') {
-      display: flex;
-      flex-direction: column;
+    a {
+      font-size: 18px;
+      text-decoration: none;
+      color: $color-black;
+
+      @include respond('medium') {
+        font-size: 15px;
+      }
     }
   }
 }

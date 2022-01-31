@@ -1,7 +1,7 @@
 const HomeContent = (): JSX.Element => (
   <>
     <section className="home-main--introduction">
-      <h1>Your child&apos;s future never looked so <span className="bright">bright.</span></h1>
+      <h1>Your child&apos;s future never looked so <span className="secondary-text">bright.</span></h1>
       <br />
       <p>
         Welcome to Caring Child Daycare &ndash; A learning center dedicated to the future of you child&apos;s well being.

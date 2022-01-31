@@ -17,9 +17,9 @@ const Footer = (): JSX.Element => (
       </a>
     </div>
     <div className="main-footer--links">
-      <button className="main-footer--links__tour btn btn-white">Request A Tour</button>
-      <button className="main-footer--links__contact btn btn-white">Contact Us</button>
-      <button className="main-footer--links__privacy btn btn-white">Privacy Policy</button>
+      <a href="#">Request A Tour</a><span className="nb-space">|</span>
+      <a href="#">Contact Us</a><span className="nb-space">|</span>
+      <a href="#">Privacy Policy</a>
     </div>
     <div className="main-footer--logo">
       <h1>Logo</h1>

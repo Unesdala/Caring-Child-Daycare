@@ -29,14 +29,14 @@ h2 {
     }
 }
 
-.bright {
-    color: $light-blue;
-}
-
-.text-secondary {
-  color: $color-secondary !important;
+.secondary-text {
+  color: $light-blue;
 }
 
 .underline {
     text-decoration: underline;
+}
+
+.nb-space {
+    padding: 0 5px;
 }
