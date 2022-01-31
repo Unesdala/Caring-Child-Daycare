@@ -41,4 +41,10 @@
         padding: 0.4rem;
     }
   }
+
+  @include respond('medium') {
+    button {
+      margin: auto 25%;
+    }
+  }
 }

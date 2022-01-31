@@ -4,4 +4,31 @@
   background-color: $white;
   color: $black;
   border-top: red 10px solid;
+
+  h1 {
+    margin-bottom: 1rem !important;
+  }
+
+  &--locations, &--social, &--links, &--logo {
+    margin: 1rem 0;
+  }
+
+  &--locations_buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  &--social {
+    a {
+      .fab {
+        padding: .4rem;
+        font-size: 2rem;
+        color: $dark-blue;
+        &:hover {
+          color: $light-blue;
+          transition: all .5s ease-out;
+        }
+      }
+    }
+  }
 }

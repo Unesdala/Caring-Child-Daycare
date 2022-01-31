@@ -18,6 +18,22 @@ body {
 
   .Site-content {
     flex: 1;
+
+    @include respond('medium') {
+      margin-bottom: 2rem;
+
+      h1, button {
+        text-align: center;
+      }
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+
+      p, blockquote {
+        margin: 0 10px;
+      }
+    }
   
     main {
       &[class$=-main] {
