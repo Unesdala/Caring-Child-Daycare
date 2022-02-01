@@ -1,5 +1,5 @@
 import { NavLink } from 'react-router-dom';
-import { AboutNav } from './DropdownNavs';
+import { AboutNav, ProgramNav } from './DropdownNavs';
 
 export const DesktopMenu = (): JSX.Element => {
   return (
@@ -12,11 +12,7 @@ export const DesktopMenu = (): JSX.Element => {
             </NavLink>
           </li>
             <AboutNav />
-          <li className="nav-item">
-            <NavLink to="/programs/" className="nav-link" exact activeClassName="active">
-              Programs
-            </NavLink>
-          </li>
+            <ProgramNav />
           <li className="nav-item">
             <NavLink to="/locations" className="nav-link" exact activeClassName="active">
               Locations

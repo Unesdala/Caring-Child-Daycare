@@ -54,7 +54,7 @@ const HomeContent = (): JSX.Element => (
           </p>
         </blockquote>
         <figcaption>
-          - Some Family
+          &ndash; Some Family
         </figcaption>
       </figure>
       <br />

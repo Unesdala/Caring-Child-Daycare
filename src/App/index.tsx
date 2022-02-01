@@ -14,13 +14,12 @@ import DefaultCurriculum from 'src/containers/About/Curriculum/Curriculum';
 import DefaultFAQ from 'src/containers/About/FAQ/FAQ';
 // End About
 // Programs Submenu
-// import DefaultPrograms from 'src/containers/Programs/Programs';
-// import DefaultAfterSchool from 'src/containers/Programs/AfterSchool/AfterSchool';
-// import DefaultInfants from 'src/containers/Programs/Infants/Infants';
-// import DefaultPreK from 'src/containers/Programs/PreK/PreK';
-// import DefaultPreSchool from 'src/containers/Programs/PreSchool/PreSchool';
-// import DefaultSummerCamp from 'src/containers/Programs/SummerCamp/SummerCamp';
-// import DefaultTwos from 'src/containers/Programs/Twos/Twos';
+import DefaultAfterSchool from 'src/containers/Programs/AfterSchool/AfterSchool';
+import DefaultInfants from 'src/containers/Programs/Infants/Infants';
+import DefaultPreK from 'src/containers/Programs/PreK/PreK';
+import DefaultPreSchool from 'src/containers/Programs/PreSchool/PreSchool';
+import DefaultSummerCamp from 'src/containers/Programs/SummerCamp/SummerCamp';
+import DefaultTwos from 'src/containers/Programs/Twos/Twos';
 // End Programs
 // import DefaultOurCenters from 'src/containers/Centers/OurCenters';
 // Parents Submenu
@@ -49,6 +48,12 @@ export class App extends PureComponent {
                 <Route exact path="/about/caring-child-history" component={DefaultHistory} />
                 <Route exact path="/about/curriculum" component={DefaultCurriculum} />
                 <Route exact path="/about/faq" component={DefaultFAQ} />
+                <Route exact path="/programs/infants-and-toddlers" component={DefaultInfants} />
+                <Route exact path="/programs/twos" component={DefaultTwos} />
+                <Route exact path="/programs/preschool" component={DefaultPreSchool} />
+                <Route exact path="/programs/private-pre-k" component={DefaultPreK} />
+                <Route exact path="/programs/after-school" component={DefaultAfterSchool} />
+                <Route exact path="/programs/summer-camp" component={DefaultSummerCamp} />
                 <Route component={AppFourOhFour} />
               </Switch>
             <Footer />

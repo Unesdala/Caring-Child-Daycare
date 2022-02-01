@@ -46,7 +46,7 @@ const AboutContent = (): JSX.Element => (
       <h1>Meeting Higher Standards</h1>
 
       <p>
-        Caring Child Daycare is partnered with Virginian&apos;s For Higher Standards – a non profit organization
+        Caring Child Daycare is partnered with Virginian&apos;s For Higher Standards &ndash; a non profit organization
         that looks into and rates businesses based on a formulaic check list and gives them a rating based on its own, interdependent findings.
       </p>
 
@@ -101,7 +101,7 @@ const AboutContent = (): JSX.Element => (
       <p>
         As a part of our Financial Relief System, we offer parents the option to have their child provided
         supper during the times they are at our centers.
-        While this is included as a standard for any child that stays past 4 pm – feel free to
+        While this is included as a standard for any child that stays past 4 pm &ndash; feel free to
         talk to a member of staff to have a packed meal provided for supper at
         home if needed. No child deserves to go hungry, and parents shouldn&apos;t have to worry about where
         their children&apos;s next meal is going to come from.
@@ -116,7 +116,7 @@ const AboutContent = (): JSX.Element => (
           </p>
         </blockquote>
         <figcaption>
-          - Jimmy J. Cricket, Founder of Caring Child Daycare
+          &ndash; Jimmy J. Cricket, Founder of Caring Child Daycare
         </figcaption>
       </figure>
 
