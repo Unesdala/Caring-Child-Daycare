@@ -11,7 +11,7 @@ import DefaultHome from 'src/containers/Homepage/Homepage';
 import DefaultAbout from 'src/containers/About/About';
 import DefaultHistory from 'src/containers/About/History/History';
 import DefaultCurriculum from 'src/containers/About/Curriculum/Curriculum';
-// import DefaultFAQ from 'src/containers/About/FAQ/FAQ';
+import DefaultFAQ from 'src/containers/About/FAQ/FAQ';
 // End About
 // Programs Submenu
 // import DefaultPrograms from 'src/containers/Programs/Programs';
@@ -48,6 +48,7 @@ export class App extends PureComponent {
                 <Route exact path="/about/" component={DefaultAbout} />
                 <Route exact path="/about/caring-child-history" component={DefaultHistory} />
                 <Route exact path="/about/curriculum" component={DefaultCurriculum} />
+                <Route exact path="/about/faq" component={DefaultFAQ} />
                 <Route component={AppFourOhFour} />
               </Switch>
             <Footer />
