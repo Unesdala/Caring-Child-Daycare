@@ -20,7 +20,7 @@ const AboutNav = (): JSX.Element => {
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem>
-          <NavLink to="/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>About Us</NavLink>
+          <NavLink to="/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>About Caring Child</NavLink>
         </DropdownItem>
         <DropdownItem>
           <NavLink to="/about/caring-child-history" tag={RRNavLink} onClick={toggle}>
@@ -28,23 +28,8 @@ const AboutNav = (): JSX.Element => {
           </NavLink>
         </DropdownItem>
         <DropdownItem>
-          <NavLink to="/about/caring-child-difference" tag={RRNavLink} onClick={toggle}>
-            The Caring Child Difference
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/about/meeting-higher-standards" tag={RRNavLink} onClick={toggle}>
-            Meeting Higher Standards
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem>
           <NavLink to="/about/curriculum" tag={RRNavLink} onClick={toggle}>
             Curriculum
-          </NavLink>
-        </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/about/meet-the-teachers" tag={RRNavLink} onClick={toggle}>
-            Meet The Teachers
           </NavLink>
         </DropdownItem>
         <DropdownItem>
