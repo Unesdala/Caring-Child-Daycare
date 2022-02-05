@@ -66,7 +66,7 @@ export class App extends PureComponent {
                 {/*Parents Submenu*/}
                 <Route exact path="/parents/parents-corner" component={DefaultParents} />
                 <Route exact path="/parents/parents-resources" component={DefaultParentResources} />
-                <Route exact path="/locations/testimonials" component={DefaultTestimonials} />
+                <Route exact path="/parents/testimonials" component={DefaultTestimonials} />
                 {/*Careers Submenu*/}
                 <Route exact path="/careers/" component={DefaultCareers} />
                 <Route exact path="/careers/job-descriptions" component={DefaultJobs} />
