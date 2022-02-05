@@ -6,7 +6,10 @@ $color-secondary: #2245cf;
 $light-blue-1: #314ebd;
 $light-blue-2: #cfe2ff;
 
-$dark-blue: #152b85;
+$dark-blue-1: #152b85;
+$dark-blue-2: #0d4293;
+
+$dark-green-1: #0f622c;
 
 $color-white: #fff;
 $color-black: #000;
@@ -25,9 +28,9 @@ $darken-2: color.adjust($color-primary, $lightness: -10%);
 $darken-3: color.adjust($color-primary, $lightness: -50%);
 
 // BOX SHADOW
-$box-shadow-1: 0 1.5rem 4rem rgba($dark-blue, .15);
-$box-shadow-2: 0 1rem 2rem  rgba($dark-blue, .6);
-$box-shadow-3:  0 .5rem 1rem rgba($dark-blue, .6);
+$box-shadow-1: 0 1.5rem 4rem rgba($dark-blue-1, .15);
+$box-shadow-2: 0 1rem 2rem  rgba($dark-blue-1, .6);
+$box-shadow-3:  0 .5rem 1rem rgba($dark-blue-1, .6);
 
 // BORDER
 $border-radius-primary: .3rem;

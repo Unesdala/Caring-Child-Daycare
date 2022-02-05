@@ -94,4 +94,78 @@ const ProgramNav = (): JSX.Element => {
   );
 };
 
-export { AboutNav, ProgramNav };
+const LocationsNav = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <Dropdown
+      nav
+      isOpen={isOpen} toggle={toggle}
+    >
+      <DropdownToggle
+        caret
+        nav
+        className="no-hover-color"
+      >
+        Caring Locations
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem>
+          <NavLink to="/locations/vinton-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            Vinton
+          </NavLink>
+        </DropdownItem>
+        <DropdownItem>
+          <NavLink to="/locations/460-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            460 Center
+          </NavLink>
+        </DropdownItem>
+        <DropdownItem>
+          <NavLink to="/locations/parkway-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            Parkway Center
+          </NavLink>
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  );
+};
+
+const ParentsNav = (): JSX.Element => {
+  const [isOpen, setIsOpen] = useState(false);
+  const toggle = () => setIsOpen(!isOpen);
+
+  return (
+    <Dropdown
+      nav
+      isOpen={isOpen} toggle={toggle}
+    >
+      <DropdownToggle
+        caret
+        nav
+        className="no-hover-color"
+      >
+        The Parent's Corner
+      </DropdownToggle>
+      <DropdownMenu>
+        <DropdownItem>
+          <NavLink to="/parents/parents-corner" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            Parent's Corner
+          </NavLink>
+        </DropdownItem>
+        <DropdownItem>
+          <NavLink to="/parents/parents-resources" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            Parent's Resources
+          </NavLink>
+        </DropdownItem>
+        <DropdownItem>
+          <NavLink to="/parents/testimonials" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+            Testimonials
+          </NavLink>
+        </DropdownItem>
+      </DropdownMenu>
+    </Dropdown>
+  );
+};
+
+export { AboutNav, ProgramNav, LocationsNav, ParentsNav };
