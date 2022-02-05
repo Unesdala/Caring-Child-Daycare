@@ -2,10 +2,21 @@ main.home-main {
   overflow: hidden;
 
   .program-grid {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin-bottom: 10px;
+
+    &--infants, &--twos, &--preschool, &--private-pre-k, &--after-school, &--summer-school {
+      display: inline-grid;
+      justify-items: center;
+    }
+
+    &--picture {
+      height: 250px;
+    }
 
     @include respond('medium') {
-      flex-direction: column;
+      grid-template-columns: repeat(1, auto);
       align-items: center;
       margin: 2rem 0;
     }

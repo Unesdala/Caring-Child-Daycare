@@ -4,6 +4,7 @@ import 'regenerator-runtime/runtime';
 import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
+import ScrollToTop from 'src/components/Navigation/ScrollToTop';
 import AppFourOhFour from './404';
 import NavBar from 'src/components/Navigation/Navbar';
 import DefaultHome from 'src/containers/Homepage/Homepage';
@@ -44,6 +45,7 @@ export class App extends PureComponent {
       <React.StrictMode>
         <div id="App" className="App Site">
           <Router>
+            <ScrollToTop />
             <NavBar />
               <Switch>
                 <Route exact path="/" component={DefaultHome} />

@@ -3,25 +3,31 @@ import { EnrollmentForms, ParentResources, DaycareDocuments } from './ResourceLi
 const CreateResourceLinks = (): JSX.Element => (
   <div className="parent-resources">
     <h2>Enrollment Forms</h2>
-    {EnrollmentForms.map((EF) => (
-      <li className="resource-link">
-        <a href={EF.url} target="blank" rel="noopener noreferrer">{EF.name}</a>
-      </li>
-    ))}
+    <ul>
+      {EnrollmentForms.map((EF) => (
+        <li className="resource-link" key={EF.name}>
+          <a href={EF.url} target="blank" rel="noopener noreferrer">{EF.name}</a>
+        </li>
+      ))}
+    </ul>
 
     <h2>Parent Resources</h2>
-    {ParentResources.map((PR) => (
-      <li className="resource-link">
-        <a href={PR.url} target="blank" rel="noopener noreferrer">{PR.name}</a>
-      </li>
-    ))}
+    <ul>
+      {ParentResources.map((PR) => (
+        <li className="resource-link" key={PR.name}>
+          <a href={PR.url} target="blank" rel="noopener noreferrer">{PR.name}</a>
+        </li>
+      ))}
+    </ul>
 
     <h2>Daycare Documents</h2>
-    {DaycareDocuments.map((DD) => (
-      <li className="resource-link">
-        <a href={DD.url} target="blank" rel="noopener noreferrer">{DD.name}</a>
-      </li>
-    ))}
+    <ul>
+      {DaycareDocuments.map((DD) => (
+        <li className="resource-link" key={DD.name}>
+          <a href={DD.url} target="blank" rel="noopener noreferrer">{DD.name}</a>
+        </li>
+      ))}
+    </ul>
   </div>
 );
 

@@ -17,32 +17,27 @@
           top: 2px;
         }
 
-        .nav {
-          flex-direction: column;
+        .menu-nav {
 
-          &-item {
-            text-align: left;
-            list-style-type: none;
+          .nav-link {
+            position: relative;
+            padding: 0 .3rem 0 0 !important;
+            font-size: 26px;
+            text-transform: uppercase;
+            font-weight: 300;
+            color: $color-black;
+            text-decoration: none;
+            text-align: center;
 
-              .nav-link {
-                display: inline-block;
-                position: relative;
-                font-size: 24px;
-                text-transform: uppercase;
-                font-weight: 300;
-                color: set-text-color($color-black) !important;
-                text-decoration: none;
-
-                &.active {
-                    color: $color-secondary !important;
-                }
-              
-                &:hover {
-                    color: $color-secondary !important;
-                    @include easeOut();
-                }
-              }
+            &.active {
+              color: $color-secondary;
             }
+      
+            &:hover {
+                color: $color-secondary;
+                @include easeOut();
+            }
+          }
         }
       }
     }
