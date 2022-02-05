@@ -17,7 +17,7 @@ const ParentsContent = (): JSX.Element => (
     <p>
       Feel free to browse our
       {' '}
-      <Link to="/parents/resources">parent resources</Link>
+      <Link to="/parents/parents-resources">parent resources</Link>
       {' '}
       or take a look at what other parents
       {' '}
