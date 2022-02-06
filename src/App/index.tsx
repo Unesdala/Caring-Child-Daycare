@@ -5,8 +5,9 @@ import React, { PureComponent } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import { connect } from 'react-redux';
 import ScrollToTop from 'src/components/Navigation/ScrollToTop';
-import AppFourOhFour from './404';
 import NavBar from 'src/components/Navigation/Navbar';
+import AppFourOhFour from './404';
+import Privacy from './Privacy';
 import DefaultHome from 'src/containers/Homepage/Homepage';
 // About Submenu
 import DefaultAbout from 'src/containers/About/About';
@@ -73,6 +74,7 @@ export class App extends PureComponent {
                 <Route exact path="/careers/" component={DefaultCareers} />
                 <Route exact path="/careers/job-descriptions" component={DefaultJobs} />
                 <Route exact path="/contact" component={DefaultContact} />
+                <Route exact path="/privacy" component={Privacy} />
                 <Route component={AppFourOhFour} />
               </Switch>
             <Footer />

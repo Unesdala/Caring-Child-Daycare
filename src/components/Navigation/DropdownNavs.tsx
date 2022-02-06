@@ -56,7 +56,7 @@ const ProgramNav = (): JSX.Element => {
         nav
         className="no-hover-color"
       >
-        Caring Programs
+        Programs
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem>
@@ -108,7 +108,7 @@ const LocationsNav = (): JSX.Element => {
         nav
         className="no-hover-color"
       >
-        Caring Locations
+        Locations
       </DropdownToggle>
       <DropdownMenu>
         <DropdownItem>

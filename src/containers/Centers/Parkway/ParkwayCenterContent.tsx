@@ -1,69 +1,51 @@
-import { Link } from 'react-router-dom';
+const ParkwayCenterContent = (): JSX.Element => (
+  <main className="parkway-main--content">
+    <section className="parkway-main--introduction">
+    <div className="introduction-grid">
+        <div className="location-features">
+          <h1>
+            Location Features
+          </h1>
+          <ol className="centers-list">
+            <li>Secure Entrances</li>
+            <li>Spacious rooms filled with colourful patterns to stimulate learning</li>
+            <li>Music rooms for kids to explore their creative talents</li>
+            <li>Modern design with skylight for natural lighting and a view of the sky</li>
+            <li>Food menus designed by our in-house chefs, designed to meet USDA guidelines</li>
+            <li>Close to the local park</li>
+            <li>Off site Field Trips</li>
+            <li>Free parking for drop off and pick up</li>
+          </ol>
+        </div>
+        <div className="location-directions">
 
-const ParkwayContent = (): JSX.Element => (
-  <main className="parkway-main--introduction">
-    <p>
-      Caring Child Daycare currently offers 3 separate locations throughout the Roanoke Valley.
-      All of our centers are open Monday through Friday from 6:30 am to 6:30 pm.
-    </p>
-
-    <p>We are looking forward to be able to expand in the near future! Stay tuned for more information.</p>
-
-    <p>
-      For Enrollment Questions, feel free to contact us at
-      {' '}
-      <a href="tel:555-555-5555">&#40;555&#41;-555-5555</a>
-      {' '}
-      or use our online&nbsp;
-      <Link to="/contact">contact form.</Link>
-    </p>
-
-    <h1>East Roanoke</h1>
-    <br />
-    <h2>Vinton Center</h2>
-    <br />
-    <p>
-      1780 Placeholder Road
-      <br />
-      Vinton, VA 24179
-    </p>
-
-    <p>
-      Director: Candi Sweet
-      <br />
-      <a href="mailto:placeholder@placeholder.com">Click Here To Email Her</a>
-    </p>
-
-    <h2>460 Center</h2>
-    <br />
-    <p>
-      1120 Placeholder Ave
-      <br />
-      Roanoke, VA 24012
-    </p>
-
-    <p>
-      Director: Mae Smith
-      <br />
-      <a href="mailto:placeholder@placeholder.com">Click Here To Email Her</a>
-    </p>
-
-    <h1>Downtown Roanoke</h1>
-    <br />
-    <h2>The Parkway Center</h2>
-
-    <p>
-      1822 Placeholder Road
-      <br />
-      Roanoke, VA 24016
-    </p>
-
-    <p>
-      Director: Dale Dimadome
-      <br />
-      <a href="mailto:placeholder@placeholder.com">Click Here To Email Him</a>
-    </p>
+        </div>
+      </div>
+    </section>
+    <section className="parkway-main--staff">
+      <h1>Meet Our Parkway Director Team</h1>
+      <div className="staff-grid">
+        <div className="staff-grid--director">
+          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--name"><h1>Dale Dimadome</h1></div>
+          <div className="staff-grid--title"><h1>Director</h1></div>
+          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+        </div>
+        <div className="staff-grid--assistant-director">
+          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--name"><h1>Name</h1></div>
+          <div className="staff-grid--title"><h1>Assistant Director</h1></div>
+          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+        </div>
+        <div className="staff-grid--third-in-charge">
+          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--name"><h1>Name</h1></div>
+          <div className="staff-grid--title"><h1>Third in Charge</h1></div>
+          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+        </div>
+      </div>
+    </section>
   </main>
 );
 
-export default ParkwayContent;
+export default ParkwayCenterContent;

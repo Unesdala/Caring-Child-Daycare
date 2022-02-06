@@ -10,7 +10,6 @@ export interface Iimage {
   'caption': string;
   'thumbnail': string | undefined;
   'link': string;
-  'modify': any | undefined;
   'comments': string;
   'created_at'?: string;
   'updated_at'?: string;

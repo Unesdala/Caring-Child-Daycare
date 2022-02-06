@@ -1,0 +1,26 @@
+[class$=--staff] {
+  h1 {
+    text-align: center;
+  }
+}
+
+.staff-grid {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  margin-bottom: 10px;
+
+  &--picture, &--name, &--title, &--description {
+    display: inline-grid;
+    justify-items: center;
+  }
+
+  &--picture {
+    height: 250px;
+  }
+
+  @include respond('medium') {
+    grid-template-columns: repeat(1, auto);
+    align-items: center;
+    margin: 2rem 0;
+  }
+}

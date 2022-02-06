@@ -17,17 +17,17 @@ const Footer = (): JSX.Element => (
       </div>
     </div>
     <div className="main-footer--social">
-      <a href="#">
+      <a href="https://facebook.com">
         <i className="fab fa-facebook" />
       </a>
-      <a href="#">
+      <a href="https://twitter.com">
         <i className="fab fa-twitter" />
       </a>
     </div>
     <div className="main-footer--links">
-      <a href="#">Request A Tour</a><span className="nb-space">|</span>
-      <a href="#">Contact Us</a><span className="nb-space">|</span>
-      <a href="#">Privacy Policy</a>
+      <Link to="/contact">Request a Tour</Link><span className="nb-space">|</span>
+      <Link to="/contact">Contact Us</Link><span className="nb-space">|</span>
+      <Link to="/privacy">Privacy</Link>
     </div>
     <div className="main-footer--logo">
       <h1>Logo</h1>
