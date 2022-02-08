@@ -30,7 +30,7 @@ const Footer = (): JSX.Element => (
       <Link to="/privacy">Privacy</Link>
     </div>
     <div className="main-footer--logo">
-      <h1>Logo</h1>
+      <img src="https://dl.dropboxusercontent.com/s/w9gkckfkvhw6tek/ccd_logo.jpg?dl=0" alt="Caring Child Daycare Logo" />
     </div>
   </footer>
 );

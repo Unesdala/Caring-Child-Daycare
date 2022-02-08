@@ -4,7 +4,8 @@
 0-350px  :  Flip phone
 350-600px:  Phone
 600-900px:  Tablet portrait
-900-1200 :  Tablet landscape
+900-991 :   Tablet landscape
+992-1199:   Specialized Application for Bootstrap
 1200-1800:  Normal styles apply
 1800px+  :  Big desktop
 
@@ -12,6 +13,7 @@ $breakpoint argument choices:
 - extra-small
 - small
 - medium
+- med-lg
 - large
 - huge
 
@@ -31,6 +33,10 @@ ORDER: Base + typography > General layout + grid > page layout > components
 
   @if $breakpoint == 'medium' {
     @media (max-width: 56.25em) { @content; } // 900px
+  }
+
+  @if $breakpoint == 'med-lg' {
+    @media (max-width: 61.9375em) { @content; } // 991px
   }
 
   @if $breakpoint == 'large' {

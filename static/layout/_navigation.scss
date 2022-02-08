@@ -1,14 +1,84 @@
 .navigation {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: flex-start;
   background-color: $color-white;
   border-bottom: $border-top;
 
-  @include respond('medium') {
-    flex-direction: column;
+  .menu-nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+
+    @include respond('med-lg') {
+      flex-direction: column !important;
+    }
+  }
+
+  .navbar {
+    padding: 0;
+  }
+
+  .menu {
+    &-nav {
+        margin: 0;
+        padding-left: 1rem;
+        list-style: none;
+    }
+
+    button {
+      &.active, &:active {
+        background-color: $light-blue-2;
+      }
+    }
+  
+    .dropdown-item {
+      width: auto;
+    }
+  
+    .nav {
+      &-item {
+        display: inline-block;
+        text-align: left;
+        list-style-type: none;
+        padding: 1rem .3rem;
+      }
+
+      &-link {
+        position: relative;
+        padding: 0 .3rem 0 0 !important;
+        font-size: 26px;
+        text-transform: uppercase;
+        font-weight: 300;
+        color: $color-black;
+        text-decoration: none;
+        
+        @include respond('large') {
+          font-size: 21px;
+        }
+
+        &.no-hover-color {
+          &:hover, &.active {
+            color: $color-black;
+          }
+        }
+
+        &.active {
+          color: $color-secondary;
+        }
+  
+        &:hover {
+            color: $color-secondary;
+            @include easeOut();
+        }
+      }
+    }
+  }
+
+  @include respond('med-lg') {
       .navbar {
         padding: 1.4rem 3rem;
+
+        @include respond('small') {
+            padding: 1.4rem 0rem;
+        }
 
         .navbar-toggler {
           position: absolute;
@@ -18,6 +88,9 @@
         }
 
         .menu-nav {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: flex-start;
 
           .nav-link {
             position: relative;
@@ -41,56 +114,4 @@
         }
       }
     }
-
-  .menu {
-    &-nav {
-        margin: 0;
-        padding-left: 1rem;
-        list-style: none;
-    }
-
-    button {
-      &.active, &:active {
-        background-color: $light-blue-2;
-      }
-    }
-  
-    .dropdown-item {
-      width: 90%;
-    }
-  
-    .nav {
-      &-item {
-        display: inline-block;
-        text-align: left;
-        list-style-type: none;
-        padding: 1rem .3rem;
-      }
-
-      &-link {
-        position: relative;
-        padding: 0 .3rem 0 0 !important;
-        font-size: 26px;
-        text-transform: uppercase;
-        font-weight: 300;
-        color: $color-black;
-        text-decoration: none;
-
-        &.no-hover-color {
-          &:hover, &.active {
-            color: $color-black;
-          }
-        }
-
-        &.active {
-          color: $color-secondary;
-        }
-  
-        &:hover {
-            color: $color-secondary;
-            @include easeOut();
-        }
-      }
-    }
-  }
 }

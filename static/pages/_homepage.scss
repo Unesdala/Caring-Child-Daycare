@@ -4,15 +4,41 @@ main.home-main {
   .program-grid {
     display: grid;
     grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
     margin-bottom: 10px;
-
-    &--infants, &--twos, &--preschool, &--private-pre-k, &--after-school, &--summer-school {
+    
+    &--infants, &--twos, &--preschool, &--private-pre-k, &--after-school, &--summer-camp {
       display: inline-grid;
       justify-items: center;
     }
 
+    &--info-box {
+      h1 {
+        text-align: center;
+      }
+    }
+
     &--picture {
       height: 250px;
+      width: 300px;
+
+      @include respond('large') {
+        height: 225px;
+        width: 250px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+
+        &:hover {
+          border: solid 2px $dark-green-1;
+        }
+      }
+    }
+
+    @include respond('large') {
+      grid-template-columns: repeat(2, auto);
     }
 
     @include respond('medium') {
