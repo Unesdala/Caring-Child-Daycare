@@ -42,7 +42,7 @@
         color: $dark-blue-1;
         &:hover {
           color: $light-blue-1;
-          @include ease-out;
+          @include easeOut;
         }
       }
     }
@@ -56,7 +56,7 @@
 
       &:hover {
         color: $color-secondary;
-        @include ease-out;
+        @include easeOut;
       }
 
       @include respond('medium') {

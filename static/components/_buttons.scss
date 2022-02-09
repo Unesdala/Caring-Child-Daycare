@@ -1,13 +1,14 @@
 // Button Styles
-.btn, %btn {
+.btn, .review-btn, %btn {
   &, &:link, &:visited {
     text-transform: uppercase;
     text-decoration: none;
     padding: .5rem 2rem;
     display: inline-block;
     border-radius: 10rem;
-    transition: all .2s;
     position: relative;
+    @include btnTransition;
+    color: $color-black !important;
 
     border: 1px solid $dark-blue-1;
     cursor: pointer;
