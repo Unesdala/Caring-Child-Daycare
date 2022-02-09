@@ -13,6 +13,8 @@ main.home-main {
     }
 
     &--info-box {
+      margin: 1rem 0;
+
       h1 {
         text-align: center;
       }
@@ -21,6 +23,10 @@ main.home-main {
     &--picture {
       height: 250px;
       width: 300px;
+
+      &:hover, &:focus {
+        border: 1px solid $color-secondary;
+      }
 
       @include respond('large') {
         height: 225px;
@@ -31,9 +37,6 @@ main.home-main {
         height: 100%;
         width: 100%;
 
-        &:hover {
-          border: solid 2px $dark-green-1;
-        }
       }
     }
 
@@ -70,4 +73,18 @@ main.home-main {
 
 .home-main--reviews {
   margin-bottom: 1rem;
+
+  a {
+    margin: 0 5px;
+    width: 12rem;
+    color: $color-black;
+
+    @include noTransition;
+
+    @include respond('medium') {
+      margin-bottom: 1rem;
+      width: 60%;
+      align-self: center;
+    }
+  }
 }

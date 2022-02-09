@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle, NavLink } from 'reactstrap';
+import { Dropdown, DropdownItem, DropdownMenu, DropdownToggle } from 'reactstrap';
 import { NavLink as RRNavLink } from 'react-router-dom';
 
 const AboutNav = (): JSX.Element => {
@@ -19,23 +19,17 @@ const AboutNav = (): JSX.Element => {
         About Us
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
-          <NavLink to="/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>Our Philosophy</NavLink>
+        <DropdownItem to="/about" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Our Philosophy
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/about/caring-child-history" tag={RRNavLink} onClick={toggle}>
-            Our History
-          </NavLink>
+        <DropdownItem to="/about/caring-child-history" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Our History
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/about/curriculum" tag={RRNavLink} onClick={toggle}>
-            Our Curriculum
-          </NavLink>
+        <DropdownItem to="/about/curriculum" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Our Curriculum
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/about/faq" tag={RRNavLink} onClick={toggle}>
-            FAQ
-          </NavLink>
+        <DropdownItem to="/about/faq" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          FAQ
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -59,35 +53,23 @@ const ProgramNav = (): JSX.Element => {
         Programs
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
-          <NavLink to="/programs/infants-and-toddlers" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Infants &amp; Toddlers.
-          </NavLink>
+        <DropdownItem to="/programs/infants-and-toddlers" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Infants &amp; Toddlers
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/programs/twos" tag={RRNavLink} onClick={toggle}>
-            Twos
-          </NavLink>
+        <DropdownItem to="/programs/twos" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Twos
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/programs/preschool" tag={RRNavLink} onClick={toggle}>
-            PreSchool
-          </NavLink>
+        <DropdownItem to="/programs/preschool" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Preschool
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/programs/private-pre-k" tag={RRNavLink} onClick={toggle}>
-            Private Pre-K
-          </NavLink>
+        <DropdownItem to="/programs/private-pre-k" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Private Pre-K
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/programs/after-school" tag={RRNavLink} onClick={toggle}>
-            After School
-          </NavLink>
+        <DropdownItem to="/programs/after-school" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          After School
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/programs/summer-camp" tag={RRNavLink} onClick={toggle}>
-            Summer Camp
-          </NavLink>
+        <DropdownItem to="/programs/summer-camp" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Summer Camp
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -111,20 +93,14 @@ const LocationsNav = (): JSX.Element => {
         Locations
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
-          <NavLink to="/locations/vinton-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Vinton
-          </NavLink>
+        <DropdownItem to="/locations/vinton-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Vinton Center
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/locations/460-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            460 Center
-          </NavLink>
+        <DropdownItem to="/locations/460-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          460 Center
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/locations/parkway-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Parkway Center
-          </NavLink>
+        <DropdownItem to="/locations/parkway-center" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Parkway Center
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>
@@ -148,20 +124,14 @@ const ParentsNav = (): JSX.Element => {
         The Parent's Corner
       </DropdownToggle>
       <DropdownMenu>
-        <DropdownItem>
-          <NavLink to="/parents/parents-corner" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Parent's Corner
-          </NavLink>
+        <DropdownItem to="/parents/parents-corner" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Parent's Corner
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/parents/parents-resources" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Parent's Resources
-          </NavLink>
+        <DropdownItem to="/parents/parents-resources" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Parent's Resources
         </DropdownItem>
-        <DropdownItem>
-          <NavLink to="/parents/testimonials" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
-            Testimonials
-          </NavLink>
+        <DropdownItem to="/parents/testimonials" exact activeClassName="active" tag={RRNavLink} onClick={toggle}>
+          Testimonials
         </DropdownItem>
       </DropdownMenu>
     </Dropdown>

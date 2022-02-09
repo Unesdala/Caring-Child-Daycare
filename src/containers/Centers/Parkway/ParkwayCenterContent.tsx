@@ -23,7 +23,7 @@ const ParkwayCenterContent = (): JSX.Element => (
       </div>
     </section>
     <section className="parkway-main--staff">
-      <h1>Meet Our Parkway Director Team</h1>
+      <h1 className="staff-header">Meet Our Parkway Director Team</h1>
       <div className="staff-grid">
         <div className="staff-grid--director">
           <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>

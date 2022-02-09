@@ -5,14 +5,14 @@ const Footer = (): JSX.Element => (
     <div className="main-footer--locations">
       <h1>Locations</h1>
       <div className="main-footer--locations_buttons">
-        <Link to="vinton-center">
-          <button aria-role="navigation" className="main-footer--locations_buttons--vinton btn btn-white">Vinton Center</button>
+        <Link to="vinton-center" className="main-footer--locations_buttons--vinton btn btn-white">
+          Vinton Center
         </Link>
-        <Link to="/locations/460-center">
-          <button aria-role="navigation" className="main-footer--locations_buttons--460 btn btn-white">460 Center</button>
+        <Link to="/locations/460-center" className="main-footer--locations_buttons--460 btn btn-white">
+          460 Center
         </Link>
-        <Link to="/locations/parkway-center">
-          <button aria-role="navigation" className="main-footer--locations_buttons--parkway btn btn-white">The Parkway Center</button>
+        <Link to="/locations/parkway-center" className="main-footer--locations_buttons--parkway btn btn-white">
+          Parkway Center
         </Link>
       </div>
     </div>

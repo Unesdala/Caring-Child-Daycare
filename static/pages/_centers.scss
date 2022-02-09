@@ -1,18 +1,13 @@
-[class$=--staff] {
-  h1 {
-    text-align: center;
-  }
+h1.staff-header {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .staff-grid {
   display: grid;
   grid-template-columns: repeat(3, auto);
   margin-bottom: 10px;
-
-  &--picture, &--name, &--title, &--description {
-    display: inline-grid;
-    justify-items: center;
-  }
+  grid-gap: 10px;
 
   &--picture {
     height: 250px;
@@ -20,7 +15,6 @@
 
   @include respond('medium') {
     grid-template-columns: repeat(1, auto);
-    align-items: center;
     margin: 2rem 0;
   }
 }

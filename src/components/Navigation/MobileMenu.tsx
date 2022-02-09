@@ -3,8 +3,6 @@ import { NavLink as RRNavLink } from 'react-router-dom';
 import {
   Collapse, Navbar, NavbarToggler, NavLink,
 } from 'reactstrap';
-import 'bootstrap/dist/css/bootstrap.css';
-
 const MobileNav = (): JSX.Element => {
   const [collapsed, setCollapsed] = useState(true);
 

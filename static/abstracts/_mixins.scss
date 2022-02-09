@@ -51,3 +51,7 @@ ORDER: Base + typography > General layout + grid > page layout > components
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
+
+@mixin noTransition {
+  transition: none;
+}
