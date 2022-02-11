@@ -49,32 +49,32 @@ export class App extends PureComponent {
             <ScrollToTop />
             <NavBar />
               <Switch>
-                <Route exact path="/" component={DefaultHome} />
+                <Route exact path="/daycare/" component={DefaultHome} />
                 {/*About Submenu*/}
-                <Route exact path="/about/" component={DefaultAbout} />
-                <Route exact path="/about/caring-child-history" component={DefaultHistory} />
-                <Route exact path="/about/curriculum" component={DefaultCurriculum} />
-                <Route exact path="/about/faq" component={DefaultFAQ} />
+                <Route exact path="/daycare/about/" component={DefaultAbout} />
+                <Route exact path="/daycare/about/caring-child-history" component={DefaultHistory} />
+                <Route exact path="/daycare/about/curriculum" component={DefaultCurriculum} />
+                <Route exact path="/daycare/about/faq" component={DefaultFAQ} />
                 {/*Programs Submenu*/}
-                <Route exact path="/programs/infants-and-toddlers" component={DefaultInfants} />
-                <Route exact path="/programs/twos" component={DefaultTwos} />
-                <Route exact path="/programs/preschool" component={DefaultPreSchool} />
-                <Route exact path="/programs/private-pre-k" component={DefaultPreK} />
-                <Route exact path="/programs/after-school" component={DefaultAfterSchool} />
-                <Route exact path="/programs/summer-camp" component={DefaultSummerCamp} />
+                <Route exact path="/daycare/programs/infants-and-toddlers" component={DefaultInfants} />
+                <Route exact path="/daycare/programs/twos" component={DefaultTwos} />
+                <Route exact path="/daycare/programs/preschool" component={DefaultPreSchool} />
+                <Route exact path="/daycare/programs/private-pre-k" component={DefaultPreK} />
+                <Route exact path="/daycare/programs/after-school" component={DefaultAfterSchool} />
+                <Route exact path="/daycare/programs/summer-camp" component={DefaultSummerCamp} />
                 {/*Locations Submenu*/}
-                <Route exact path="/locations/vinton-center" component={DefaultVintonCenter} />
-                <Route exact path="/locations/460-center" component={DefaultFourSixtyCenter} />
-                <Route exact path="/locations/parkway-center" component={DefaultParkwayCenter} />
+                <Route exact path="/daycare/locations/vinton-center" component={DefaultVintonCenter} />
+                <Route exact path="/daycare/locations/460-center" component={DefaultFourSixtyCenter} />
+                <Route exact path="/daycare/locations/parkway-center" component={DefaultParkwayCenter} />
                 {/*Parents Submenu*/}
-                <Route exact path="/parents/parents-corner" component={DefaultParents} />
-                <Route exact path="/parents/parents-resources" component={DefaultParentResources} />
-                <Route exact path="/parents/testimonials" component={DefaultTestimonials} />
+                <Route exact path="/daycare/parents/parents-corner" component={DefaultParents} />
+                <Route exact path="/daycare/parents/parents-resources" component={DefaultParentResources} />
+                <Route exact path="/daycare/parents/testimonials" component={DefaultTestimonials} />
                 {/*Careers Submenu*/}
-                <Route exact path="/careers/" component={DefaultCareers} />
-                <Route exact path="/careers/job-descriptions" component={DefaultJobs} />
-                <Route exact path="/contact" component={DefaultContact} />
-                <Route exact path="/privacy" component={Privacy} />
+                <Route exact path="/daycare/careers/" component={DefaultCareers} />
+                <Route exact path="/daycare/careers/job-descriptions" component={DefaultJobs} />
+                <Route exact path="/daycare/contact" component={DefaultContact} />
+                <Route exact path="/daycare/privacy" component={Privacy} />
                 <Route component={AppFourOhFour} />
               </Switch>
             <Footer />

@@ -4,7 +4,7 @@ const ContactContent = (): JSX.Element => (
   <main className="contact-main--content">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our
-      <Link to="/centers"> local centers.</Link>
+      <Link to="/daycare/centers"> local centers.</Link>
     </p>
 
     <p>For more general information, contact our central corporate office.</p>

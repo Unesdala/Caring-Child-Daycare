@@ -5,7 +5,7 @@ const FourOhFour = (): JSX.Element => (
     <div className="fof">
       404 &ndash; Page not available
     </div>
-    <Redirect to="/" />
+    <Redirect to="/daycare/" />
   </div>
 );
 export default FourOhFour;

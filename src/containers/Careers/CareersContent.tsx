@@ -19,7 +19,7 @@ const CareerContent = (): JSX.Element => (
     <p>
       To see a list of job descriptions,
       {' '}
-      <Link to="/careers/job-descriptions/">click here.</Link>
+      <Link to="/daycare/careers/job-descriptions/">click here.</Link>
     </p>
   </main>
 );

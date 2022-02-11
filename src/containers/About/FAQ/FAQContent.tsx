@@ -51,7 +51,7 @@ const FAQContent = (): JSX.Element => (
       Center your child will be attending prior to their start date. In addition, you can view some of
       the forms and information at our
       {' '}
-      <Link to="/daycare/parents/resources">Parent Resources</Link>
+      <Link to="/daycare/daycare/parents/resources">Parent Resources</Link>
       {' '}
       section.
     </p>

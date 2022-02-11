@@ -17,11 +17,11 @@ const ParentsContent = (): JSX.Element => (
     <p>
       Feel free to browse our
       {' '}
-      <Link to="/parents/parents-resources">parent resources</Link>
+      <Link to="/daycare/parents/parents-resources">parent resources</Link>
       {' '}
       or take a look at what other parents
       {' '}
-      <Link to="/parents/testimonials">have said</Link>
+      <Link to="/daycare/parents/testimonials">have said</Link>
       {' '}
       about Caring Child Daycare.
     </p>

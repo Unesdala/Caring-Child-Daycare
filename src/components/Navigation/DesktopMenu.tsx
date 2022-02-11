@@ -7,7 +7,7 @@ export const DesktopMenu = (): JSX.Element => {
       <nav className="menu">
         <ul className="menu-nav">
           <li className="nav-item">
-            <NavLink to="/" className="nav-link" exact activeClassName="active">
+            <NavLink to="/daycare/" className="nav-link" exact activeClassName="active">
               Home
             </NavLink>
           </li>
@@ -16,12 +16,12 @@ export const DesktopMenu = (): JSX.Element => {
             <LocationsNav />
             <ParentsNav />
           <li className="nav-item">
-            <NavLink to="/careers/" className="nav-link" exact activeClassName="active">
+            <NavLink to="/daycare/careers/" className="nav-link" exact activeClassName="active">
               Careers
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink to="/contact/" className="nav-link" exact activeClassName="active">
+            <NavLink to="/daycare/contact/" className="nav-link" exact activeClassName="active">
               Contact Us
             </NavLink>
           </li>

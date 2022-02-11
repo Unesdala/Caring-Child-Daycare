@@ -16,7 +16,7 @@ const MobileNav = (): JSX.Element => {
           <ul className="menu-nav">
             <li className="nav-item">
               <NavLink 
-                to="/" 
+                to="/daycare/" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -27,7 +27,7 @@ const MobileNav = (): JSX.Element => {
             <hr />
             <li className="nav-item">
               <NavLink 
-                to="/about" 
+                to="/daycare/about" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -37,7 +37,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/about/caring-child-history" 
+                to="/daycare/about/caring-child-history" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -47,7 +47,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/about/curriculum" 
+                to="/daycare/about/curriculum" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -57,7 +57,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/about/faq" 
+                to="/daycare/about/faq" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -68,7 +68,7 @@ const MobileNav = (): JSX.Element => {
             <hr />
             <li className="nav-item">
               <NavLink 
-                to="/programs/infants-and-toddlers" 
+                to="/daycare/programs/infants-and-toddlers" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -78,7 +78,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/programs/twos" 
+                to="/daycare/programs/twos" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -88,7 +88,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/programs/preschool" 
+                to="/daycare/programs/preschool" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -98,7 +98,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/programs/private-pre-k" 
+                to="/daycare/programs/private-pre-k" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -108,7 +108,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/programs/after-school" 
+                to="/daycare/programs/after-school" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -118,7 +118,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/programs/summer-camp" 
+                to="/daycare/programs/summer-camp" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -129,7 +129,7 @@ const MobileNav = (): JSX.Element => {
             <hr />
             <li className="nav-item">
               <NavLink 
-                to="/locations/vinton-center" 
+                to="/daycare/locations/vinton-center" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -139,7 +139,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/locations/460-center" 
+                to="/daycare/locations/460-center" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -149,7 +149,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/locations/parkway-center" 
+                to="/daycare/locations/parkway-center" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -160,7 +160,7 @@ const MobileNav = (): JSX.Element => {
             <hr />
             <li className="nav-item">
               <NavLink 
-                to="/parents/parents-corner" 
+                to="/daycare/parents/parents-corner" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -170,7 +170,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/parents/parents-resources" 
+                to="/daycare/parents/parents-resources" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
@@ -180,7 +180,7 @@ const MobileNav = (): JSX.Element => {
             </li>
             <li className="nav-item">
               <NavLink 
-                to="/parents/testimonials" 
+                to="/daycare/parents/testimonials" 
                 exact activeClassName="active" 
                 tag={RRNavLink} 
                 onClick={toggleNavbar}
