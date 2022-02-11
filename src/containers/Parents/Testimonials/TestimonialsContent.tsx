@@ -1,8 +1,8 @@
 const TestimonialsContent = (): JSX.Element => (
-  <main className="testimonials">
+  <main className="testimonials-main--content">
     <h1>What parents think about Caring Child.</h1>
     <br />
-    <div className="testimonials-content">
+    <div className="testimonials-main--reviews">
       <h2>Kandi Apple</h2>
 
       <p>

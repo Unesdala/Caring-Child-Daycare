@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../../components/lib/commonUtils';
-import DefaultInfantsContent from './InfantsContent';
+import InfantsContent from './InfantsContent';
 
-export class Infants extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Infants & Toddlers', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultInfantsContent />
-        </div>
-      </>
-    );
-  }
-}
+export const Infants = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | Infants & Toddlers';  
+  return (
+    <div className="Site-content">
+      <main className="infants-main">
+        <InfantsContent />
+      </main>
+    </div>
+  );
+};
 
 export default Infants;

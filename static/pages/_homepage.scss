@@ -1,0 +1,89 @@
+main.home-main {
+  overflow: hidden;
+
+  .program-grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    grid-gap: 10px;
+    margin-bottom: 10px;
+    
+    &--infants, &--twos, &--preschool, &--private-pre-k, &--after-school, &--summer-camp {
+      display: inline-grid;
+      justify-items: center;
+    }
+
+    &--info-box {
+      margin: 1rem 0;
+
+      h1 {
+        text-align: center;
+      }
+    }
+
+    &--picture {
+      height: 250px;
+      width: 300px;
+
+      &:hover, &:focus {
+        border: 1px solid $color-secondary;
+      }
+
+      @include respond('large') {
+        height: 225px;
+        width: 250px;
+      }
+
+      img {
+        height: 100%;
+        width: 100%;
+
+      }
+    }
+
+    @include respond('large') {
+      grid-template-columns: repeat(2, auto);
+    }
+
+    @include respond('medium') {
+      grid-template-columns: repeat(1, auto);
+      align-items: center;
+      margin: 2rem 0;
+    }
+  }
+
+  @include respond('medium') {
+    min-width: 100%;
+    margin-bottom: 2rem;
+    
+    .home-main--reviews {
+      display: flex;
+      flex-direction: column;
+
+      .review-button {
+        width: 50%;
+        align-self: center;
+      }
+    }
+  }
+
+  @include respond('extra-small') {
+    min-width: 320px;
+  }
+}
+
+.home-main--reviews {
+  margin-bottom: 1rem;
+
+    a.review-button {
+      &:hover {
+        color: $color-black;
+      }
+  
+      @include respond('medium') {
+        margin-bottom: 1rem;
+        width: 60%;
+        align-self: center;
+    }
+  }
+
+}

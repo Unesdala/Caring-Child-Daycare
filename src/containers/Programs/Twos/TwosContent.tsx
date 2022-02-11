@@ -1,5 +1,5 @@
 const TwosContent = (): JSX.Element => (
-  <main className="twos">
+  <main className="twos-main--content">
 
     <h1>Children explore. We lead.</h1>
 

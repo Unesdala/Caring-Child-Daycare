@@ -1,11 +1,13 @@
 const AfterSchoolContent = (): JSX.Element => (
-  <main className="after-school">
+  <main className="after-school-main--content">
 
-    <h1>School age children are busy searching the world. We help them to navigate it.</h1>
+    <h1>School age children are busy searching the world.</h1>
+    <br />
+    <h2>We help them to navigate it.</h2>
 
     <p>
-      Your child spends most of their time at school – learning, juggling friendships, doing assigned work and reading – and need an educational
-      outlet that puts the power in their hands to explore the educational world in a
+      Your child spends most of their time at school &ndash; learning, juggling friendships, doing assigned work and reading &ndash; 
+      and need an educational outlet that puts the power in their hands to explore the educational world in a
       less stressful manner. That&apos;s where Caring Child steps in! Our after school program allows your child to further their learning
       experience in a fun and interactive manner that helps to enhance what they&apos;ve been
       learning in school. We strive to nudge your child to enjoy learning through lessons that offer a bit of creative freedom.
@@ -38,7 +40,7 @@ const AfterSchoolContent = (): JSX.Element => (
     <p>
       Caring Child&apos;s Hands On! Program offers plenty of creative opportunity for your child
       to grow. Through arts and crafts projects ranging from simple colouring pages, to
-      clay sculptures, or interactive plays – your child will learn to flex
+      clay sculptures, or interactive plays &ndash; your child will learn to flex
       their creative muscles into integral learning experiences. Whether it be through a paper medium, a play, or even photography,
       your child will have ample opportunity to learn and grow.
     </p>

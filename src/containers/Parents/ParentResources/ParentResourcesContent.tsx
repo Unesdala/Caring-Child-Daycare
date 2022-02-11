@@ -1,7 +1,7 @@
 import CreateResourceLinks from './ParentResourceLinks';
 
 const ParentResourcesContent = (): JSX.Element => (
-  <main className="parent-resources">
+  <main className="parent-resources-main--content">
 
     <h1>Bringing you resources to make life easier.</h1>
 

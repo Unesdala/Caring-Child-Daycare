@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultContactContent from './ContactContent';
+import ContactContent from './ContactContent';
 
-export class Contact extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Contact Us', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultContactContent />
-        </div>
-      </>
-    );
-  }
-}
+export const Contact = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | Contact Us';  
+  return (
+    <div className="Site-content">
+      <main className="contact-main">
+        <ContactContent />
+      </main>
+    </div>
+  );
+};
 
 export default Contact;

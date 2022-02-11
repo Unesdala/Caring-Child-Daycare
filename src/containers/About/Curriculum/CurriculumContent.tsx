@@ -1,8 +1,8 @@
 const CurriculumContent = (): JSX.Element => (
-  <main className="curriculum">
+  <main className="curriculum-main--content">
 
     <h1>Caring Child Daycare Curricula</h1>
-
+    <br />
     <h2>Infant &#38; Toddler, Twos, Preschool Curriculum</h2>
 
     <p>

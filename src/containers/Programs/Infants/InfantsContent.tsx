@@ -1,6 +1,7 @@
 const InfantsContent = (): JSX.Element => (
-  <main className="infants">
+  <main className="infants-main--content">
     <h1>Infants and Toddlers have their own individual personalities.</h1>
+    <br />
     <h2>We bring them to the surface.</h2>
 
     <p>
@@ -23,7 +24,7 @@ const InfantsContent = (): JSX.Element => (
       development and health, fine motor control and skill, gross motor control and skill, and social skills.
     </p>
 
-    <h2>Infants – Aged 6 weeks to 12 months.</h2>
+    <h2>Infants &ndash; Aged 6 weeks to 12 months.</h2>
 
     <p>
       The Caring Child Educational Formula for infants is designed to help them develop the cognitive, emotional, social, and physical motor skills
@@ -40,7 +41,7 @@ const InfantsContent = (): JSX.Element => (
 
     <p>
       For helping your child to develop
-      <b>communication skills&nbsp;</b>
+      <b>&nbsp;communication skills&nbsp;</b>
       , our teachers will take time reading to your child, singing songs, and putting on
       puppet shows. Your infant will learn to communicate their wants and needs in no time!
     </p>
@@ -78,7 +79,7 @@ const InfantsContent = (): JSX.Element => (
       time plying with friends in their age-range in age appropriate classrooms to build the early bond of friendships.
     </p>
 
-    <h2>Toddlers – Aged 13 months to 24 months</h2>
+    <h2>Toddlers &ndash; Aged 13 months to 24 months</h2>
 
     <p>
       Similar to infants, we focus on six main areas of learning to help further expand and build upon the early development
@@ -95,7 +96,7 @@ const InfantsContent = (): JSX.Element => (
       <b>Cognitive Skills &nbsp;</b>
       at this age include learning new vocabulary words, perfecting movement through their environment, and forming connections with
       other people. The All Natural Teaching curriculum focuses on establishing connections through song, books, games, and more. We encourage your
-      child to build their knowledge by building their education – naming colors, objects, and people.
+      child to build their knowledge by building their education &ndash; naming colors, objects, and people.
     </p>
 
     <p>

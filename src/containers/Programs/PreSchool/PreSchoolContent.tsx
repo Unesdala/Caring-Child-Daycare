@@ -1,6 +1,8 @@
 const PreSchoolContent = (): JSX.Element => (
-  <main className="pre-school">
-    <h1>At 3, children are discovering the world around them. We encourage them in their exploration.</h1>
+  <main className="pre-school-main--content">
+    <h1>At 3, children are discovering the world around them.</h1>
+    <br />
+    <h2>We encourage them in their exploration.</h2>
 
     <p>
       Our preschool curriculum is designed to inspire children to explore their surroundings, and progress at their own pace. Your children will be
@@ -16,7 +18,7 @@ const PreSchoolContent = (): JSX.Element => (
     </p>
 
     <p>
-      Language development doesn&apos;t stop in preschool – We&apos;ll help your child to further their written and spoken
+      Language development doesn&apos;t stop in preschool &ndash; We&apos;ll help your child to further their written and spoken
       education through singing, story-telling, and simple rhymes. They&apos;ll be read age-appropriate books from our well stocked library, and
       retell those stories through drawings and other mediums. Your children will be encouraged to ask questions and share ideas about what it is
       they&apos;re learning. Dramatic play, blocks, and transportation are just a few examples of how they&apos;ll develop through play.

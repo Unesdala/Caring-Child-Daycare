@@ -1,105 +1,88 @@
 *,
-*::before,
-*::after {
+*::after,
+*::before {
   margin: 0;
   padding: 0;
   box-sizing: inherit;
 }
 
-// html {
-//   box-sizing: border-box;
-//   font-size: 62.5%; // 10px/16px = 62.5% -> 1rem = 10px
-// //   @media only screen and (max-width: $bp-largest) {
-// //     font-size: 50%; // 1rem = 8px;
-// //   }
-// }
-
 body {
-    background-color: $primary-color;
-    color: set-text-color($primary-color);
-    height: 100%;
-    margin: 0;
-    font-family: "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-    line-height: 1.5;
+  background-color: $color-white;
+  // color: set-text-color($color-primary);
 }
 
-img.bg {
-    /* Set rules to fill background */
-    min-height: 100%;
-    min-width: 1024px;
+.Site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
-    /* Set up proportionate scaling */
-    width: 100%;
-    height: auto;
+  .container-fluid {
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 0);
+  }
 
-    /* Set up positioning */
-    position: fixed;
-    top: 0;
-    left: 0;
+  .Site-content {
+    flex: 1;
 
-    opacity: 0.1;
+    @include respond('medium') {
+      margin-bottom: 2rem;
 
-    z-index: -2;
-}
+      h1, h2, button {
+        text-align: center;
+      }
 
-a {
-    color: $secondary-link-color;
-    text-decoration: none;
+      p, blockquote {
+        margin: 0 10px;
+      }
 
-    &:hover {
-        color: $secondary-color;
-        text-decoration: none;
+      blockquote.fancy-blockquote {
+        border: 1px solid $color-black;
+        background-color: $light-blue-3;
+        color: $color-black;
+        padding: 10px;
+        border-radius: 5px;
+      }
+
+      figcaption {
+        margin-left: 1.5rem;
+        margin-top: 1rem;
+      }
+    }
+  
+    main {
+      &[class$=-main] {
+        width: 80%;
+        padding: 5rem 0 4rem 5rem;
+
+        @include respond('large') {
+          padding: 7rem 0 0 0;
+          margin: auto;
+        }
+
+        @include respond('medium') {
+          padding: 3rem 0 0 0;
+          margin: auto;
+        }
+
+        @include respond('extra-small') {
+          padding: 2.5rem 0 0 0;
+        }
+      }
+    }
+
+    a {
+      color: $color-secondary;
+      text-decoration: none;
+
+      &:hover {
+        color: $dark-green-1;
         @include easeOut();
+      }
     }
 
-    &:visited {
-        color: $link-visited;
+    ul {
+      list-style-type: none;
+      padding-left: 1rem;
     }
-}
-
-main {
-    padding: 4rem; // height: 100%;
-    min-height: calc(100vh - 12rem);
-}
-
-hr {
-    width: 96%;
-}
-
-nav {
-    text-align: center;
-}
-
-li.resource-link {
-    margin: 0 0 -.5rem .6rem;
-    list-style: none;
-}
-
-@media screen and (max-width: 102.4rem) {
-
-    /* Specific to this particular image */
-    img.bg {
-        left: 50%;
-        margin-left: -51.2rem;
-        /* 50% */
-    }
-
-    .menu-nav > li {
-        padding: 0px 1.3rem !important;
-    }
-
-}
-
-.page-content {
-    margin-left: 3.5rem;
-}
-
-// Lists
-
-ul {
-    list-style: none;
-}
-
-#contact ul li {
-    margin-left: -3rem;
+  }
 }

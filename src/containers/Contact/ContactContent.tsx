@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom';
 
 const ContactContent = (): JSX.Element => (
-  <main className="contact">
+  <main className="contact-main--content">
     <p>
       If you&apos;d like to contact us, feel free to visit one of our
-      <Link to="/daycare/centers"> local centers.</Link>
+      <Link to="/centers"> local centers.</Link>
     </p>
 
     <p>For more general information, contact our central corporate office.</p>
@@ -18,18 +18,20 @@ const ContactContent = (): JSX.Element => (
     </p>
 
     <h3>Phone Number</h3>
+    <p>
+      <a href="tel:540-555-5555">540-555-5555</a>
+      <br />
+    </p>
 
-    <a href="tel:540-555-5555">540-555-5555</a>
-
-    <h3>Director</h3>
-
-    <p>Rhayven Ayers</p>
-    <a href="mailto:rhayven@codingforllamas.com">Email</a>
+    <h3>Rhayven Ayers</h3>
+    <p>
+     <a href="mailto:rhayven@codingforllamas.com">Email</a>
+    </p>
 
     <h3>Hours</h3>
 
     <ul>
-      <li>Monday – Friday: 6:30am-6:30pm</li>
+      <li>Monday &ndash; Friday: 6:30am-6:30pm</li>
       <li>Saturday: Closed</li>
       <li>Sunday: Closed</li>
       <li>Holidays: Closed</li>
@@ -45,8 +47,10 @@ const ContactContent = (): JSX.Element => (
 
     <h3>Phone Number</h3>
 
-    <a href="tel:540-555-5555">540-555-5555</a>
-
+    <p>
+      <a href="tel:540-555-5555">540-555-5555</a>
+    </p>
+    
     <h2>Human Resources</h2>
 
     <p>

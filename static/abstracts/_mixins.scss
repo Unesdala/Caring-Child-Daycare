@@ -1,170 +1,57 @@
-@use "sass:color";
+// BREAKPOINTS
+
+/*
+0-350px  :  Flip phone
+350-600px:  Phone
+600-900px:  Tablet portrait
+900-991 :   Tablet landscape
+992-1199:   Specialized Application for Bootstrap
+1200-1800:  Normal styles apply
+1800px+  :  Big desktop
+
+$breakpoint argument choices:
+- extra-small
+- small
+- medium
+- med-lg
+- large
+- huge
+
+ORDER: Base + typography > General layout + grid > page layout > components
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == 'extra-small' {
+    @media (max-width: 21.875em) { @content; } // 350px
+  }
+
+  @if $breakpoint == 'small' {
+    @media (max-width: 37.5em) { @content; } // 600px
+  }
+
+  @if $breakpoint == 'medium' {
+    @media (max-width: 56.25em) { @content; } // 900px
+  }
+
+  @if $breakpoint == 'med-lg' {
+    @media (max-width: 61.9375em) { @content; } // 991px
+  }
+
+  @if $breakpoint == 'large' {
+    @media (max-width: 75em) { @content; } // 1200px
+  }
+
+  @if $breakpoint == 'huge' {
+    @media (min-width: 112.5em) { @content; } // 1800px
+  }
+}
 
 @mixin easeOut {
   transition: all 0.5s ease-out;
 }
 
-@mixin menu {
-
-  .menu {
-      &-nav {
-          margin: 0;
-          margin-left: -2.5rem;
-          background-color: color.adjust($link-color, $lightness: -5%);
-          list-style: none;
-          border-top: thin solid slategrey;
-          border-bottom: thin solid slategrey;
-      }
-
-      .nav-item {
-          display: inline-block;
-          text-align: left;
-          list-style-type: none;
-          padding: 0 .3rem;
-      }
-
-      .nav-link {
-          position: relative;
-          padding: 0 .3rem 0 0 !important;
-          font-size: 17px;
-          text-transform: uppercase;
-          font-weight: 300;
-          color: set-text-color($link-color);
-          text-decoration: none;
-
-          &.active {
-              color: $secondary-color;
-          }
-
-          &:hover {
-              color: $secondary-color;
-          }
-      }
-  }
-
-  .dropdown-toggle {
-      background-color: $link-color;
-      :hover {
-          background-color: $link-color;
-      }
-      a:hover {
-          background-color: $link-color;
-      }
-  }
-  .dropdown-menu {
-      background-color: $link-color;
-  }
-
-  .btn:hover, .btn:focus {
-      background-color: $link-color;
-  }
-
-  // Arrow for menu dropdown
-  .btn-secondary {
-      color: $button-secondary-color !important;
-      font-size: 17px;
-      text-transform: uppercase;
-  }
-
-  .btn-secondary:focus, .btn-secondary:active {
-      background-color: $link-color !important;
-      border-color: color.adjust($primary-color, $lightness: -5%) !important;
-      box-shadow: 0 0 0 0.1rem rgba(130,138,145,.5);
-  }
-
-  .nav .button:hover {
-      background-color: $link-color;
-  }
-
-  .dropdown-item:focus, .dropdown-item:hover {
-      background-color: transparent;
-      .nav-link {
-          color: $secondary-color !important;
-      }
-  }
-
-  .icon-button {
-      position: relative !important;
-      z-index: 3;
-      right: 35px;
-      top: 35px;
-      margin-right: .5rem !important;
-
-      svg {
-      fill: var(--text-color);
-      width: 20px;
-      height: 20px;
-      }
-  }
-}
-
-@mixin mobileMenu {
-  // Menu Overlay
-
-  .navbar {
-      padding: 2.5rem 3rem;
-  }
-
-  .nav {
-      flex-direction: column;
-  }
-
-  .navbar-toggler {
-      position: absolute;
-      z-index: 3;
-      right: 35px;
-      top: 35px;
-      cursor: pointer;
-  }
-
-  .nav-item {
-      &.current>a {
-          color: $secondary-color !important;
-      }
-  }
-
-  .nav-link {
-      display: inline-block;
-      position: relative;
-      font-size: 30px;
-      text-transform: uppercase;
-      font-weight: 300;
-      color: set-text-color($link-color) !important;
-      text-decoration: none;
-      @include easeOut;
-
-      &.active {
-          color: $secondary-color !important;
-      }
-
-      &:hover {
-          color: $secondary-color !important;
-      }
-  }
-}
-
-
-// Media Query Mixins
-@mixin mediaSm {
-  @media screen and (max-width: 50rem) {
-      @content;
-  }
-}
-
-@mixin mediaMd {
-  @media screen and (min-width: 50.1rem) and (max-width: 76.8rem) {
-      @content;
-  }
-}
-
-@mixin mediaLg {
-  @media screen and (min-width: 76.9rem) and (max-width: 117rem) {
-      @content;
-  }
-}
-
-@mixin mediaXl {
-  @media screen and (min-width: 117.1rem) {
-      @content;
-  }
+@mixin btnTransition {
+  transition: all .2s !important;
 }

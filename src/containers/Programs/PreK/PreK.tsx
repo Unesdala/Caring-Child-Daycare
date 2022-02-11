@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../../components/lib/commonUtils';
-import DefaultPreKContent from './PreKContent';
+import PreKContent from './PreKContent';
 
-export class PreK extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Private Pre-K', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultPreKContent />
-        </div>
-      </>
-    );
-  }
-}
+export const PreK = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | Pre-K';  
+  return (
+    <div className="Site-content">
+      <main className="pre-k-main">
+        <PreKContent />
+      </main>
+    </div>
+  );
+};
 
 export default PreK;

@@ -1,26 +1,15 @@
-import { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultHomeContent from './HomepageContent';
+import HomeContent from './HomepageContent';
 
-export class Homepage extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultHomeContent />
-        </div>
-      </>
-    );
-  }
-}
+export const Homepage = (): JSX.Element => {
+  document.title = 'Caring Child Daycare';
+  console.log(window.innerWidth);
+  return (
+    <div className="Site-content">
+      <main className="home-main">
+        <HomeContent />
+      </main>
+    </div>
+  );
+};
 
 export default Homepage;

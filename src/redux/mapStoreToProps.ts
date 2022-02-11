@@ -10,7 +10,6 @@ export interface Iimage {
   'caption': string;
   'thumbnail': string | undefined;
   'link': string;
-  'modify': any | undefined;
   'comments': string;
   'created_at'?: string;
   'updated_at'?: string;
@@ -21,6 +20,7 @@ export interface Store {
 
 // eslint-disable-next-line arrow-body-style
 const mapStoreToProps = (store: Store): MapProps => {
+  // console.log(store);
   return ({
     images: store.images.images,
   });

@@ -1,27 +1,14 @@
-/* eslint-disable @typescript-eslint/ban-ts-comment */
-import { Component } from 'react';
-import commonUtils from '../../../components/lib/commonUtils';
-import DefaultAfterSchoolContent from './AfterSchoolContent';
+import AfterSchoolContent from './AfterSchoolContent';
 
-export class AfterSchool extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('After School', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultAfterSchoolContent />
-        </div>
-      </>
-    );
-  }
-}
+export const AfterSchool = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | After School';  
+  return (
+    <div className="Site-content">
+      <main className="after-school-main">
+        <AfterSchoolContent />
+      </main>
+    </div>
+  );
+};
 
 export default AfterSchool;

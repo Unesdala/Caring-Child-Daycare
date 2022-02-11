@@ -1,5 +1,5 @@
 const CaringChildHistoryContent = (): JSX.Element => (
-  <main className="history">
+  <main className="history-main--content">
 
     <h1>Our History. Your Future.</h1>
 

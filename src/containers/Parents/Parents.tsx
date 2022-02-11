@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultParentsContent from './ParentsContent';
+import ParentsContent from './ParentsContent';
 
-export class Parents extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Parent&apos;s Corner', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultParentsContent />
-        </div>
-      </>
-    );
-  }
-}
+export const Parents = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | Parent\'s Corner';  
+  return (
+    <div className="Site-content">
+      <main className="parents-corner-main">
+        <ParentsContent />
+      </main>
+    </div>
+  );
+};
 
 export default Parents;

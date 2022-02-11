@@ -1,0 +1,77 @@
+// Button Styles
+.btn, .review-btn, %btn {
+  &, &:link, &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .5rem 2rem;
+    display: inline-block;
+    border-radius: 10rem;
+    position: relative;
+    @include btnTransition;
+    color: $color-black !important;
+
+    border: 1px solid $dark-blue-1;
+    cursor: pointer;
+  }
+
+  @include respond('medium') {
+    margin-bottom: 2rem;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: $box-shadow-2;
+
+    @include respond('medium') {
+      box-shadow: $box-shadow-3;
+    }
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: $box-shadow-3;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 10rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-dark-1;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
+
+// Font Awesome
+.Site-content {
+  .icons {
+    margin-top: 1rem;
+
+    @include respond('medium') {
+      margin-bottom: 2rem;
+    }
+  
+    a {
+        padding: 0.4rem;
+    }
+  }
+}

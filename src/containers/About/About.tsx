@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../components/lib/commonUtils';
-import DefaultAboutContent from './AboutContent';
+import AboutContent from './AboutContent';
 
-export class About extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('About', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultAboutContent />
-        </div>
-      </>
-    );
-  }
-}
+export const About = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | About Caring Child Daycare';  
+  return (
+    <div className="Site-content">
+      <main className="about-main">
+        <AboutContent />
+      </main>
+    </div>
+  );
+};
 
 export default About;

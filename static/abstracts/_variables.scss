@@ -1,6 +1,41 @@
-$primary-color: #fefefe;
-$secondary-color: #9D343B;
-$button-secondary-color: #000;
-$link-color: #fefefe;
-$secondary-link-color: #792E8A;
-$link-visited: #A2005B;
+@use "sass:color";
+
+$color-primary: #312f2f;
+$color-secondary: #2245cf;
+
+$light-blue-1: #314ebd;
+$light-blue-2: #cfe2ff;
+$light-blue-3: #dce3ec;
+
+$dark-blue-1: #152b85;
+$dark-blue-2: #0d4293;
+
+$dark-green-1: #0f622c;
+
+$color-white: #fff;
+$color-black: #000;
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-grey-dark-1: #777;
+$color-grey-dark-2: #999;
+$color-grey-dark-3: #333;
+
+$lighten-1: color.adjust($color-primary, $lightness: 2%, $alpha: -0.5);
+$lighten-2: color.adjust($color-primary, $lightness: 50%);
+$darken-1: color.adjust($color-primary, $lightness: -5%);
+$darken-2: color.adjust($color-primary, $lightness: -10%);
+$darken-3: color.adjust($color-primary, $lightness: -50%);
+
+// BOX SHADOW
+$box-shadow-1: 0 1.5rem 4rem rgba($dark-blue-1, .15);
+$box-shadow-2: 0 1rem 2rem  rgba($dark-blue-1, .6);
+$box-shadow-3:  0 .5rem 1rem rgba($dark-blue-1, .6);
+
+// BORDER
+$border-radius-primary: .3rem;
+$border-radius-secondary: .2rem;
+$border-radius-tertiary: 0;
+
+$border-top: $light-blue-1 10px solid;

@@ -1,26 +1,14 @@
-import { Component } from 'react';
-import commonUtils from '../../../components/lib/commonUtils';
-import DefaultTestimonialsContent from './TestimonialsContent';
+import TestimonialsContent from './TestimonialsContent';
 
-export class Testimonials extends Component {
-  commonUtils: { setTitleAndScroll: (pageTitle: string, width: number) => void };
-
-  constructor(props: Record<string, unknown>) {
-    super(props);
-    this.commonUtils = commonUtils;
-  }
-
-  componentDidMount(): void { this.commonUtils.setTitleAndScroll('Parent Testimonials', window.screen.width); }
-
-  render(): JSX.Element {
-    return (
-      <>
-        <div className="page-content">
-          <DefaultTestimonialsContent />
-        </div>
-      </>
-    );
-  }
-}
+export const Testimonials = (): JSX.Element => {
+  document.title = 'Caring Child Daycare | Testimonials';  
+  return (
+    <div className="Site-content">
+      <main className="testimonials-main">
+        <TestimonialsContent />
+      </main>
+    </div>
+  );
+};
 
 export default Testimonials;

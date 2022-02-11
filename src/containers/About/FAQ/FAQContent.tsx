@@ -1,20 +1,22 @@
 import { Link } from 'react-router-dom';
 
 const FAQContent = (): JSX.Element => (
-  <main className="faq">
+  <main className="faq-main--content">
 
     <h1>Frequently Asked Questions</h1>
-
+    <br />
     <h2>Hours of Operation</h2>
 
-    All of our centers are open Monday – Friday from 6:30 am to 6:30 pm.
+    <p>
+      All of our centers are open Monday &ndash; Friday from 6 am to 6:30 pm.
+    </p>
 
     <h2>Student to Teacher Ratios</h2>
 
     <ul>
-      <li>Infants &#40;6 weeks – 12 months&#41;: 1:4</li>
+      <li>Infants &#40;6 weeks &ndash; 12 months&#41;: 1:4</li>
 
-      <li>Toddlers &#40;13 months – 23 months&#41;: 1:5</li>
+      <li>Toddlers &#40;13 months &ndash; 23 months&#41;: 1:5</li>
 
       <li>Twos &#40;2 years&#41;: 1:8</li>
 
@@ -22,7 +24,7 @@ const FAQContent = (): JSX.Element => (
 
       <li>Private Pre-K &#40;4 years&#41;: 1:10</li>
 
-      <li>After School &#40;5 years – 12 years&#41;: 1:18</li>
+      <li>After School &#40;5 years &ndash; 12 years&#41;: 1:18</li>
     </ul>
 
     <h2>Security Measures</h2>

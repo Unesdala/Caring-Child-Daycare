@@ -1,5 +1,5 @@
 const SummerCampContent = (): JSX.Element => (
-  <main className="summer-camp">
+  <main className="summer-camp-main--content">
 
     <h1>Learning doesn&apos;t end just because school did.</h1>
 
@@ -12,7 +12,7 @@ const SummerCampContent = (): JSX.Element => (
 
     <p>
       Camp Wannahawk is a 10 week program starting shortly after school lets out for the summer. Our centers serve as base camps, and provide
-      transportation to and from activities. Most camp activities run from 9 am to 5:30 pm. Our centers open at the regular hours of 6 am to 6 pm.
+      transportation to and from activities. Most camp activities run from 9 am to 5:30 pm. Our centers open at the regular hours of 6 am to 6:30 pm.
     </p>
 
     <p>

@@ -1,7 +1,9 @@
 const PreKContent = (): JSX.Element => (
-  <main className="pre-k">
+  <main className="pre-k-main--content">
 
-    <h1>By 4 years old, children are preparing to enter school. We guide them to make sure they&apos;re ready.</h1>
+    <h1>By 4 years old, children are preparing to enter school.</h1>
+    <br />
+    <h2>We guide them to make sure they&apos;re ready.</h2>
 
     <p>
       Caring Child Daycare is, by all accounts, a tight-knit community where your growing 4 year old
