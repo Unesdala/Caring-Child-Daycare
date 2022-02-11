@@ -26,11 +26,9 @@ const ParkwayCenterContent = (): JSX.Element => (
       <h1 className="staff-header">Meet Our Parkway Director Team</h1>
       <div className="staff-grid">
         <div className="staff-grid--director">
-          <div className="staff-grid--picture">
-            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
-          </div>
-          <div className="staff-grid--name"><h1>Dale Dimadome</h1></div>
-          <div className="staff-grid--title"><h1>Director</h1></div>
+          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--name"><h2>Dale Dimadome</h2></div>
+          <div className="staff-grid--title"><h2>Director</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti itaque dolores fugiat 
@@ -43,11 +41,9 @@ const ParkwayCenterContent = (): JSX.Element => (
           </div>
         </div>
         <div className="staff-grid--assistant-director">
-          <div className="staff-grid--picture">
-            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
-          </div>
-          <div className="staff-grid--name"><h1>Name</h1></div>
-          <div className="staff-grid--title"><h1>Assistant Director</h1></div>
+          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--name"><h2>Name</h2></div>
+          <div className="staff-grid--title"><h2>Assistant Director</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minima doloribus quibusdam 
@@ -61,11 +57,9 @@ const ParkwayCenterContent = (): JSX.Element => (
           </div>
         </div>
         <div className="staff-grid--third-in-charge">
-          <div className="staff-grid--picture">
-            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
-          </div>
-          <div className="staff-grid--name"><h1>Name</h1></div>
-          <div className="staff-grid--title"><h1>Third in Charge</h1></div>
+          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--name"><h2>Name</h2></div>
+          <div className="staff-grid--title"><h2>Third in Charge</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati blanditiis ipsa 

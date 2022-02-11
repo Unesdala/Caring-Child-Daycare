@@ -29,8 +29,8 @@ const VintonCenterContent = (): JSX.Element => (
           <div className="staff-grid--picture">
             <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
           </div>
-          <div className="staff-grid--name"><h1>Candi Sweet</h1></div>
-          <div className="staff-grid--title"><h1>Director</h1></div>
+          <div className="staff-grid--name"><h2>Candi Sweet</h2></div>
+          <div className="staff-grid--title"><h2>Director</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet totam aliquid, optio facere 
@@ -51,8 +51,8 @@ const VintonCenterContent = (): JSX.Element => (
           <div className="staff-grid--picture">
             <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
           </div>
-          <div className="staff-grid--name"><h1>Name</h1></div>
-          <div className="staff-grid--title"><h1>Assistant Director</h1></div>
+          <div className="staff-grid--name"><h2>Name</h2></div>
+          <div className="staff-grid--title"><h2>Assistant Director</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi blanditiis iste tempora, aut facere expedita 
@@ -68,8 +68,8 @@ const VintonCenterContent = (): JSX.Element => (
           <div className="staff-grid--picture">
             <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
           </div>
-          <div className="staff-grid--name"><h1>Name</h1></div>
-          <div className="staff-grid--title"><h1>Third in Charge</h1></div>
+          <div className="staff-grid--name"><h2>Name</h2></div>
+          <div className="staff-grid--title"><h2>Third in Charge</h2></div>
           <div className="staff-grid--description">
             <p>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus magni error at earum excepturi 
