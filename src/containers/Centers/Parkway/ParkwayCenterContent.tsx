@@ -26,7 +26,9 @@ const ParkwayCenterContent = (): JSX.Element => (
       <h1 className="staff-header">Meet Our Parkway Director Team</h1>
       <div className="staff-grid">
         <div className="staff-grid--director">
-          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h2>Dale Dimadome</h2></div>
           <div className="staff-grid--title"><h2>Director</h2></div>
           <div className="staff-grid--description">
@@ -41,7 +43,9 @@ const ParkwayCenterContent = (): JSX.Element => (
           </div>
         </div>
         <div className="staff-grid--assistant-director">
-          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h2>Name</h2></div>
           <div className="staff-grid--title"><h2>Assistant Director</h2></div>
           <div className="staff-grid--description">
@@ -57,7 +61,9 @@ const ParkwayCenterContent = (): JSX.Element => (
           </div>
         </div>
         <div className="staff-grid--third-in-charge">
-          <div className="staff-grid--picture"><h2>Insert Picture Here</h2></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h2>Name</h2></div>
           <div className="staff-grid--title"><h2>Third in Charge</h2></div>
           <div className="staff-grid--description">
