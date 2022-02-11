@@ -6,6 +6,9 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-start;
+    margin: 0;
+    padding-left: 1rem;
+    list-style: none;
 
     @include respond('med-lg') {
       flex-direction: column !important;
@@ -17,11 +20,6 @@
   }
 
   .menu {
-    &-nav {
-        margin: 0;
-        padding-left: 1rem;
-        list-style: none;
-    }
 
     button {
       &.active, &:active {
