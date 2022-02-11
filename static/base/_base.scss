@@ -16,22 +16,31 @@ body {
   min-height: 100vh;
   flex-direction: column;
 
+  .container-fluid {
+    padding-right: var(--bs-gutter-x, 1rem);
+    padding-left: var(--bs-gutter-x, 0);
+  }
+
   .Site-content {
     flex: 1;
 
     @include respond('medium') {
       margin-bottom: 2rem;
 
-      h1, button {
+      h1, h2, button {
         text-align: center;
-      }
-
-      h1 {
-        margin-bottom: 1rem;
       }
 
       p, blockquote {
         margin: 0 10px;
+      }
+
+      blockquote.fancy-blockquote {
+        border: 1px solid $color-black;
+        background-color: $light-blue-3;
+        color: $color-black;
+        padding: 10px;
+        border-radius: 5px;
       }
 
       figcaption {

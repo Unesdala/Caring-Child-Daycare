@@ -18,13 +18,15 @@ const ContactContent = (): JSX.Element => (
     </p>
 
     <h3>Phone Number</h3>
+    <p>
+      <a href="tel:540-555-5555">540-555-5555</a>
+      <br />
+    </p>
 
-    <a href="tel:540-555-5555">540-555-5555</a>
-
-    <h3>Director</h3>
-
-    <p>Rhayven Ayers</p>
-    <a href="mailto:rhayven@codingforllamas.com">Email</a>
+    <h3>Rhayven Ayers</h3>
+    <p>
+     <a href="mailto:rhayven@codingforllamas.com">Email</a>
+    </p>
 
     <h3>Hours</h3>
 
@@ -45,8 +47,10 @@ const ContactContent = (): JSX.Element => (
 
     <h3>Phone Number</h3>
 
-    <a href="tel:540-555-5555">540-555-5555</a>
-
+    <p>
+      <a href="tel:540-555-5555">540-555-5555</a>
+    </p>
+    
     <h2>Human Resources</h2>
 
     <p>

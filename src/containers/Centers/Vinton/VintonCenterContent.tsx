@@ -26,22 +26,63 @@ const VintonCenterContent = (): JSX.Element => (
       <h1 className="staff-header">Meet Our Vinton Director Team</h1>
       <div className="staff-grid">
         <div className="staff-grid--director">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Candi Sweet</h1></div>
           <div className="staff-grid--title"><h1>Director</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem amet totam aliquid, optio facere 
+              necessitatibus a mollitia consequatur doloribus voluptates quos debitis repellat. Molestias iure dicta ab et aut.
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum esse suscipit ad eos nobis! 
+              Ipsam, cupiditate deserunt, beatae inventore odit officia corrupti possimus nemo, culpa fugit ipsa quam 
+              eum vel minus praesentium eveniet voluptas dicta ea fuga.
+            </p>
+            <p>
+              Lorem, ipsum dolor sit amet 
+              consectetur adipisicing elit. At impedit asperiores quasi, animi est itaque reprehenderit repellendus nemo eum incidunt nam tempora.
+            </p>
+          </div>
         </div>
         <div className="staff-grid--assistant-director">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Name</h1></div>
           <div className="staff-grid--title"><h1>Assistant Director</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi blanditiis iste tempora, aut facere expedita 
+              molestiae omnis aspernatur suscipit, accusantium corporis fugiat voluptas sapiente ad repellat quos rerum dolorum corrupti?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error neque aperiam rem quas similique 
+              totam voluptatem molestiae assumenda eaque et, aut, consectetur dolores?
+            </p>
+          </div>
         </div>
         <div className="staff-grid--third-in-charge">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Name</h1></div>
           <div className="staff-grid--title"><h1>Third in Charge</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusamus magni error at earum excepturi 
+              inventore debitis officia dolore soluta odio velit, ipsa iste. Totam blanditiis exercitationem incidunt at adipisci?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam molestias sequi assumenda dolores enim 
+              cumque labore culpa est ut! Velit ipsum porro, totam fugiat atque placeat facere iure consequuntur adipisci qui quasi tempore in minima.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sequi fuga alias quasi soluta neque, porro dolores earum maxime.
+            </p>
+          </div>
         </div>
       </div>
     </section>

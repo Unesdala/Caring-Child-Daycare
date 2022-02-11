@@ -72,7 +72,7 @@ const HomeContent = (): JSX.Element => (
       </div>
     </section>
     <section className="home-main--reviews">
-      <h1>Review Title</h1>
+      <h1>"Caring Child Really Cares!"</h1>
       <figure>
         <blockquote>
           <p>
@@ -81,7 +81,7 @@ const HomeContent = (): JSX.Element => (
           </p>
         </blockquote>
         <figcaption>
-          &ndash; Some Family
+          &ndash; Mx. Wolfe
         </figcaption>
       </figure>
       <br />

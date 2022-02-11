@@ -26,22 +26,61 @@ const ParkwayCenterContent = (): JSX.Element => (
       <h1 className="staff-header">Meet Our Parkway Director Team</h1>
       <div className="staff-grid">
         <div className="staff-grid--director">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Dale Dimadome</h1></div>
           <div className="staff-grid--title"><h1>Director</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, deleniti itaque dolores fugiat 
+              illum quae accusantium culpa amet earum voluptates ratione, aliquam cum blanditiis perspiciatis pariatur at in sed magni.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi deleniti minus, quam unde 
+              exercitationem, magnam odit ullam sint dolorum fugit enim voluptatem.
+            </p>
+          </div>
         </div>
         <div className="staff-grid--assistant-director">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Name</h1></div>
           <div className="staff-grid--title"><h1>Assistant Director</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis minima doloribus quibusdam 
+              mollitia, ea aliquid autem officia dolore non sed iure quidem enim accusamus 
+              repudiandae aspernatur deleniti harum recusandae quasi nisi facere assumenda.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Est suscipit, sunt distinctio, nostrum 
+              delectus obcaecati molestiae doloribus quo, reiciendis ullam iure impedit nihil qui ipsum nemo dolore.
+            </p>
+          </div>
         </div>
         <div className="staff-grid--third-in-charge">
-          <div className="staff-grid--picture"><h1>Insert Picture Here</h1></div>
+          <div className="staff-grid--picture">
+            <img src="https://dl.dropboxusercontent.com/s/o6xtpfqxibbubh3/Placeholder.png?dl=0" alt="Placeholder Image" />
+          </div>
           <div className="staff-grid--name"><h1>Name</h1></div>
           <div className="staff-grid--title"><h1>Third in Charge</h1></div>
-          <div className="staff-grid--description"><h1>Descritpion</h1></div>
+          <div className="staff-grid--description">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis obcaecati blanditiis ipsa 
+              expedita velit, itaque quae amet harum, incidunt alias ab odit fuga? Rerum, facilis doloremque similique 
+              voluptates aperiam facere corporis vero expedita!
+              </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur aspernatur aut exercitationem 
+              voluptas. Error aliquam dolore iusto eaque ex sint quae cumque architecto fugit!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed dolorum molestiae laudantium distinctio 
+              voluptas, ipsam hic reiciendis quia autem dignissimos nihil magni quaerat tempora nam, dolorem accusantium?
+              </p>
+          </div>
         </div>
       </div>
     </section>

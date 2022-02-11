@@ -13,8 +13,14 @@ h1.staff-header {
   margin-bottom: 10px;
   grid-gap: 10px;
 
+  h1 {
+    text-align: center;
+  }
+
   &--picture {
-    height: 250px;
+    img {
+      height: 250px;
+    }
   }
 
   @include respond('medium') {
