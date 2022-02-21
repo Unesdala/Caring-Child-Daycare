@@ -5,7 +5,7 @@ const Footer = (): JSX.Element => (
     <div className="main-footer--locations">
       <h1>Locations</h1>
       <div className="main-footer--locations_buttons">
-        <Link to="vinton-center" className="main-footer--locations_buttons--vinton btn btn-white">
+        <Link to="/daycare/locations/vinton-center" className="main-footer--locations_buttons--vinton btn btn-white">
           Vinton Center
         </Link>
         <Link to="/daycare/locations/460-center" className="main-footer--locations_buttons--460 btn btn-white">
